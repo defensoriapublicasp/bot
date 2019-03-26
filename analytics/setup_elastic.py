@@ -11,7 +11,7 @@ args = parser.parse_args()
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-es = Elasticsearch([os.getenv('ELASTICSEARCH_URL', 'elasticsearch:9200')])
+es = Elasticsearch(["{}:{}".format(os.getenv('ELASTICSEARCH_URL', 'elasticsearch'),os.getenv('ELASTICSEARCH_PORT','9200'))],http_auth=('defensoria', 'defensoria'))
 
 settings = {
     "settings": {

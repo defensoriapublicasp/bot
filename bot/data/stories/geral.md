@@ -24,6 +24,17 @@
 * negar
     - utter_despedir
 
+## o que e defensoria
+* defensoria_oque_e
+    - utter_defensoria_oque_e
+
+## oque e defensoria 2
+* cumprimentar
+    - utter_cumprimentar
+* defensoria_oque_e
+    - utter_defensoria_oque_e
+
+
 
 ## elogios
 * elogios

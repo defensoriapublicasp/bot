@@ -31,6 +31,7 @@ intents:
   - bff
   - historia
   - risada
+  - defensoria_oque_e
 
   - action_test
 
@@ -60,6 +61,13 @@ entities:
   - historia
 
 templates:
+  utter_defensoria_oque_e:
+    - text: |
+        A Defensoria Pública do Estado de São Paulo é uma instituição permanente cuja função, 
+        como expressão e instrumento do regime democrático, é oferecer, às pessoas necessitadas, 
+        de forma integral e gratuita, a orientação jurídica, a promoção dos direitos humanos 
+        e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos.
+
   utter_default:
     - text: |
         Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito
@@ -449,5 +457,6 @@ actions:
   - utter_bff
   - utter_historia
   - utter_risada
+  - utter_defensoria_oque_e
 
   - action_test

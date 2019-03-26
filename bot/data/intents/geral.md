@@ -1,3 +1,12 @@
+## intent:defensoria_oque_e
+- O que e a defensoria
+- o que faz a defensoria
+- defensoria publica
+- defesa dos direitos humanos
+- defesa legal
+- advogado publico
+- defina defensoria
+
 ## intent:out_of_scope
 - Você fala sobre o meio ambiente?
 - Qual a origem do mundo?
