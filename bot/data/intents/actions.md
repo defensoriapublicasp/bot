@@ -1,8 +1,11 @@
 ## intent:action_agendamento
-- test custom action
-- custom action
-- actions
-- custom actions
-- action
-- test action
-
+- quero fazer um agendamento
+- agora é meu agendamento
+- moro em [São Paulo](cidade)
+- estou em [Campinas](cidade)
+- vivo em [Guarulhos](cidade)
+- fico em [Piraporinha](cidade)
+- [Tajaí](cidade) é mais próximo pra mim
+- sou de [Itajaí](cidade)
+- o processo está em [Registro](cidade)
+- foro dele é em [São Paulo](cidade)

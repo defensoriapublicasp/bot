@@ -1,9 +1,9 @@
-## cumprimentar action_test
+## cumprimentar action_agendamento
 * cumprimentar
     - utter_cumprimentar
-* action_test
-    - action_test
+* action_agendamento
+    - action_agendamento
 
-## action_test
-* action_test
-    - action_test
+## action_agendamento
+* action_agendamento
+    - action_agendamento
