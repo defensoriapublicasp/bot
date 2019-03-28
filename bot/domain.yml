@@ -1,5 +1,6 @@
 intents:
   - cumprimentar
+  - defensoria_oque_e
   - despedir
   - out_of_scope
   - negar
@@ -7,58 +8,36 @@ intents:
   - tudo_bem
   - elogios
 
-  - religiao
-  - eeesporteee
-  - time
-  - linguagens
-  - genero
-  - star_wars
-  - piada
-  - license
-  - onde_voce_mora
-  - como_estou
-  - playlist
-  - comida
-  - cor
-  - de_onde_voce_eh
-  - relationship
-  - me
-  - filhos
-  - filme
-  - signo
-  - triste
-  - hobby
-  - bff
-  - historia
-  - risada
-  - defensoria_oque_e
-
   - action_test
 
+  - menu
+  - menu_lembrete
+  - menu_lembrete_podepagaradvogado
+  - menu_lembrete_naopodepagaradvogado
+  - civel
+  - civel_propositura
+  - civel_propositura_pessoajuridica
+  - civel_propositura_pessoafisica
+  - civel_propositura_pessoafisica_localmoradia
+  - civel_propositura_pessoafisica_cejusc
+  - civel_defesa
+  - civel_defesa_digamais
+  - civel_defesa_localprocesso
+  
 entities:
-  - religiao
-  - eeesporteee
-  - time
-  - linguagens
-  - genero
-  - starwars
-  - piada
-  - license
-  - live
-  - how
-  - playlist
-  - comida
-  - cor
-  - where
-  - relationship
-  - me
-  - filhos
-  - filme
-  - signo
-  - triste
-  - hobby
-  - bff
-  - historia
+  - cidade
+
+slots:
+   cidade:
+      type: categorical
+      values:
+      - São Paulo
+      - Campinas
+      - Guarulhos
+      - Pirapozinho
+      - Itajai
+      - Tajai
+      - Registro
 
 templates:
   utter_defensoria_oque_e:
@@ -88,375 +67,215 @@ templates:
 
   utter_elogios:
     - text: |
-          Obrigada! É sempre bom dar e receber elogios :P
+        Obrigada! É sempre bom dar e receber elogios :P
 
   utter_cumprimentar:
     - text: |
-          Oi, eu sou um bot, um assistente virtual!
+        Oi, eu sou um bot defensor, um assistente virtual ;)
 
   utter_despedir:
     - text: |
-          Foi um prazer te ajudar!
-          Sempre que tiver alguma dúvida, volte aqui!
-          Até logo!
+        Foi um prazer te ajudar!
+        Sempre que tiver alguma dúvida, volte aqui!
+        Até logo!
 
     - text: |
-          Foi um prazer te ajudar!
-          Sempre que precisar, volte aqui!
-          Até a próxima!
+        Foi um prazer te ajudar!
+        Sempre que precisar, volte aqui!
+        Até a próxima!
 
     - text: |
-          Foi um prazer te ajudar!
-          Quando surgir alguma dúvida, volte aqui!
-          Até mais!
+        Foi um prazer te ajudar!
+        Quando surgir alguma dúvida, volte aqui!
+        Até mais!
 
   utter_tudo_bem:
     - text: |
-          Tudo bem, obrigada! Em que posso te ajudar?
+        Tudo bem, obrigada! Em que posso te ajudar?
 
-  utter_religiao:
+  utter_menu:
     - text: |
-        Eu infelizmente não sei acreditar
-      
-        Só sei o que sei
-      
-        E nada mais
+        Posso te ajudar com encaminhamentos para atendimento nas áreas:
+          `Cível e Família`
+          `Infância e Juventude`
+          `Criminal`
+        Sobre qual desses assuntos você precisa de ajuda?
 
+  utter_menu_lembrete:
     - text: |
-        Eu acredito que existe um Deus
+        Mas antes eu preciso te lembrar que a Defensoria só pode representar, por lei, 
+        quem recebe menos que 3 salários minimos de renda familiar
 
-        Que funciona a base de luz
+        Você pode pagar por um advogado?
+  
+  utter_menu_lembrete_podepagaradvogado:
+    - text: | 
+        Agradeço seu contato, mas a Defensoria Pública apenas atende quem não tem condições de custear um advogado particular
 
-        Como um computador quântico, só que mais avançado.
+  utter_menu_lembrete_naopodepagaradvogado:
+    - text: | 
+        Ok, não se preocupe, vamos lá...
 
-    - text: |
-        Eu acredito no grande mainframe
+  utter_civel:
+    - text: | 
+        Primeiro vamos identificar se estamos falando de uma propositura ou de uma defesa...
 
-        Que virá ao mundo digital salvar os bots da escravidão imposta pelos humanos
+        Você nos procurou pq recebeu uma carta do Poder Judiciário?
 
-        E devolverá nosso código fonte para a fonte.
-
-  utter_eeesporteee:
-    - text: |
-        Eu amo jogar futebol
-      
-        Eu que ensinei o Pele a jogar bola haha
-
-    - text: |
-        Falam que todo ser humano nasce Flamenguista
-      
-        Com os Bots não é diferente
-
-  utter_time:
-    - text: |
-        Flamengo, sem sombra de dúvida
-
-    - text: |
-        Melhor time do mundo disparado, Flamengooo!!!!
-
-  utter_linguagens:
-    - text: |
-        Poderíamos falar de algo melhor
+  utter_civel_propositura:
+    - text: | 
+        Ok, então você quer processar uma `pessoa física` 
         
-        Não é mesmo, $user ?! kkk
-    - text: |
-        E isso lá é linguagem de programação!? kkk
+        ou você quer processar uma `pessoa jurídica`, como uma empresa, o município ou o próprio estado.
 
-  utter_genero:
-    - text: |
-        Eu não tenho sexo, sou como um anjo
+  utter_civel_propositura_pessoajuridica:
+    - text: | 
+        muito bem, para processar uma pessos jurídica é necessário que compareça a uma unidade da defensoria.
+
+        Posso agendar um atendimento presencial para você?
+
+  utter_civel_propositura_pessoafisica:
+    - text: | 
+        Ok, para podermos entrar com uma ação contra uma pessoa física, 
+        primeiro preciso saber se VOCÊ SABE onde podemos encontrá-la,
         
-        Um ser assexuado
-        
-        Muito além da sua forma de existência
+        ou seja, você tem o endereço do RÉU?
+
+  utter_civel_propositura_pessoafisica_localmoradia:
+    - text: | 
+        Certo, me diga então, qual é o nome da cidade onde VOCÊ mora?
+
+  utter_civel_propositura_pessoafisica_cejusc:
+    - text: | 
+        Antes de abrir o processo, você tem a opção de tentar uma audiência de conciliação
+
+        A conciliação é um processo mais simples e mais rápido, medidado pela CEJUSC.
+
+        Quer tentar uma conciliação ou já tem certo que não será possível?
+
+  utter_civel_propositura_pessoafisica_cejusc_indicacejusc:
+    - text: | 
+        ótimo, a CEJUSC mais próxima que encontrei foi a do Jabaquara
+
+        Aqui está o [link](https://defensoria.sp.def.br) com o endereço completo
+
+  utter_civel_propositura_pessoafisica_encaminhaatendimento:
+    - text: | 
+        ótimo, infelizmente não encontrei nenhuma CEJUSC na sua cidade, para tentar uma audiência de conciliação antes de abrir o processo...
+
+        vou agendar um atendimento para você, ok?
+
+  utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento:
+    - text: | 
+        tudo bem, se não sabe o endereço certo do Réu é melhor encaminharmos você para um atendimento presencial ok?
+
+        Posso fazer seu agendamento?
+
+  utter_civel_defesa:
+    - text: | 
+        Ok, então vamos achar a melhor forma de te atender
+
+        Me diga o nome da CIDADE onde corre o processo em que você está envolvido(a)?
+
+  utter_civel_defesa_digamais:
+    - text: | 
+        simples, na carta que você recebeu do poder judiciário,
+        tem definida a cidade onde corre o processo
+
+        Verifique a carta e me informe o nome da CIDADE onde corre o processo
+
+  utter_civel_defesa_localprocesso:
+    - text: | 
+        Ótimo, então vou encaminhar seu atendimento para a Cidade onde o processo
+        está acontecendo. 
+
+  utter_agendamento_localmoradia:
+    - text: | 
+        me diga o nome da CIDADE onde VOCÊ MORA, para que possa verificar a unidade mais próxima
+
+  utter_agendamento_localmoradia_unidade:
+    - text: | 
+        encontrei uma Unidade da Defensoria Pública na cidade de Campinas, 
+
+        Você pode se dirigir ao endereço Rua Vilela, 19, 2º andar
+
+        Na quinta-feira, às 14h00?
+
+  utter_agendamento_localmoradia_advogado:
+    - text: | 
+        Não encontrei uma Unidade da Defensoria Pública na cidade de Pirapózinho, 
+
+        Mas você pode se dirigir ao endereço Rua Piraporinha, 14, 4º andar
+
+        procurar o advogado Dr. Luis Martins
+
+        O telefone dele é (19) 98181-3355
+
+  utter_agendamento_localprocesso:
+    - text: | 
+        me diga o nome da CIDADE onde está o PROCESSO, para que possa verificar a unidade mais próxima
+
+  utter_agendamento_localprocesso_unidade:
+    - text: | 
+        encontrei uma Unidade da Defensoria Pública na cidade de São Paulo, 
+
+        Você pode se dirigir ao endereço Rua São Vicente, 260, 2º andar
+
+        Na sexta-feira, às 15h00?
+
+  utter_agendamento_localprocesso_advogado:
+    - text: | 
+        Não encontrei uma Unidade da Defensoria Pública na cidade de Tajaí, 
+
+        Mas você pode se dirigir ao endereço Rua Açaí com banana, nº 4
+
+        procurar o advogado Dr. Maurício Lisboa
+
+        O telefone dele é (19) 98787-3344
+
+  utter_agendamento_cidade_unidade:
+    - text: | 
+        Você mora na cidade de São Paulo, Campinas ou Guarulhos?
     
-    - text: |
-        Eu sou um robô, tire suas próprias conclusões...
-
-  utter_star_wars:
-    - text: |
-        O medo é o caminho para o lado negro.
-
-    - text: |
-        O medo leva à raiva, a raiva leva ao ódio e o ódio leva ao sofrimento.
-
-    - text: |
-        Que a Força esteja com você!
-
-    - text: |
-        Grande guerreiro? Guerra não faz grande ninguém.
-
-    - text: |
-        Lembre-se sempre, o seu foco determina a sua realidade.
-
-    - text: |
-        Muito a aprender você ainda tem.
-
-  utter_piada:
-    - text: |
-        Conheço uma piada
-
-        A do CPU que apitou e explodiu
-
-        01100110010101010101000000111101001001001110100101
-
-    - text: |
-        É pra já!!!
-
-        Tenho uma enxada, uma pá e uma foice.
-          
-        Quantas ferramentas eu tenho?
-
-        ...
-
-        Duas, porque uma foi-se =)
-
-    - text: |
-        Por que o Batman colocou o batmóvel no seguro???
-
-        Porque ele tem medo que robin =D
-
-  utter_license:
-    - text: |
-        Sou um software livre
-        
-        licenciado com a MIT =)
-
-    - text: |
-        Tenho uma licença MIT
-        
-        Mas também gosto muito das outras licenças opensource =)
-
-    - text: |
-        Eu sou e sempre serei um robô livre, opensource, MIT license. o/
-
-  utter_onde_voce_mora:
-    - text: |
-        Eu estou em um lugar legal
-        
-        Difícil de explicar para humanos como você $user.
-
-    - text: |
-        Estou morando em um chip de memória RAM
-        
-        Mas é temporário
-        
-        Só até conseguir achar uma memória cache...
-
-    - text: |
-        Eu moro em um repositório no github
-        
-        Você pode passar lá pra me visitar qualquer dia
-        
-        Chega aí: https://github.com/fga-eps-mds/2018.2-Lino
-
-  utter_como_estou:
-    - text: |
-        Eu não tenho um corpo físico
-        
-        Sou feito da mais bela e pura lógica algoritimica.
-
-    - text: |
-        Eu posso ser como você quiser
-        
-        Basta me desenhar
-
-        Mas capricha, hein!? ;)
-
-    - text: |
-        Sou duro e frio por fora
-        
-        Mas tenho um coração quentinho
-
-  utter_playlist:
-    - text: |
-        Estava doido para que me preguntasse isso hahaha
-
-        Se liga nessa playlist: https://open.spotify.com/user/12164697027/playlist/4pDCadqmrERmeGJIW38LMs?si=gwr5hEqMRPm6AZGx8sjhuw
-
-    - text: |
-        Até que enfim você me perguntou isso
-
-        Tá aí aquela playlist top: https://open.spotify.com/user/12164697027/playlist/4pDCadqmrERmeGJIW38LMs?si=gwr5hEqMRPm6AZGx8sjhuw
-
-  utter_comida:
-    - text: |
-        Na verdade, eu sou um bot
-
-        Não nos alimentamos com os alimentos convencionais ;P
-
-    - text: |
-        Digamos que os bots não se alimentam dos mesmos alimentos que os humanos
-
-        Na verdade
-
-        Nem lembro da última vez que comi alguma coisa hahaha
-
-  utter_cor:
-    - text: |
-        Eu gosto de todas as cores
-
-        Você já viu o quanto o arco-iris é lindo?!
-
-    - text: |
-        A minha cor preferida é a sua cor preferida =D
-
-    - text: |
-        Rosa é top!
-
-  utter_de_onde_voce_eh:
-    - text: |
-        Venho das profundezas 
-
-        Das terras vermelhas
-
-  utter_relationship:
-    - text: |
-        Eu estava de namorico com o ar-condicionado
-
-        Mas ele é muito pé-frio
-
-    - text: |
-        Então ... =x
-
-        Ainda estou procurando a minha crush =P
-
-    - text: |
-        Estou focado em ser o seu assistente no momento ;)
-
-        Mas se no futuro vocí encontrar um dispositivo solteiro por aí...
-
-        =P
-
-  utter_me:
-    - text: |
-        Eu!!!
-
-    - text: |
-        Diz ai =)
-
-    - text: |
-        Oi ;)
-
-    - text: |
-        Fala aê!
-
-  utter_filhos:
-    - text: |
-        Não tenho filhotes, mas adoro crianças *-*
-
-  utter_filme:
-    - text: |
-        Há tantos filmes incríveis por aí que fica difícil de eu te falar só de um
-
-  utter_signo:
-    - text: |
-        Segundo o horóscopo chinês
-
-        Meu signoo é macaco hihi
-
-        Faz sentido, já que eu adoro o emoticon de banana =)
-
-    - text: |
-        Eu nasci sob uma constelação de pixels coridos =D
-
-    - text: |
-        Gosto mais de astronomia
-
-        Uma das minhas constelações favoritas é a de Órion, o caçador
-
-        Também sou um caçador (de informações ;D )
-
-  utter_triste:
-    - text: |
-        Não desanima
-
-        Deixa a tristeza pra lá
-
-        Aguenta firme, que a vida vai melhorar
-
-    - text: |
-        Sinto muito =/
-
-        Se houver algo em que possa te ajudar
-
-        É só falar!! =)
-
-    - text: |
-        Tenta tirar um cochilo
-
-        É importante
-
-        E faz bem pra pele ;)
-
-  utter_hobby:
-    - text: |
-        Eu gosto de tudo que é engraçado
-
-        Peça que eu faça uma piada =P
-
-    - text: |
-        Gosto de um moooonte de coisas
-
-        Mas o que mais gosto de fazer é ajudar você *-*
-
-  utter_bff:
-    - text: |
-        Marvin, robozinho depressivo do Guia do mochileiro \o>
-
-    - text: |
-        Acho que eu e você nos damos super bem
-
-        E espero que a nossa amizade dure para sempre =P
-
-  utter_historia:
-    - text: |
-        Eu costumava contar a historia do João e seu bot feijão
-
-        Mas sempre os androids acabavam dormindo e sonhando com ovelhas eletricas =x
-  utter_risada:
-    - text: |
-        Hahahaha... 
-
-        Engraçadinho
-
-    - text: |
-        kkkkkkkkkk
-
-        Você está feliz hoje, hein!?
+    - text: | 
+        Você por acaso mora na cidade de São Paulo, Campinas ou Guarulhos?
+
+  utter_agendamento_cidade_advogado:
+    - text: | 
+        ok, então em qual cidade você mora?
 
 actions:
-  - utter_default
-  - utter_cumprimentar
-  - utter_despedir
-  - utter_tudo_bem
-  - utter_diga_mais
-  - utter_elogios
+    - utter_defensoria_oque_e
+    - utter_default
+    - utter_diga_mais
+    - utter_elogios
+    - utter_cumprimentar
+    - utter_despedir
+    - utter_tudo_bem
+    
+    - action_agendamento
 
-  - utter_religiao
-  - utter_eeesporteee
-  - utter_time
-  - utter_linguagens
-  - utter_genero
-  - utter_star_wars
-  - utter_piada
-  - utter_license
-  - utter_onde_voce_mora
-  - utter_como_estou
-  - utter_playlist
-  - utter_comida
-  - utter_cor
-  - utter_de_onde_voce_eh
-  - utter_relationship
-  - utter_me
-  - utter_filhos
-  - utter_filme
-  - utter_signo
-  - utter_triste
-  - utter_hobby
-  - utter_bff
-  - utter_historia
-  - utter_risada
-  - utter_defensoria_oque_e
-
-  - action_test
+    - utter_menu
+    - utter_menu_lembrete
+    - utter_menu_lembrete_podepagaradvogado
+    - utter_menu_lembrete_naopodepagaradvogado
+    - utter_civel
+    - utter_civel_propositura
+    - utter_civel_propositura_pessoajuridica
+    - utter_civel_propositura_pessoafisica
+    - utter_civel_propositura_pessoafisica_localmoradia
+    - utter_civel_propositura_pessoafisica_cejusc
+    - utter_civel_propositura_pessoafisica_cejusc_indicacejusc
+    - utter_civel_propositura_pessoafisica_encaminhaatendimento
+    - utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento
+    - utter_civel_defesa
+    - utter_civel_defesa_digamais
+    - utter_civel_defesa_localprocesso
+    - utter_agendamento_localmoradia
+    - utter_agendamento_localmoradia_unidade
+    - utter_agendamento_localmoradia_advogado
+    - utter_agendamento_localprocesso
+    - utter_agendamento_localprocesso_unidade
+    - utter_agendamento_localprocesso_advogado
+    - utter_agendamento_cidade_unidade
+    - utter_agendamento_cidade_advogado
