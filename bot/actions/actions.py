@@ -9,7 +9,7 @@ class ActionAgendamento(Action):
 
    def run(self, dispatcher, tracker, domain):
         try:
-          dispatcher.utter_message("Mensagem enviada por uma custom action.")
+          dispatcher.utter_message("Ok, encontrei uma unidade próxima a {}, vamos agendar para amanhã a tarde?".format(tracker.get_slot('cidade')))
         except ValueError:
           dispatcher.utter_message(ValueError)
 

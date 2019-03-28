@@ -1,3 +1,10 @@
+## Oi Tudo Bem Story 1
+* cumprimentar
+    - utter_cumprimentar
+* tudo_bem
+    - utter_tudo_bem
+    - utter_menu
+
 ## Despedir
 * despedir
     - utter_despedir
@@ -6,11 +13,6 @@
 * tudo_bem
     - utter_tudo_bem
 
-## Oi Tudo Bem Story 1
-* cumprimentar
-    - utter_cumprimentar
-* tudo_bem
-    - utter_tudo_bem
 
 ## Nao entendi
 * diga_mais
@@ -25,14 +27,14 @@
     - utter_despedir
 
 ## o que e defensoria
-* defensoria_oque_e
-    - utter_defensoria_oque_e
+* sobre
+    - utter_sobre
 
 ## oque e defensoria 2
 * cumprimentar
     - utter_cumprimentar
-* defensoria_oque_e
-    - utter_defensoria_oque_e
+* sobre
+    - utter_sobre
 
 
 

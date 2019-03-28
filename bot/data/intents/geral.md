@@ -33,20 +33,12 @@
 - até breve
 - falou, valeu
 - flw vlw
-- blza
-- blz
-- valeu
-- de boa
-- obrigada
-- obrigado
-- obj
 
 ## intent:cumprimentar
 - oi, tudo bem
 - como vai
 - oi, como vai voce
 - como vao as coisas
-- com licenca
 - tudo bom
 - posso falar com voce
 - pode me tirar uma duvida
@@ -59,11 +51,13 @@
 - bom dia
 - boa tarde
 - boa noite
-- olá
+- ola
+- Olá como vai
 - oie
 - oiee
 - opa tudo bem
 - ola boa tarde
+- ola ola
 
 ## intent:elogios
 - Você é  muito educado!

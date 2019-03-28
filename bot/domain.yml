@@ -1,6 +1,6 @@
 intents:
   - cumprimentar
-  - defensoria_oque_e
+  - sobre
   - despedir
   - out_of_scope
   - negar
@@ -40,7 +40,7 @@ slots:
       - Registro
 
 templates:
-  utter_defensoria_oque_e:
+  utter_sobre:
     - text: |
         A Defensoria Pública do Estado de São Paulo é uma instituição permanente cuja função, 
         como expressão e instrumento do regime democrático, é oferecer, às pessoas necessitadas, 
@@ -91,8 +91,9 @@ templates:
 
   utter_tudo_bem:
     - text: |
-        Tudo bem, obrigada! Em que posso te ajudar?
+        Tudo bem, obrigada! 
 
+# ============================ NAVEGAÇÃO PRINCIPAL ============================ #
   utter_menu:
     - text: |
         Posso te ajudar com encaminhamentos para atendimento nas áreas:
@@ -115,6 +116,8 @@ templates:
   utter_menu_lembrete_naopodepagaradvogado:
     - text: | 
         Ok, não se preocupe, vamos lá...
+
+# ============================ CIVEL E FAMILIA ============================ #
 
   utter_civel:
     - text: | 
@@ -151,7 +154,7 @@ templates:
 
         A conciliação é um processo mais simples e mais rápido, medidado pela CEJUSC.
 
-        Quer tentar uma conciliação ou já tem certo que não será possível?
+        Quer tentar uma conciliação ?
 
   utter_civel_propositura_pessoafisica_cejusc_indicacejusc:
     - text: | 
@@ -186,9 +189,23 @@ templates:
 
   utter_civel_defesa_localprocesso:
     - text: | 
-        Ótimo, então vou encaminhar seu atendimento para a Cidade onde o processo
-        está acontecendo. 
+        você sabe em qual cidade está o processo?
 
+  utter_civel_defesa_atendimento:
+    - text: | 
+        Ok, maravilha
+
+        vamos encaminhar seu agendamento agora!
+
+# ============================ INFANCIA E JUVENTUDE ============================ #
+
+
+
+# ============================ CRIMINAL ============================ #
+
+
+
+# ============================ AGENDAMENTO ============================ #
   utter_agendamento_localmoradia:
     - text: | 
         me diga o nome da CIDADE onde VOCÊ MORA, para que possa verificar a unidade mais próxima
@@ -244,8 +261,8 @@ templates:
     - text: | 
         ok, então em qual cidade você mora?
 
+# ============================ ACTIONS ============================ #
 actions:
-    - utter_defensoria_oque_e
     - utter_default
     - utter_diga_mais
     - utter_elogios
@@ -253,12 +270,13 @@ actions:
     - utter_despedir
     - utter_tudo_bem
     
-    - action_agendamento
+    - utter_sobre
 
     - utter_menu
     - utter_menu_lembrete
     - utter_menu_lembrete_podepagaradvogado
     - utter_menu_lembrete_naopodepagaradvogado
+
     - utter_civel
     - utter_civel_propositura
     - utter_civel_propositura_pessoajuridica
@@ -271,6 +289,7 @@ actions:
     - utter_civel_defesa
     - utter_civel_defesa_digamais
     - utter_civel_defesa_localprocesso
+
     - utter_agendamento_localmoradia
     - utter_agendamento_localmoradia_unidade
     - utter_agendamento_localmoradia_advogado
@@ -279,3 +298,5 @@ actions:
     - utter_agendamento_localprocesso_advogado
     - utter_agendamento_cidade_unidade
     - utter_agendamento_cidade_advogado
+
+    - action_agendamento
