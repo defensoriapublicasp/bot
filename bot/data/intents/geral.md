@@ -1,4 +1,4 @@
-## intent:defensoria_oque_e
+## intent:sobre
 - O que e a defensoria
 - o que faz a defensoria
 - defensoria publica
@@ -7,6 +7,15 @@
 - advogado publico
 - defina defensoria
 
+## intent:menu
+- Oque você sabe fazer
+- menu
+- menu principal
+- raiz
+- retorna
+- volta
+- o que pode fazer
+  
 ## intent:out_of_scope
 - Você fala sobre o meio ambiente?
 - Qual a origem do mundo?
@@ -15,7 +24,7 @@
 - batatinha quando nasce
 
 ## intent:despedir
-- Tchau obrigada
+- Tchau obrigado
 - Tchau
 - até logo
 - namaste
@@ -60,8 +69,11 @@
 - Você é  muito educado!
 - Adorei
 - Me ajudou muito
-- vc eh linda
-
+- vc eh lindo
+- parabéns
+- amei
+- voce foi demais
+  
 ## intent:negar
 - não sei onde a minha pergunta se encaixa
 - nao quero saber mais
@@ -83,6 +95,23 @@
 - ainda não sei
 - nenhum
 
+## intent:afirmar
+- sim
+- isso
+- isso mesmo
+- ok
+- oquei
+- okay
+- ta bom
+- blza
+- beleza
+- firmeza
+- fmz
+- sim sim
+- sí
+- ótimo
+- massa
+  
 ## intent:diga_mais
 - como funciona
 - me diga mais
@@ -101,7 +130,7 @@
 - joia
 - joinha
 - tudo bom
-- bom dia flor do dia
+- bom dia
 - Tudo bem e você
 - como vc esta
 - como vai
