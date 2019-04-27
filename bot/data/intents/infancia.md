@@ -24,7 +24,6 @@
 
 ## intent:civel
 - quero propor uma ação 
-- quero processar alguem
 - estou sendo processado
 - fui intimado a comparecer
 - estou sendo vitima
