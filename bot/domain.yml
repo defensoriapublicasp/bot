@@ -8,12 +8,25 @@ intents:
   - tudo_bem
   - elogios
 
-  - action_test
+  - afirmar
 
-  - menu
-  - menu_lembrete
-  - menu_lembrete_podepagaradvogado
-  - menu_lembrete_naopodepagaradvogado
+  # - menu_civel
+  # - menu_crime
+  # - menu_pena
+  # - menu_lembrete
+  # - menu_lembrete_podepagaradvogado
+  # - menu_lembrete_naopodepagaradvogado
+
+  # - pena_preso
+  # - pena_solto
+  # - pena_preso_localprisao
+  # - pena_solto_localpena
+
+  # - criminal
+  # - crime_localacontecimento
+
+  # - infancia
+
   - civel
   - civel_propositura
   - civel_propositura_pessoajuridica
@@ -23,6 +36,10 @@ intents:
   - civel_defesa
   - civel_defesa_digamais
   - civel_defesa_localprocesso
+
+  # - informa_cidade
+
+  - action_agendamento
   
 entities:
   - cidade
@@ -102,20 +119,20 @@ templates:
           `Criminal`
         Sobre qual desses assuntos você precisa de ajuda?
 
-  utter_menu_lembrete:
-    - text: |
-        Mas antes eu preciso te lembrar que a Defensoria só pode representar, por lei, 
-        quem recebe menos que 3 salários minimos de renda familiar
+  # utter_menu_lembrete:
+  #   - text: |
+  #       Mas antes eu preciso te lembrar que a Defensoria só pode representar, por lei, 
+  #       quem recebe menos que 3 salários minimos de renda familiar
 
-        Você pode pagar por um advogado?
+  #       Você pode pagar por um advogado?
   
-  utter_menu_lembrete_podepagaradvogado:
-    - text: | 
-        Agradeço seu contato, mas a Defensoria Pública apenas atende quem não tem condições de custear um advogado particular
+  # utter_menu_lembrete_podepagaradvogado:
+  #   - text: | 
+  #       Agradeço seu contato, mas a Defensoria Pública apenas atende quem não tem condições de custear um advogado particular
 
-  utter_menu_lembrete_naopodepagaradvogado:
-    - text: | 
-        Ok, não se preocupe, vamos lá...
+  # utter_menu_lembrete_naopodepagaradvogado:
+  #   - text: | 
+  #       Ok, não se preocupe, vamos lá...
 
 # ============================ CIVEL E FAMILIA ============================ #
 
@@ -206,60 +223,60 @@ templates:
 
 
 # ============================ AGENDAMENTO ============================ #
-  utter_agendamento_localmoradia:
-    - text: | 
-        me diga o nome da CIDADE onde VOCÊ MORA, para que possa verificar a unidade mais próxima
+  # utter_agendamento_localmoradia:
+  #   - text: | 
+  #       me diga o nome da CIDADE onde VOCÊ MORA, para que possa verificar a unidade mais próxima
 
-  utter_agendamento_localmoradia_unidade:
-    - text: | 
-        encontrei uma Unidade da Defensoria Pública na cidade de Campinas, 
+  # utter_agendamento_localmoradia_unidade:
+  #   - text: | 
+  #       encontrei uma Unidade da Defensoria Pública na cidade de Campinas, 
 
-        Você pode se dirigir ao endereço Rua Vilela, 19, 2º andar
+  #       Você pode se dirigir ao endereço Rua Vilela, 19, 2º andar
 
-        Na quinta-feira, às 14h00?
+  #       Na quinta-feira, às 14h00?
 
-  utter_agendamento_localmoradia_advogado:
-    - text: | 
-        Não encontrei uma Unidade da Defensoria Pública na cidade de Pirapózinho, 
+  # utter_agendamento_localmoradia_advogado:
+  #   - text: | 
+  #       Não encontrei uma Unidade da Defensoria Pública na cidade de Pirapózinho, 
 
-        Mas você pode se dirigir ao endereço Rua Piraporinha, 14, 4º andar
+  #       Mas você pode se dirigir ao endereço Rua Piraporinha, 14, 4º andar
 
-        procurar o advogado Dr. Luis Martins
+  #       procurar o advogado Dr. Luis Martins
 
-        O telefone dele é (19) 98181-3355
+  #       O telefone dele é (19) 98181-3355
 
-  utter_agendamento_localprocesso:
-    - text: | 
-        me diga o nome da CIDADE onde está o PROCESSO, para que possa verificar a unidade mais próxima
+  # utter_agendamento_localprocesso:
+  #   - text: | 
+  #       me diga o nome da CIDADE onde está o PROCESSO, para que possa verificar a unidade mais próxima
 
-  utter_agendamento_localprocesso_unidade:
-    - text: | 
-        encontrei uma Unidade da Defensoria Pública na cidade de São Paulo, 
+  # utter_agendamento_localprocesso_unidade:
+  #   - text: | 
+  #       encontrei uma Unidade da Defensoria Pública na cidade de São Paulo, 
 
-        Você pode se dirigir ao endereço Rua São Vicente, 260, 2º andar
+  #       Você pode se dirigir ao endereço Rua São Vicente, 260, 2º andar
 
-        Na sexta-feira, às 15h00?
+  #       Na sexta-feira, às 15h00?
 
-  utter_agendamento_localprocesso_advogado:
-    - text: | 
-        Não encontrei uma Unidade da Defensoria Pública na cidade de Tajaí, 
+  # utter_agendamento_localprocesso_advogado:
+  #   - text: | 
+  #       Não encontrei uma Unidade da Defensoria Pública na cidade de Tajaí, 
 
-        Mas você pode se dirigir ao endereço Rua Açaí com banana, nº 4
+  #       Mas você pode se dirigir ao endereço Rua Açaí com banana, nº 4
 
-        procurar o advogado Dr. Maurício Lisboa
+  #       procurar o advogado Dr. Maurício Lisboa
 
-        O telefone dele é (19) 98787-3344
+  #       O telefone dele é (19) 98787-3344
 
-  utter_agendamento_cidade_unidade:
-    - text: | 
-        Você mora na cidade de São Paulo, Campinas ou Guarulhos?
+  # utter_agendamento_cidade_unidade:
+  #   - text: | 
+  #       Você mora na cidade de São Paulo, Campinas ou Guarulhos?
     
-    - text: | 
-        Você por acaso mora na cidade de São Paulo, Campinas ou Guarulhos?
+  #   - text: | 
+  #       Você por acaso mora na cidade de São Paulo, Campinas ou Guarulhos?
 
-  utter_agendamento_cidade_advogado:
-    - text: | 
-        ok, então em qual cidade você mora?
+  # utter_agendamento_cidade_advogado:
+  #   - text: | 
+  #       ok, então em qual cidade você mora?
 
 # ============================ ACTIONS ============================ #
 actions:
@@ -273,9 +290,9 @@ actions:
     - utter_sobre
 
     - utter_menu
-    - utter_menu_lembrete
-    - utter_menu_lembrete_podepagaradvogado
-    - utter_menu_lembrete_naopodepagaradvogado
+    # - utter_menu_lembrete
+    # - utter_menu_lembrete_podepagaradvogado
+    # - utter_menu_lembrete_naopodepagaradvogado
 
     - utter_civel
     - utter_civel_propositura
@@ -289,14 +306,15 @@ actions:
     - utter_civel_defesa
     - utter_civel_defesa_digamais
     - utter_civel_defesa_localprocesso
+    - utter_civel_defesa_atendimento
 
-    - utter_agendamento_localmoradia
-    - utter_agendamento_localmoradia_unidade
-    - utter_agendamento_localmoradia_advogado
-    - utter_agendamento_localprocesso
-    - utter_agendamento_localprocesso_unidade
-    - utter_agendamento_localprocesso_advogado
-    - utter_agendamento_cidade_unidade
-    - utter_agendamento_cidade_advogado
+    # - utter_agendamento_localmoradia
+    # - utter_agendamento_localmoradia_unidade
+    # - utter_agendamento_localmoradia_advogado
+    # - utter_agendamento_localprocesso
+    # - utter_agendamento_localprocesso_unidade
+    # - utter_agendamento_localprocesso_advogado
+    # - utter_agendamento_cidade_unidade
+    # - utter_agendamento_cidade_advogado
 
     - action_agendamento

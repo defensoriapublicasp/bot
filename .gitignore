@@ -2,7 +2,6 @@
 bot/models
 rasa_core.log
 errors.json
-chat_graph.html
 
 ### Rasa evaluation ###
 notebooks/models/

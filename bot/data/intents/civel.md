@@ -1,4 +1,19 @@
-## intent:menu_lembrete
+## intent:civel
+- quero propor uma ação 
+- quero processar alguem
+- estou sendo processado
+- fui intimado a comparecer
+- estou sendo vitima
+- sou réu em um processo
+- estou me divorciando
+- quero me divorciar
+- quero pedir pensao
+- pensao para meus filhos
+- quero me separar
+- quero ajuda para me separar
+- quero pedir alimentos
+
+<!-- ## intent:menu_lembrete
 -  Eu posso ser defendido pela Defensoria
 -  Posso ter um advogado
 -  preciso de um advogado
@@ -20,24 +35,9 @@
 - ganho 1 salario minimo
 - renda familiar de 2 salários minimos
 - ganho bem pouco
-- sou pobre
+- sou pobre -->
 
-## intent:civel
-- quero propor uma ação 
-- quero processar alguem
-- estou sendo processado
-- fui intimado a comparecer
-- estou sendo vitima
-- sou réu em um processo
-- estou me divorciando
-- quero me divorciar
-- quero pedir pensao
-- pensao para meus filhos
-- quero me separar
-- quero ajuda para me separar
-- quero pedir alimentos
-
-## intent:civel_propositura
+<!-- ## intent:civel_propositura
 -  quero processar alguem
 -  como faco para processar uma pessoa
 -  quero realizar uma propositura de acao
@@ -104,4 +104,4 @@
 - na carta tem o local 
 - sei a cidade do processo 
 - sei o local do foro do processo 
-- sei a comarca onde esta o processo
+- sei a comarca onde esta o processo -->

@@ -51,46 +51,6 @@
 * afirmar
     - utter_civel_propositura_pessoafisica_localmoradia
 
-## Civel 8
-* civel_propositura_pessoafisica
-    - utter_civel_propositura_pessoafisica
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","São Paulo"}
-    - utter_civel_propositura_pessoafisica_cejusc
-
-## Civel 9
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","São Paulo"}
-    - utter_civel_propositura_pessoafisica_cejusc
-* afirmar
-    - utter_civel_propositura_pessoafisica_cejusc_indicacejusc
-
-## Civel 10
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","São Paulo"}
-    - utter_civel_propositura_pessoafisica_cejusc
-* negar
-    - action_agendamento
-
-## Civel 11
-* civel_propositura_pessoafisica
-    - utter_civel_propositura_pessoafisica
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","Piraporinho"}
-    - action_agendamento
-
-## Civel 12
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","Piraporinho"}
-    - action_agendamento
-* despedir
-    - utter_despedir
-
 ## Civel 13
 * civel
     - utter_civel
@@ -118,19 +78,3 @@
     - utter_civel_defesa
 * civel_defesa_localprocesso
     - utter_civel_defesa_localprocesso
-
-## Civel 3
-* diga_mais
-    - utter_civel_defesa_digamais
-* civel_defesa_localprocesso
-    - utter_civel_defesa_localprocesso
-* civel_defesa_agendamento
-    - action_agendamento
-
-## Civel 3
-* civel_defesa
-    - utter_civel_defesa
-* civel_defesa_localprocesso
-    - utter_civel_defesa_localprocesso
-* civel_defesa_agendamento
-    - action_agendamento

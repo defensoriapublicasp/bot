@@ -7,15 +7,6 @@
 - advogado publico
 - defina defensoria
 
-## intent:menu
-- Oque você sabe fazer
-- menu
-- menu principal
-- raiz
-- retorna
-- volta
-- o que pode fazer
-  
 ## intent:out_of_scope
 - Você fala sobre o meio ambiente?
 - Qual a origem do mundo?
