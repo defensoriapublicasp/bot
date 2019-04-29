@@ -80,6 +80,7 @@
 
 ## intent:afirmar
 - sim
+- quero
 - concordo
 - pode sim
 - claro que pode

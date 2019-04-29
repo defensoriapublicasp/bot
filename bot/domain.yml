@@ -10,12 +10,9 @@ intents:
 
   - afirmar
 
-  # - menu_civel
-  # - menu_crime
-  # - menu_pena
-  # - menu_lembrete
-  # - menu_lembrete_podepagaradvogado
-  # - menu_lembrete_naopodepagaradvogado
+  - menu_lembrete
+  - menu_lembrete_podepagaradvogado
+  - menu_lembrete_naopodepagaradvogado
 
   # - pena_preso
   # - pena_solto
@@ -39,22 +36,15 @@ intents:
 
   # - informa_cidade
 
-  - action_agendamento
+  - action_confirma_agendamento
   
 entities:
   - cidade
 
 slots:
-   cidade:
-      type: categorical
-      values:
-      - São Paulo
-      - Campinas
-      - Guarulhos
-      - Pirapozinho
-      - Itajai
-      - Tajai
-      - Registro
+  local:
+    type: text
+    initial_value: "São Paulo"
 
 templates:
   utter_cumprimentar:
@@ -313,4 +303,5 @@ actions:
     # - utter_agendamento_cidade_unidade
     # - utter_agendamento_cidade_advogado
 
+    - action_confirma_agendamento
     - action_agendamento

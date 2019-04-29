@@ -7,7 +7,23 @@
 * civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoajuridica
 * afirmar
+    - action_confirma_agendamento
+* afirmar
     - action_agendamento
+
+## propositura juridica
+* civel
+    - utter_civel
+* negar
+    - utter_civel_propositura
+* civel_propositura_pessoajuridica
+    - utter_civel_propositura_pessoajuridica
+* afirmar
+    - action_confirma_agendamento
+* negar 
+    - utter_entendi_negar
+    - utter_conhecimento
+    - utter_menu
 
 ## propositura juridica
 * civel
@@ -37,6 +53,8 @@
 * civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoajuridica
 * afirmar
+    - action_confirma_agendamento
+* afirmar
     - action_agendamento
 
 ## propositura fisica
@@ -55,6 +73,8 @@
 * negar
     - utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento
 * afirmar
+    - action_confirma_agendamento
+* afirmar
     - action_agendamento
 
 ## propositura fisica
@@ -70,12 +90,6 @@
     - utter_menu
 
 <!-- Geral -->
-## civel 
-* tudo_bem
-    - utter_tudo_bem
-    - utter_conhecimento
-    - utter_menu
-
 ## civel
 * civel
     - utter_civel

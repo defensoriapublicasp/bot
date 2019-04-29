@@ -10,7 +10,6 @@ run-rocketchat:
 	python3 run-rocketchat.py
 
 run-console:
-	python -m rasa_core_sdk.endpoint --actions actions & \
 	python3 -m rasa_core.run -d models/dialogue -u models/nlu/current --debug --endpoints endpoints.yml
 
 run-api:

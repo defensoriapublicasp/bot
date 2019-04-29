@@ -9,7 +9,7 @@
 * civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoajuridica
 * afirmar
-    - action_agendamento
+    - action_confirma_agendamento
 
 ## civel
 * cumprimentar
