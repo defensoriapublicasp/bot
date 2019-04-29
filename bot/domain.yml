@@ -1,12 +1,12 @@
 intents:
   - cumprimentar
-  - sobre
   - despedir
   - out_of_scope
   - negar
-  - diga_mais
   - tudo_bem
   - elogios
+  - conhecimento
+  - defensoria
 
   - afirmar
 
@@ -57,12 +57,10 @@ slots:
       - Registro
 
 templates:
-  utter_sobre:
+  utter_cumprimentar:
     - text: |
-        A Defensoria Pública do Estado de São Paulo é uma instituição permanente cuja função, 
-        como expressão e instrumento do regime democrático, é oferecer, às pessoas necessitadas, 
-        de forma integral e gratuita, a orientação jurídica, a promoção dos direitos humanos 
-        e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos.
+        Oi, eu sou um bot defensor, posso te ajudar a solucionar alguns
+        problemas jurídicos do estado de São Paulo.
 
   utter_default:
     - text: |
@@ -78,37 +76,37 @@ templates:
     - text: |
         Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
 
-  utter_diga_mais:
-    - text: |
-        Por enquanto, só entendo perguntas completas.
-
   utter_elogios:
     - text: |
         Obrigada! É sempre bom dar e receber elogios :P
 
-  utter_cumprimentar:
-    - text: |
-        Oi, eu sou um bot defensor, um assistente virtual ;)
-
   utter_despedir:
     - text: |
-        Foi um prazer te ajudar!
-        Sempre que tiver alguma dúvida, volte aqui!
-        Até logo!
+        Espero ter ajudado com o que você precisava. Sempre que tiver alguma dúvida, volte aqui!
 
-    - text: |
-        Foi um prazer te ajudar!
-        Sempre que precisar, volte aqui!
-        Até a próxima!
-
-    - text: |
-        Foi um prazer te ajudar!
-        Quando surgir alguma dúvida, volte aqui!
-        Até mais!
+        Tchau, até mais :D
 
   utter_tudo_bem:
     - text: |
         Tudo bem, obrigada! 
+
+  utter_conhecimento:
+    - text: |
+        Eu sei onde você pode encontrar a solução para seu problema jurídico,
+        mas pra isso eu preciso que você me ajuda respondendo algumas perguntas,
+        vamos começar?
+
+  utter_defensoria:
+    - text: |
+        A Defensoria Pública do Estado de São Paulo é uma instituição permanente cuja função, 
+        como expressão e instrumento do regime democrático, é oferecer, às pessoas necessitadas, 
+        de forma integral e gratuita, a orientação jurídica, a promoção dos direitos humanos 
+        e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos.
+
+  utter_entendi_negar:
+    - text: |
+        Entendi, já que você não quer fazer isso vou voltar para o começo da conversa e tentar te ajudar com outra coisa.
+        Se não quiser conversar sobre mais nada comigo, só se despedir ;)
 
 # ============================ NAVEGAÇÃO PRINCIPAL ============================ #
   utter_menu:
@@ -140,13 +138,11 @@ templates:
     - text: | 
         Primeiro vamos identificar se estamos falando de uma propositura ou de uma defesa...
 
-        Você nos procurou pq recebeu uma carta do Poder Judiciário?
+        Você nos procurou pois recebeu uma carta do Poder Judiciário?
 
   utter_civel_propositura:
     - text: | 
-        Ok, então você quer processar uma `pessoa física` 
-        
-        ou você quer processar uma `pessoa jurídica`, como uma empresa, o município ou o próprio estado.
+        Entendi, você quer fazer uma propositura. Você quer processar uma "pessoa física" ou você quer processar uma "pessoa jurídica", como uma empresa, o município ou o próprio estado.
 
   utter_civel_propositura_pessoajuridica:
     - text: | 
@@ -281,13 +277,13 @@ templates:
 # ============================ ACTIONS ============================ #
 actions:
     - utter_default
-    - utter_diga_mais
     - utter_elogios
     - utter_cumprimentar
     - utter_despedir
     - utter_tudo_bem
-    
-    - utter_sobre
+    - utter_conhecimento
+    - utter_defensoria
+    - utter_entendi_negar
 
     - utter_menu
     # - utter_menu_lembrete

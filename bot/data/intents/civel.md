@@ -1,4 +1,8 @@
 ## intent:civel
+- cível
+- civel
+- Cível e Família
+- civel e familia
 - quero propor uma ação 
 - quero processar alguem
 - estou sendo processado
@@ -12,8 +16,9 @@
 - quero me separar
 - quero ajuda para me separar
 - quero pedir alimentos
+- Área Cível e Família
 
-<!-- ## intent:menu_lembrete
+## intent:menu_lembrete
 -  Eu posso ser defendido pela Defensoria
 -  Posso ter um advogado
 -  preciso de um advogado
@@ -30,38 +35,48 @@
 
 
 ## intent:menu_lembrete_naopodepagaradvogado
+- não tenho condições de pagar um advogado
+- não consigo pagar um advogado
 - ganho menos que 3 salarios
 - renda familiar não chega a 3 salarios
 - ganho 1 salario minimo
 - renda familiar de 2 salários minimos
 - ganho bem pouco
-- sou pobre -->
+- sou pobre
 
-<!-- ## intent:civel_propositura
--  quero processar alguem
--  como faco para processar uma pessoa
--  quero realizar uma propositura de acao
--  quero abrir um processo
--  quero abrir um processo contra alguem
+## intent:civel_propositura
+- propositura
+- abrir processo contra uma pessoa
+- abrir processo contra uma empresa
+- quero processar alguem
+- como faco para processar uma pessoa
+- quero realizar uma propositura de acao
+- quero abrir um processo
+- quero abrir um processo contra alguem
   
   
 ## intent:civel_propositura_pessoajuridica
+- pessoa juridica
+- pessoa jurídica
+- Poder Judiciário
 - quero processar uma empresa 
-- quero processar um orgao publico
-- quero processar uma ONG
+- processar um orgao publico
+- gostaria de processar uma ONG
 - vou processar o estado
 - processar empresa de telefonia 
 - negociar divida
-- produto nao foi entregue 
+- gostaria de negociar uma dívida
 
 ## intent:civel_propositura_pessoafisica
--  quero processar uma pessoa
--  quero processar vizinho
--  quero processar um amigo
--  processar meu marido
--  processar meu ex-marido
--  processar minha ex-mulher
--  processar meu companheiro
+- pessoa física
+- pessoa fisica
+- quero processar uma pessoa
+- quero processar vizinho
+- quero processar um amigo
+- processar meu marido
+- processar meu ex-marido
+- processar minha ex-mulher
+- processar meu companheiro
 
 ## intent:civel_propositura_pessoafisica_localmoradia
 - eu sei onde o reu mora
@@ -76,7 +91,7 @@
 - acho que podemos tentar o cejusc
 - acredito que de para conciliar
 - talvez da para conciliar
-- vamos tentar o dialogo 
+- vamos tentar o dialogo
   
 
 ## intent:civel_defesa
@@ -104,4 +119,4 @@
 - na carta tem o local 
 - sei a cidade do processo 
 - sei o local do foro do processo 
-- sei a comarca onde esta o processo -->
+- sei a comarca onde esta o processo
