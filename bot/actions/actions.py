@@ -29,7 +29,8 @@ class ActionAgendamento(Action):
         dispatcher.utter_message('Ótimo.')
         place = tracker.get_slot('local')
         try:
-            api_place = api.get_city_data(place)
-            dispatcher.utter_message('Você pode ir na {} que fica {}'.format(api_place[0]['nome'], api_place[0]['endereco']['logradouro']))
+            api_place = api.get_city_data(place)[0]
+            logger.info(api_place)
+            dispatcher.utter_message('Você pode ir na {} que fica na {}, número {} {}.'.format(api_place['nome'], api_place['endereco']['logradouro'], api_place['endereco']['numero'], api_place['endereco']['complemento']))
         except:
             dispatcher.utter_message(problem_message)

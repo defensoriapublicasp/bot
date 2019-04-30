@@ -175,7 +175,7 @@ templates:
     - text: | 
         tudo bem, se não sabe o endereço certo do Réu é melhor encaminharmos você para um atendimento presencial ok?
 
-        Posso fazer seu agendamento?
+        Posso te indicar uma unidade mais próxima de você?
 
   utter_civel_defesa:
     - text: | 
@@ -209,9 +209,9 @@ templates:
 
 
 # ============================ AGENDAMENTO ============================ #
-  # utter_agendamento_localmoradia:
-  #   - text: | 
-  #       me diga o nome da CIDADE onde VOCÊ MORA, para que possa verificar a unidade mais próxima
+  utter_agendamento_local:
+    - text: | 
+        me diga o nome da CIDADE onde VOCÊ MORA, para que possa verificar a unidade mais próxima
 
   # utter_agendamento_localmoradia_unidade:
   #   - text: | 
@@ -293,8 +293,8 @@ actions:
     - utter_civel_defesa_digamais
     - utter_civel_defesa_localprocesso
     - utter_civel_defesa_atendimento
-
-    # - utter_agendamento_localmoradia
+    
+    - utter_agendamento_local
     # - utter_agendamento_localmoradia_unidade
     # - utter_agendamento_localmoradia_advogado
     # - utter_agendamento_localprocesso

@@ -7,6 +7,8 @@
 * civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoajuridica
 * afirmar
+    - utter_agendamento_local
+* action_confirma_agendamento 
     - action_confirma_agendamento
 * afirmar
     - action_agendamento
@@ -53,6 +55,8 @@
 * civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoajuridica
 * afirmar
+    - utter_agendamento_local
+* action_confirma_agendamento 
     - action_confirma_agendamento
 * afirmar
     - action_agendamento
@@ -73,6 +77,8 @@
 * negar
     - utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento
 * afirmar
+    - utter_agendamento_local
+* action_confirma_agendamento 
     - action_confirma_agendamento
 * afirmar
     - action_agendamento
