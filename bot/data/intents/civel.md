@@ -70,7 +70,7 @@
 ## intent:civel_propositura_pessoafisica
 - pessoa física
 - pessoa fisica
-- quero processar uma pessoa
+- quero processar uma pessoa física
 - quero processar vizinho
 - quero processar um amigo
 - processar meu marido
