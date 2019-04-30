@@ -38,6 +38,7 @@ services:
       - ROCKETCHAT_ADMIN_PASSWORD=admin
       - ROCKETCHAT_BOT_USERNAME=bia
       - ROCKETCHAT_BOT_PASSWORD=biabot
+      - DEFENSORIA_TOKEN=token
 
       # Should be set to 'production' or 'beta' or 'dev'
       - ENVIRONMENT_NAME=beta
