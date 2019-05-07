@@ -1,53 +1,62 @@
-## Oi Tudo Bem Story 1
+## civel
 * cumprimentar
     - utter_cumprimentar
-* tudo_bem
-    - utter_tudo_bem
+    - utter_menu
+* civel
+    - utter_civel
+* civel_propositura
+    - utter_civel_propositura
+* civel_propositura_pessoajuridica
+    - utter_civel_propositura_pessoajuridica
+* afirmar
+    - action_confirma_agendamento
+
+## civel
+* cumprimentar
+    - utter_cumprimentar
+    - utter_menu
+* civel
+    - utter_civel
+* civel_propositura
+    - utter_civel_propositura
+* civel_propositura_pessoajuridica
+    - utter_civel_propositura_pessoajuridica
+* negar 
+    - utter_conhecimento
     - utter_menu
 
-## Despedir
+## geral
+* cumprimentar
+    - utter_cumprimentar
+    - utter_menu
+
+## geral
+* elogios
+    - utter_elogios
+
+## geral
 * despedir
     - utter_despedir
 
-## Oi Tudo Bem Story
+## geral
 * tudo_bem
     - utter_tudo_bem
-
-
-## Nao entendi
-* diga_mais
-    - utter_diga_mais  
 
 ## fallback
 * out_of_scope
     - utter_default
 
-## negar sem contexto
+## negar
 * negar
+    - utter_entendi_negar
+    - utter_conhecimento
     - utter_despedir
 
-## o que e defensoria
-* sobre
-    - utter_sobre
+## defensoria
+* defensoria
+    - utter_defensoria
 
-## oque e defensoria 2
-* cumprimentar
-    - utter_cumprimentar
-* sobre
-    - utter_sobre
-
-
-
-## elogios
-* elogios
-    - utter_elogios
-
-
-## path 1
-* cumprimentar
-        - utter_cumprimentar
-* despedir
-        - utter_despedir
-## path 2
-* cumprimentar
-        - utter_cumprimentar
+## defensoria
+* conhecimento
+    - utter_conhecimento
+    - utter_menu

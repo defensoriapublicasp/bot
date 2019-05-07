@@ -1,136 +1,121 @@
-## Civel 1
-* tudo_bem
-    - utter_tudo_bem
+<!-- FLUXO -->
+## propositura juridica
+* civel
+    - utter_civel
+* negar
+    - utter_civel_propositura
+* civel_propositura_pessoajuridica
+    - utter_civel_propositura_pessoajuridica
+* afirmar
+    - utter_agendamento_local
+* action_confirma_agendamento 
+    - action_confirma_agendamento
+* afirmar
+    - action_agendamento
+
+## propositura juridica
+* civel
+    - utter_civel
+* negar
+    - utter_civel_propositura
+* civel_propositura_pessoajuridica
+    - utter_civel_propositura_pessoajuridica
+* afirmar
+    - action_confirma_agendamento
+* negar 
+    - utter_entendi_negar
+    - utter_conhecimento
     - utter_menu
+
+## propositura juridica
 * civel
     - utter_civel
-
-## Civel 2
-* civel
-    - utter_civel
-* civel_propositura
-    - utter_civel_propositura
-
-## Civel 3
-* civel
-    - utter_civel
-* civel_propositura
-    - utter_civel_propositura
-* civel_propositura_pessoajuridica
-    - utter_civel_propositura_pessoajuridica
-
-## Civel 4
-* civel_propositura
-    - utter_civel_propositura
-* civel_propositura_pessoajuridica
-    - utter_civel_propositura_pessoajuridica
-* afirmar
-    - action_agendamento
-
-## Civel 5
-* civel_propositura
-    - utter_civel_propositura
-* civel_propositura_pessoajuridica
-    - utter_civel_propositura_pessoajuridica
 * negar
-    - utter_civel
+    - utter_civel_propositura
+* civel_propositura_pessoajuridica
+    - utter_civel_propositura_pessoajuridica
+* negar 
+    - utter_entendi_negar
+    - utter_conhecimento
+    - utter_menu
 
-## Civel 6
-* civel
-    - utter_civel
+## propositura juridica
+* civel_propositura
+    - utter_civel_propositura
+* civel_propositura_pessoajuridica
+    - utter_civel_propositura_pessoajuridica
+* negar 
+    - utter_entendi_negar
+    - utter_conhecimento
+    - utter_menu
+
+## propositura juridica
+* civel_propositura
+    - utter_civel_propositura
+* civel_propositura_pessoajuridica
+    - utter_civel_propositura_pessoajuridica
+* afirmar
+    - utter_agendamento_local
+* action_confirma_agendamento 
+    - action_confirma_agendamento
+* afirmar
+    - action_agendamento
+
+## propositura fisica
 * civel_propositura
     - utter_civel_propositura
 * civel_propositura_pessoafisica
     - utter_civel_propositura_pessoafisica
+* afirmar
+    - utter_civel_propositura_pessoafisica_localmoradia
 
-## Civel 7
+## propositura fisica
 * civel_propositura
     - utter_civel_propositura
 * civel_propositura_pessoafisica
     - utter_civel_propositura_pessoafisica
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-
-## Civel 8
-* civel_propositura_pessoafisica
-    - utter_civel_propositura_pessoafisica
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","São Paulo"}
-    - utter_civel_propositura_pessoafisica_cejusc
-
-## Civel 9
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","São Paulo"}
-    - utter_civel_propositura_pessoafisica_cejusc
-* afirmar
-    - utter_civel_propositura_pessoafisica_cejusc_indicacejusc
-
-## Civel 10
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","São Paulo"}
-    - utter_civel_propositura_pessoafisica_cejusc
 * negar
+    - utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento
+* afirmar
+    - utter_agendamento_local
+* action_confirma_agendamento 
+    - action_confirma_agendamento
+* afirmar
     - action_agendamento
 
-## Civel 11
+## propositura fisica
+* civel_propositura
+    - utter_civel_propositura
 * civel_propositura_pessoafisica
     - utter_civel_propositura_pessoafisica
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","Piraporinho"}
-    - action_agendamento
+* negar
+    - utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento
+* negar
+    - utter_entendi_negar
+    - utter_conhecimento
+    - utter_menu
 
-## Civel 12
-* afirmar
-    - utter_civel_propositura_pessoafisica_localmoradia
-* slot{"cidade","Piraporinho"}
-    - action_agendamento
-* despedir
-    - utter_despedir
-
-## Civel 13
+<!-- Geral -->
+## civel
 * civel
     - utter_civel
 * civel_defesa
     - utter_civel_defesa
 
-## Civel 3
+## civel
 * civel
     - utter_civel
 * civel_defesa
     - utter_civel_defesa
-* diga_mais
-    - utter_civel_defesa_digamais
 
-## Civel 3
-* civel_defesa
-    - utter_civel_defesa
-* diga_mais
-    - utter_civel_defesa_digamais
-* civel_defesa_localprocesso
-    - utter_civel_defesa_localprocesso
-
-## Civel 3
+## civel
 * civel_defesa
     - utter_civel_defesa
 * civel_defesa_localprocesso
     - utter_civel_defesa_localprocesso
 
-## Civel 3
-* diga_mais
-    - utter_civel_defesa_digamais
-* civel_defesa_localprocesso
-    - utter_civel_defesa_localprocesso
-* civel_defesa_agendamento
-    - action_agendamento
-
-## Civel 3
+## civel
 * civel_defesa
     - utter_civel_defesa
 * civel_defesa_localprocesso
     - utter_civel_defesa_localprocesso
-* civel_defesa_agendamento
-    - action_agendamento

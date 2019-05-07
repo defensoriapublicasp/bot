@@ -7,6 +7,32 @@ Este projeto teve como base a [Tais](http://github.com/lappis-unb/tais).
 
 ## Bot
 
+### Variáveis de Ambiente
+
+* É necessário atualizar as variáveis de ambiente para executar o `chatbot`.
+Atualize seus valores nos arquivos `bot.env` e `actions.env` de acordo
+com as configurações do seu contexto, os arquivos estão na pasta `docker`.
+
+* Os seguintes valores são importantes para a utilização do `chatbot`:
+
+  * `docker/bot.env`
+```sh
+# Analytics config
+ENABLE_ANALYTICS=True
+ELASTICSEARCH_URL=IP <- COLOQUE AQUI O IP DESEJADO
+
+# HTTP login on elasticsearch
+ELASTICSEARCH_USER=<usuario-elasticsearch> <- COLOQUE AQUI O USUÁRIO DE ACESSO AO ELASTICSEARCH
+ELASTICSEARCH_PASSWORD=<senha-elasticsearch> <- COLOQUE AQUI A SENHA DE ACESSO AO ELASTICSEARCH
+ELASTICSEARCH_HTTP_SCHEME=http
+ELASTICSEARCH_PORT=9292
+```
+
+  * `docker/actions.env`
+```sh
+DEFENSORIA_TOKEN=<TOKEN> <- COLOQUE AQUI SEU TOKEN
+```
+
 ### RocketChat
 
 ```sh

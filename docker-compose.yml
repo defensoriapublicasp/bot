@@ -3,7 +3,7 @@ version: '2'
 services:
   # ============================= Rocketchat ==================================
   rocketchat:
-    image: rocket.chat:latest
+    image: rocket.chat:0.69.2
     restart: unless-stopped
     environment:
       - PORT=3000
@@ -29,30 +29,8 @@ services:
       context: .
       dockerfile: ./docker/bot.Dockerfile
     restart: unless-stopped
-    environment:
-      - MAX_TYPING_TIME=3
-      - MIN_TYPING_TIME=1
-      - WORDS_PER_SECOND_TYPING=10
-      - ROCKETCHAT_URL=rocketchat:3000
-      - ROCKETCHAT_ADMIN_USERNAME=admin
-      - ROCKETCHAT_ADMIN_PASSWORD=admin
-      - ROCKETCHAT_BOT_USERNAME=bia
-      - ROCKETCHAT_BOT_PASSWORD=biabot
-
-      # Should be set to 'production' or 'beta' or 'dev'
-      - ENVIRONMENT_NAME=beta
-      # Last commit hash using this command: git rev-parse HEAD
-      - BOT_VERSION=last-commit-hash
-
-      # Analytics config
-      - ENABLE_ANALYTICS=True
-      - ELASTICSEARCH_URL=10.92.1.101
-
-      # HTTP login on elasticsearch
-      - ELASTICSEARCH_USER=defensoria
-      - ELASTICSEARCH_PASSWORD=defensoria
-      - ELASTICSEARCH_HTTP_SCHEME=http
-      - ELASTICSEARCH_PORT=9292
+    env_file:
+      - ./docker/bot.env
     ports:
       - 5005:5005
       - 5002:5002
@@ -66,6 +44,8 @@ services:
     build:
       context: .
       dockerfile: ./docker/actions.Dockerfile
+    env_file:
+      - ./docker/actions.env
     ports:
       - 5055:5055
     volumes:
@@ -74,12 +54,12 @@ services:
     command: "make run-actions"
 
   # =============================== Notebooks =================================
- # notebooks:
- #   build:
- #     context: .
- #     dockerfile: ./docker/notebooks.Dockerfile
- #   volumes:
- #     - ./bot:/work/bot
- #     - ./notebooks:/work/notebooks
- #   ports:
- #     - 8888:8888
+  notebooks:
+    build:
+      context: .
+      dockerfile: ./docker/notebooks.Dockerfile
+    volumes:
+      - ./bot:/work/bot
+      - ./notebooks:/work/notebooks
+    ports:
+      - 8888:8888
