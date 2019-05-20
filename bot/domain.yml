@@ -11,6 +11,7 @@ intents:
   - afirmar
 
   - menu_lembrete
+  - menu_agendamento
   - menu_lembrete_podepagaradvogado
   - menu_lembrete_naopodepagaradvogado
 
@@ -49,8 +50,13 @@ slots:
 templates:
   utter_cumprimentar:
     - text: |
-        Oi, eu sou um bot defensor, posso te ajudar a solucionar alguns
+        Oi, eu sou a Dirce, a assistente virtual da Defensoria Pública do Estado de São Paulo (DPESP).
         problemas jurídicos do estado de São Paulo.
+        Estou aqui para garantir que você tenha acesso à justiça. Em que posso te ajudar?
+
+        Quero agendar um atendimento
+        Quero informações sobre a Defensoria Pública
+        Quero informações sobre um processo em andamento
 
   utter_default:
     - text: |
@@ -101,19 +107,27 @@ templates:
 # ============================ NAVEGAÇÃO PRINCIPAL ============================ #
   utter_menu:
     - text: |
-        Posso te ajudar com encaminhamentos para atendimento nas áreas:
-          `Cível e Família`
-          `Infância e Juventude`
-          `Criminal`
-        Sobre qual desses assuntos você precisa de ajuda?
+          Você precisa de encaminhamento para atendimento em qual área?
 
-  # utter_menu_lembrete:
-  #   - text: |
-  #       Mas antes eu preciso te lembrar que a Defensoria só pode representar, por lei, 
-  #       quem recebe menos que 3 salários minimos de renda familiar
+          Cível e Família
+          Infância e Juventude
+          Criminal
 
-  #       Você pode pagar por um advogado?
-  
+  utter_menu_lembrete:
+     - text: |
+         Antes de tudo eu preciso te fazer uma pergunta... 
+         porque a Defensoria só pode representar, por lei, 
+         quem recebe menos que 3 salários mínimos de renda familiar,
+         ou seja, o total de todos os salários das pessoas da sua família.
+         Você pode pagar por um advogado?
+
+  utter_defensoria_posso_pagar:
+    - text: |
+        Desculpe, a Defensoria pública só pode te ajudar se você não puder pagar um advogado,
+        caso queira acompanhar um processo ou saber mais informações sobre a nossa instituição
+        fique a vontade para perguntar :)
+        Volte sempre!
+
   # utter_menu_lembrete_podepagaradvogado:
   #   - text: | 
   #       Agradeço seu contato, mas a Defensoria Pública apenas atende quem não tem condições de custear um advogado particular
@@ -126,9 +140,12 @@ templates:
 
   utter_civel:
     - text: | 
-        Primeiro vamos identificar se estamos falando de uma propositura ou de uma defesa...
+        Primeiro preciso saber se você precisa de auxílio em uma propositura (entrar com ação judicial/processar)
+        ou de uma defesa. Em qual categoria você se encaixa?
 
-        Você nos procurou pois recebeu uma carta do Poder Judiciário?
+  utter_civel_carta:
+    - text: |
+        Você recebeu uma carta do Poder Judiciário?
 
   utter_civel_propositura:
     - text: | 
@@ -276,11 +293,13 @@ actions:
     - utter_entendi_negar
 
     - utter_menu
-    # - utter_menu_lembrete
+    - utter_menu_lembrete
+    - utter_defensoria_posso_pagar
     # - utter_menu_lembrete_podepagaradvogado
     # - utter_menu_lembrete_naopodepagaradvogado
 
     - utter_civel
+    - utter_civel_carta
     - utter_civel_propositura
     - utter_civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoafisica

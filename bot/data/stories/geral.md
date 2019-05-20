@@ -1,6 +1,7 @@
 ## civel
 * cumprimentar
     - utter_cumprimentar
+* menu_agendamento
     - utter_menu
 * civel
     - utter_civel
@@ -14,6 +15,7 @@
 ## civel
 * cumprimentar
     - utter_cumprimentar
+* menu_agendamento
     - utter_menu
 * civel
     - utter_civel
@@ -28,6 +30,7 @@
 ## geral
 * cumprimentar
     - utter_cumprimentar
+* menu_agendamento
     - utter_menu
 
 ## geral

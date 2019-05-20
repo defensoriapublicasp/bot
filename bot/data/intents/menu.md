@@ -1,3 +1,11 @@
+## intent:menu_agendamento
+- quero agendar um atendimento
+- quero agendar um atendimento
+- quero fazer um agendamento
+- quero agendar
+- atendimento
+- agendamento
+
 <!-- ## intent:menu_civel
 -  tenho um problema de família
 -  processo civel
