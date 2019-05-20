@@ -1,7 +1,7 @@
 <!-- FLUXO -->
 ## propositura juridica
 * civel
-    - menu_lembrete
+    - utter_menu_lembrete
 * negar
     - utter_civel
 * negar
@@ -17,7 +17,7 @@
 
 ## propositura juridica
 * civel
-    - menu_lembrete
+    - utter_menu_lembrete
 * negar
     - utter_civel
 * negar
@@ -33,7 +33,7 @@
 
 ## propositura juridica
 * civel
-    - menu_lembrete
+    - utter_menu_lembrete
 * negar
     - utter_civel
 * negar

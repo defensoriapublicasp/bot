@@ -6,7 +6,7 @@
 * civel
     - utter_civel
 * civel_propositura
-    - menu_lembrete
+    - utter_menu_lembrete
 * afirmar
     - utter_defensoria_posso_pagar
 
@@ -18,7 +18,7 @@
 * civel
     - utter_civel
 * civel_propositura
-    - menu_lembrete
+    - utter_menu_lembrete
 * negar
     - utter_civel_propositura
 * civel_propositura_pessoajuridica
@@ -34,7 +34,7 @@
 * civel
     - utter_civel
 * civel_propositura
-    - menu_lembrete
+    - utter_menu_lembrete
 * negar
     - utter_civel_propositura
 * civel_propositura_pessoajuridica
