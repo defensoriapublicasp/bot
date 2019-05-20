@@ -49,8 +49,12 @@ slots:
 templates:
   utter_cumprimentar:
     - text: |
-        Oi, eu sou um bot defensor, posso te ajudar a solucionar alguns
-        problemas jurídicos do estado de São Paulo.
+        Oi, eu sou a Dirce, a assistente virtual da Defensoria Pública do Estado de São Paulo (DPESP).
+        Estou aqui para garantir que você tenha acesso à justiça. Em que posso te ajudar?
+
+        Quero agendar um atendimento
+        Quero informações sobre a Defensoria Pública
+        Quero informações sobre um processo em andamento
 
   utter_default:
     - text: |
@@ -101,11 +105,10 @@ templates:
 # ============================ NAVEGAÇÃO PRINCIPAL ============================ #
   utter_menu:
     - text: |
-        Posso te ajudar com encaminhamentos para atendimento nas áreas:
-          `Cível e Família`
-          `Infância e Juventude`
-          `Criminal`
-        Sobre qual desses assuntos você precisa de ajuda?
+          Você precisa de encaminhamento para atendimento em qual área?
+          Cível e Família
+          Infância e Juventude
+          Criminal
 
   # utter_menu_lembrete:
   #   - text: |
