@@ -50,6 +50,12 @@
     - utter_menu
 
 ## geral
+* civel_propositura
+    - utter_menu_lembrete
+* afirmar
+    - utter_defensoria_posso_pagar
+
+## geral
 * elogios
     - utter_elogios
 
