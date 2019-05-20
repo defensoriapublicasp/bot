@@ -6,6 +6,20 @@
 * civel
     - utter_civel
 * civel_propositura
+    - menu_lembrete
+* afirmar
+    - utter_defensoria_posso_pagar
+
+## civel
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu
+* civel
+    - utter_civel
+* civel_propositura
+    - menu_lembrete
+* negar
     - utter_civel_propositura
 * civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoajuridica
@@ -20,6 +34,8 @@
 * civel
     - utter_civel
 * civel_propositura
+    - menu_lembrete
+* negar
     - utter_civel_propositura
 * civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoajuridica
