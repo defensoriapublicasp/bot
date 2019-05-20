@@ -112,16 +112,30 @@
 * civel
     - utter_civel
 * civel_defesa
+    - utter_menu_lembrete
+* afirmar
+    - utter_defensoria_posso_pagar
+
+## civel
+* civel
+    - utter_civel
+* civel_defesa
+    - utter_menu_lembrete
+* afirmar
     - utter_civel_defesa
 
 ## civel
 * civel_defesa
+    - utter_menu_lembrete
+* negar
     - utter_civel_defesa
 * civel_defesa_localprocesso
     - utter_civel_defesa_localprocesso
 
 ## civel
 * civel_defesa
+    - utter_menu_lembrete
+* negar
     - utter_civel_defesa
 * civel_defesa_localprocesso
     - utter_civel_defesa_localprocesso

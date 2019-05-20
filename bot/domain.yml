@@ -54,9 +54,9 @@ templates:
         problemas jurídicos do estado de São Paulo.
         Estou aqui para garantir que você tenha acesso à justiça. Em que posso te ajudar?
 
-        Quero agendar um atendimento
-        Quero informações sobre a Defensoria Pública
-        Quero informações sobre um processo em andamento
+        Agendar um atendimento
+        Informações sobre a Defensoria Pública
+        Informações sobre um processo em andamento
 
   utter_default:
     - text: |
@@ -121,6 +121,9 @@ templates:
          ou seja, o total de todos os salários das pessoas da sua família.
          Você pode pagar por um advogado?
 
+         Sim
+         Não
+
   utter_defensoria_posso_pagar:
     - text: |
         Desculpe, a Defensoria pública só pode te ajudar se você não puder pagar um advogado,
@@ -142,6 +145,9 @@ templates:
     - text: | 
         Primeiro preciso saber se você precisa de auxílio em uma propositura (entrar com ação judicial/processar)
         ou de uma defesa. Em qual categoria você se encaixa?
+
+        Propositura
+        Defesa
 
   utter_civel_carta:
     - text: |
