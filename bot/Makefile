@@ -12,6 +12,9 @@ run-rocketchat:
 run-console:
 	python3 -m rasa_core.run -d models/dialogue -u models/nlu/current --debug --endpoints endpoints.yml
 
+run-webchat:
+	python3 run-webchat.py
+
 run-api:
 	python3 -m rasa_core.run -d models/dialogue -u models/nlu/current --endpoints endpoints.yml --debug --enable_api 
 
