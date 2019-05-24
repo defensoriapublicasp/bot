@@ -34,11 +34,13 @@ services:
     ports:
       - 5005:5005
       - 5002:5002
+      - 3000:3000
     depends_on:
       - actions
     volumes:
       - ./bot:/bot
       - ./scripts:/scripts
+    command: "make run-webchat"
 
   actions:
     build:
