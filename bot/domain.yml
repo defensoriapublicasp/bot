@@ -125,10 +125,12 @@ templates:
 # ============================ CIVEL E FAMILIA ============================ #
 
   utter_civel:
-    - text: | 
-        Primeiro vamos identificar se estamos falando de uma propositura ou de uma defesa...
-
-        Você nos procurou pois recebeu uma carta do Poder Judiciário?
+    - text: Primeiro vamos identificar se estamos falando de uma propositura ou de uma defesa... Você nos procurou pois recebeu uma carta do Poder Judiciário?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_propositura:
     - text: | 

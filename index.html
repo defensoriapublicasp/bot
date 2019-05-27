@@ -3,6 +3,7 @@
     <title>Rasa Web Chat test</title>
 </head>
 <body>
+    <h1>Pagina do Bot :)</h1>
     <div id="webchat"/>
     <script src="https://storage.googleapis.com/mrbot-cdn/webchat-0.5.8.js"></script>
     <script>
@@ -11,7 +12,7 @@
         initPayload: "/get_started",
         interval: 1000, // 1000 ms between each message
         // customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-        socketUrl: "http://localhost:5002",
+        socketUrl: "http://localhost:3000",
         socketPath: "/socket.io/",
         title: "Auto Atendimento",
         subtitle: "Ligero Smart",
