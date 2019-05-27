@@ -40,7 +40,6 @@ services:
     volumes:
       - ./bot:/bot
       - ./scripts:/scripts
-    command: "make run-webchat"
 
   actions:
     build:
