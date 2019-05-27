@@ -155,12 +155,12 @@ templates:
 # ============================ CIVEL E FAMILIA ============================ #
 
   utter_civel:
-    - text: | 
-        Primeiro preciso saber se você precisa de auxílio em uma propositura (entrar com ação judicial/processar)
-        ou de uma defesa. Em qual categoria você se encaixa?
-
-        Propositura
-        Defesa
+    - text: Primeiro preciso saber se você precisa de auxílio em uma propositura (entrar com ação judicial/processar) ou de uma defesa. Em qual categoria você se encaixa?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_carta:
     - text: |
