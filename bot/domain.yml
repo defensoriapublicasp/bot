@@ -129,8 +129,8 @@ templates:
       buttons:
       - title: sim
         payload: sim
-      - title: nao
-        payload: nao
+      - title: não
+        payload: não
 
   utter_civel_propositura:
     - text: | 

@@ -36,7 +36,7 @@
 
 ## geral
 * despedir
-    - utter_menu
+    - utter_despedir
 
 ## geral
 * tudo_bem
