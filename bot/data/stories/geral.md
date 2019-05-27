@@ -93,3 +93,27 @@
     - utter_menu
 * defensoria
     - utter_defensoria
+
+## defensoria
+* cumprimentar
+    - utter_cumprimentar
+* defensoria
+    - utter_defensoria
+* menu_agendamento
+    - utter_menu
+
+## defensoria
+* cumprimentar
+    - utter_cumprimentar
+* defensoria
+    - utter_defensoria
+* andamento_processo
+    - utter_implementar
+
+## andamento_processo
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu
+* andamento_processo
+    - utter_implementar

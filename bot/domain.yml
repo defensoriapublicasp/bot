@@ -7,6 +7,7 @@ intents:
   - elogios
   - conhecimento
   - defensoria
+  - andamento_processo
 
   - afirmar
 
@@ -86,6 +87,13 @@ templates:
     - text: |
         Tudo bem, obrigada! 
 
+  utter_implementar:
+    - text: |
+        Olha, eu ainda vou aprender a falar sobre isso na próxima versão,
+        mas estou super disposta a continuar te ajudando nos assuntos que eu domino:
+        Agendar um atendimento
+        Informações sobre a Defensoria Pública
+
   utter_conhecimento:
     - text: |
         Eu sei onde você pode encontrar a solução para seu problema jurídico,
@@ -98,6 +106,11 @@ templates:
         como expressão e instrumento do regime democrático, é oferecer, às pessoas necessitadas, 
         de forma integral e gratuita, a orientação jurídica, a promoção dos direitos humanos 
         e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos.
+
+        E agora, em que mais posso te ajudar?
+
+        Agendar um atendimento
+        Informações sobre um processo em andamento
 
   utter_entendi_negar:
     - text: |
@@ -297,6 +310,7 @@ actions:
     - utter_conhecimento
     - utter_defensoria
     - utter_entendi_negar
+    - utter_implementar
 
     - utter_menu
     - utter_menu_lembrete
