@@ -15,6 +15,7 @@ intents:
   - menu_agendamento
   - menu_lembrete_podepagaradvogado
   - menu_lembrete_naopodepagaradvogado
+  - menu_crime
 
   # - pena_preso
   # - pena_solto
@@ -93,6 +94,12 @@ templates:
         mas estou super disposta a continuar te ajudando nos assuntos que eu domino:
         Agendar um atendimento
         Informações sobre a Defensoria Pública
+
+  utter_implementar2:
+    - text: |
+        Olha, eu ainda vou aprender a falar sobre isso na próxima versão,
+        mas estou super disposta a continuar te ajudando no tipo de encaminhamento que eu domino:
+        Cível e Família
 
   utter_conhecimento:
     - text: |
@@ -311,12 +318,11 @@ actions:
     - utter_defensoria
     - utter_entendi_negar
     - utter_implementar
+    - utter_implementar2
 
     - utter_menu
     - utter_menu_lembrete
     - utter_defensoria_posso_pagar
-    # - utter_menu_lembrete_podepagaradvogado
-    # - utter_menu_lembrete_naopodepagaradvogado
 
     - utter_civel
     - utter_civel_carta

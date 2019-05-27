@@ -117,3 +117,11 @@
     - utter_menu
 * andamento_processo
     - utter_implementar
+
+## crime
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu
+* menu_criminal
+    - utter_implementar
