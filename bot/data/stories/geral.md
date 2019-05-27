@@ -85,3 +85,11 @@
 * conhecimento
     - utter_conhecimento
     - utter_menu
+
+## defensoria
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu
+* defensoria
+    - utter_defensoria
