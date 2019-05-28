@@ -51,14 +51,16 @@ slots:
 
 templates:
   utter_cumprimentar:
-    - text: |
-        Oi, eu sou a Dirce, a assistente virtual da Defensoria Pública do Estado de São Paulo (DPESP).
+    - text: Oi, eu sou a Dirce, a assistente virtual da Defensoria Pública do Estado de São Paulo (DPESP).
         problemas jurídicos do estado de São Paulo.
         Estou aqui para garantir que você tenha acesso à justiça. Em que posso te ajudar?
-
-        Agendar um atendimento
-        Informações sobre a Defensoria Pública
-        Informações sobre um processo em andamento
+      buttons:
+      - title: Agendar um atendimento
+        payload: Agendar um atendimento
+      - title: Informações sobre a Defensoria Pública
+        payload: Informações sobre a Defensoria Pública
+      - title: Informações sobre um processo em andamento
+        payload: Informações sobre um processo em andamento
 
   utter_default:
     - text: |
@@ -89,17 +91,22 @@ templates:
         Tudo bem, obrigada! 
 
   utter_implementar:
-    - text: |
-        Olha, eu ainda vou aprender a falar sobre isso na próxima versão,
-        mas estou super disposta a continuar te ajudando nos assuntos que eu domino:
-        Agendar um atendimento
-        Informações sobre a Defensoria Pública
+    - text: Olha, eu ainda vou aprender a falar sobre isso na próxima versão,
+
+        mas estou super disposta a continuar te ajudando nos assuntos que eu domino
+      buttons:
+      - title: Agendar um atendimento
+        payload: Agendar um atendimento
+      - title: Informações sobre a Defensoria Pública
+        payload: Informações sobre a Defensoria Pública
 
   utter_implementar2:
-    - text: |
-        Olha, eu ainda vou aprender a falar sobre isso na próxima versão,
-        mas estou super disposta a continuar te ajudando no tipo de encaminhamento que eu domino:
-        Cível e Família
+    - text: Olha, eu ainda vou aprender a falar sobre isso na próxima versão,
+
+        mas estou super disposta a continuar te ajudando no tipo de encaminhamento que eu domino
+      buttons:
+      - title: Cível e Família
+        payload: Cível e Família
 
   utter_conhecimento:
     - text: |
@@ -108,16 +115,17 @@ templates:
         vamos começar?
 
   utter_defensoria:
-    - text: |
-        A Defensoria Pública do Estado de São Paulo é uma instituição permanente cuja função, 
+    - text: A Defensoria Pública do Estado de São Paulo é uma instituição permanente cuja função, 
         como expressão e instrumento do regime democrático, é oferecer, às pessoas necessitadas, 
         de forma integral e gratuita, a orientação jurídica, a promoção dos direitos humanos 
         e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos.
 
         E agora, em que mais posso te ajudar?
-
-        Agendar um atendimento
-        Informações sobre um processo em andamento
+      buttons:
+      - title: Agendar um atendimento
+        payload: Agendar um atendimento
+      - title: Informações sobre a Defensoria Pública
+        payload: Informações sobre a Defensoria Pública
 
   utter_entendi_negar:
     - text: |
@@ -126,23 +134,26 @@ templates:
 
 # ============================ NAVEGAÇÃO PRINCIPAL ============================ #
   utter_menu:
-    - text: |
-          Você precisa de encaminhamento para atendimento em qual área?
-
-          Cível e Família
-          Infância e Juventude
-          Criminal
+    - text: Você precisa de encaminhamento para atendimento em qual área?
+      buttons:
+      - title: Cível e Família
+        payload: Cível e Família
+      - title: Infância e Juventude
+        payload: Infância e Juventude
+      - title: Criminal
+        payload: Criminal
 
   utter_menu_lembrete:
-     - text: |
-         Antes de tudo eu preciso te fazer uma pergunta... 
-         porque a Defensoria só pode representar, por lei, 
-         quem recebe menos que 3 salários mínimos de renda familiar,
-         ou seja, o total de todos os salários das pessoas da sua família.
-         Você pode pagar por um advogado?
-
-         Sim
-         Não
+    - text: Antes de tudo eu preciso te fazer uma pergunta... 
+        porque a Defensoria só pode representar, por lei, 
+        quem recebe menos que 3 salários mínimos de renda familiar,
+        ou seja, o total de todos os salários das pessoas da sua família.
+        Você pode pagar por um advogado?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_defensoria_posso_pagar:
     - text: |
@@ -164,18 +175,23 @@ templates:
   utter_civel:
     - text: Primeiro preciso saber se você precisa de auxílio em uma propositura (entrar com ação judicial/processar) ou de uma defesa. Em qual categoria você se encaixa?
       buttons:
-      - title: sim
-        payload: sim
-      - title: não
-        payload: não
+      - title: Propositura
+        payload: Propositura
+      - title: Defesa
+        payload: Defesa
 
   utter_civel_carta:
     - text: |
         Você recebeu uma carta do Poder Judiciário?
 
   utter_civel_propositura:
-    - text: | 
-        Entendi, você quer fazer uma propositura. Você quer processar uma "pessoa física" ou você quer processar uma "pessoa jurídica", como uma empresa, o município ou o próprio estado.
+    - text: Entendi, você quer fazer uma propositura.
+        Você quer processar
+      buttons:
+      - title: Pessoa física
+        payload: Pessoa física
+      - title: Pessoa jurídica
+        payload: Pessoa jurídica [empresa, município ou Estado]
 
   utter_civel_propositura_pessoajuridica:
     - text: | 
