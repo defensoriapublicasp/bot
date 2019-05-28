@@ -125,3 +125,13 @@
     - utter_menu
 * menu_crime
     - utter_implementar2
+
+## crime
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu
+* menu_crime
+    - utter_implementar2
+* cível
+    - utter_civel
