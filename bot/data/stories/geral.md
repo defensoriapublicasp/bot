@@ -123,5 +123,5 @@
     - utter_cumprimentar
 * menu_agendamento
     - utter_menu
-* menu_criminal
+* menu_crime
     - utter_implementar2
