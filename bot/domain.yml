@@ -212,11 +212,12 @@ templates:
 
   utter_civel_propositura_pessoafisica_cejusc:
     - text: | 
-        Antes de abrir o processo, você tem a opção de tentar uma audiência de conciliação
-
-        A conciliação é um processo mais simples e mais rápido, medidado pela CEJUSC.
-
-        Quer tentar uma conciliação ?
+        O CEJUSC é uma maneira mais rápida de resolver um conflito,
+        ele realiza as audiências de conciliação,
+        Ele vai te ajudar a fazer uma conciliação.
+        Um mediador vai facilitar a comunicação entre você e a pessoa processada.
+        Se você conseguir fazer uma conciliação, a sua situação pode ser resolvida
+        mais rápido. E aí, quer tentar?
 
   utter_civel_propositura_pessoafisica_cejusc_indicacejusc:
     - text: | 
@@ -259,14 +260,7 @@ templates:
 
         vamos encaminhar seu agendamento agora!
 
-  utter_cejusc:
-    - text: |
-        O CEJUSC é uma maneira mais rápida de resolver um conflito,
-        ele é responsável pelas audiências de conciliação,
-        Sendo assim vai te ajudar a fazer uma conciliação.
-        Um mediador vai facilitar a comunicação entre você e a pessoa processada.
-        Se você conseguir fazer uma conciliação, a sua situação pode ser resolvida
-        mais rápido. E aí, quer tentar?
+
 
 # ============================ INFANCIA E JUVENTUDE ============================ #
 
@@ -348,7 +342,6 @@ actions:
     - utter_menu
     - utter_menu_lembrete
     - utter_defensoria_posso_pagar
-    - utter_cejusc
 
     - utter_civel
     - utter_civel_carta
