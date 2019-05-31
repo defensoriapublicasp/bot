@@ -259,6 +259,15 @@ templates:
 
         vamos encaminhar seu agendamento agora!
 
+  utter_cejusc:
+    - text: |
+        O CEJUSC é uma maneira mais rápida de resolver um conflito,
+        ele é responsável pelas audiências de conciliação,
+        Sendo assim vai te ajudar a fazer uma conciliação.
+        Um mediador vai facilitar a comunicação entre você e a pessoa processada.
+        Se você conseguir fazer uma conciliação, a sua situação pode ser resolvida
+        mais rápido. E aí, quer tentar?
+
 # ============================ INFANCIA E JUVENTUDE ============================ #
 
 
@@ -339,6 +348,7 @@ actions:
     - utter_menu
     - utter_menu_lembrete
     - utter_defensoria_posso_pagar
+    - utter_cejusc
 
     - utter_civel
     - utter_civel_carta
