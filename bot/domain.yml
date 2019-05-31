@@ -111,7 +111,7 @@ templates:
   utter_conhecimento:
     - text: |
         Eu sei onde você pode encontrar a solução para seu problema jurídico,
-        mas pra isso eu preciso que você me ajuda respondendo algumas perguntas,
+        mas pra isso eu preciso que você me ajude respondendo algumas perguntas,
         vamos começar?
 
   utter_defensoria:
@@ -195,7 +195,7 @@ templates:
 
   utter_civel_propositura_pessoajuridica:
     - text: | 
-        muito bem, para processar uma pessos jurídica é necessário que compareça a uma unidade da defensoria.
+        muito bem, para processar uma pessoa jurídica é necessário que compareça a uma unidade da defensoria.
 
         Posso agendar um atendimento presencial para você?
 
