@@ -2,10 +2,6 @@
 * cumprimentar
     - utter_cumprimentar
 * menu_agendamento
-    - utter_menu
-* civel
-    - utter_civel
-* civel_propositura
     - utter_menu_lembrete
 * afirmar
     - utter_defensoria_posso_pagar
@@ -14,12 +10,12 @@
 * cumprimentar
     - utter_cumprimentar
 * menu_agendamento
+    - utter_menu_lembrete
+* negar
     - utter_menu
 * civel
     - utter_civel
 * civel_propositura
-    - utter_menu_lembrete
-* negar
     - utter_civel_propositura
 * civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoajuridica
@@ -30,12 +26,12 @@
 * cumprimentar
     - utter_cumprimentar
 * menu_agendamento
+    - utter_menu_lembrete
+* negar
     - utter_menu
 * civel
     - utter_civel
 * civel_propositura
-    - utter_menu_lembrete
-* negar
     - utter_civel_propositura
 * civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoajuridica
@@ -47,10 +43,10 @@
 * cumprimentar
     - utter_cumprimentar
 * menu_agendamento
-    - utter_menu
+    - utter_menu_lembrete
 
 ## geral
-* civel_propositura
+* menu_agendamento
     - utter_menu_lembrete
 * afirmar
     - utter_defensoria_posso_pagar
@@ -81,7 +77,7 @@
 * defensoria
     - utter_defensoria
 
-## defensoria
+## conhecimento
 * conhecimento
     - utter_conhecimento
     - utter_menu
@@ -89,32 +85,12 @@
 ## defensoria
 * cumprimentar
     - utter_cumprimentar
-* menu_agendamento
-    - utter_menu
 * defensoria
     - utter_defensoria
-
-## defensoria
-* cumprimentar
-    - utter_cumprimentar
-* defensoria
-    - utter_defensoria
-* menu_agendamento
-    - utter_menu
-
-## defensoria
-* cumprimentar
-    - utter_cumprimentar
-* defensoria
-    - utter_defensoria
-* andamento_processo
-    - utter_implementar
 
 ## andamento_processo
 * cumprimentar
     - utter_cumprimentar
-* menu_agendamento
-    - utter_menu
 * andamento_processo
     - utter_implementar
 
@@ -133,5 +109,5 @@
     - utter_menu
 * menu_crime
     - utter_implementar2
-* cível
+* civel
     - utter_civel
