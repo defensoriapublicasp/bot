@@ -183,6 +183,11 @@ templates:
   utter_civel_carta:
     - text: |
         Você recebeu uma carta do Poder Judiciário?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_propositura:
     - text: Entendi, você quer fazer uma propositura.
