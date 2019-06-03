@@ -28,7 +28,4 @@ env TRAINING_EPOCHS=20                    \
     ENABLE_ANALYTICS=False                 \
     ELASTICSEARCH_URL=elasticsearch:9200
 
-cmd python /scripts/bot_config.py -r $ROCKETCHAT_URL                        \
-           -an $ROCKETCHAT_ADMIN_USERNAME -ap $ROCKETCHAT_ADMIN_PASSWORD    \
-           -bu $ROCKETCHAT_BOT_USERNAME -bp $ROCKETCHAT_BOT_PASSWORD     && \
-    make train && make run-rocketchat
+cmd make train && make run-webchat

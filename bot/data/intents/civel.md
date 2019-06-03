@@ -103,7 +103,9 @@
 - recebi um pedido de separacao 
 - recebi um pedido de DNA 
 - estao me processando 
-- fui processado injustamente 
+- fui processado injustamente
+- defesa
+- defender
 
 ## intent:civel_defesa_digamais
 - o que e defesa 

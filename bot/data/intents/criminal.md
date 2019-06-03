@@ -1,10 +1,10 @@
-<!-- ## intent:menu_crime
+## intent:menu_crime
 -  quero reportar um crime
 -  preciso de ajuda com um problema penal
 -  criminal
 -  processo criminal
 -  quero processar por um crime
--  um crime aconteceu -->
+-  um crime aconteceu
 
 <!-- ## intent:menu_pena
 -  Cumprimento de pena

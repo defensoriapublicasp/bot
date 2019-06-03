@@ -7,12 +7,15 @@ intents:
   - elogios
   - conhecimento
   - defensoria
+  - andamento_processo
 
   - afirmar
 
   - menu_lembrete
+  - menu_agendamento
   - menu_lembrete_podepagaradvogado
   - menu_lembrete_naopodepagaradvogado
+  - menu_crime
 
   # - pena_preso
   # - pena_solto
@@ -48,13 +51,16 @@ slots:
 
 templates:
   utter_cumprimentar:
-    - text: |
-        Oi, eu sou a Dirce, a assistente virtual da Defensoria Pública do Estado de São Paulo (DPESP).
+    - text: Oi, eu sou a Dirce, a assistente virtual da Defensoria Pública do Estado de São Paulo (DPESP).
+        problemas jurídicos do estado de São Paulo.
         Estou aqui para garantir que você tenha acesso à justiça. Em que posso te ajudar?
-
-        Quero agendar um atendimento
-        Quero informações sobre a Defensoria Pública
-        Quero informações sobre um processo em andamento
+      buttons:
+      - title: Agendar um atendimento
+        payload: agendar 
+      - title: Informações sobre a Defensoria Pública
+        payload: defensoria publica
+      - title: Informações sobre um processo em andamento
+        payload: processo em andamento
 
   utter_default:
     - text: |
@@ -84,18 +90,42 @@ templates:
     - text: |
         Tudo bem, obrigada! 
 
+  utter_implementar:
+    - text: Olha, eu ainda vou aprender a falar sobre isso na próxima versão,
+
+        mas estou super disposta a continuar te ajudando nos assuntos que eu domino
+      buttons:
+      - title: Agendar um atendimento
+        payload: agendar
+      - title: Informações sobre a Defensoria Pública
+        payload: defensoria publica
+
+  utter_implementar2:
+    - text: Olha, eu ainda vou aprender a falar sobre isso na próxima versão,
+
+        mas estou super disposta a continuar te ajudando no tipo de encaminhamento que eu domino
+      buttons:
+      - title: Cível e Família
+        payload: Cível e Família
+
   utter_conhecimento:
     - text: |
         Eu sei onde você pode encontrar a solução para seu problema jurídico,
-        mas pra isso eu preciso que você me ajuda respondendo algumas perguntas,
+        mas pra isso eu preciso que você me ajude respondendo algumas perguntas,
         vamos começar?
 
   utter_defensoria:
-    - text: |
-        A Defensoria Pública do Estado de São Paulo é uma instituição permanente cuja função, 
+    - text: A Defensoria Pública do Estado de São Paulo é uma instituição permanente cuja função, 
         como expressão e instrumento do regime democrático, é oferecer, às pessoas necessitadas, 
         de forma integral e gratuita, a orientação jurídica, a promoção dos direitos humanos 
         e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos.
+
+        E agora, em que mais posso te ajudar?
+      buttons:
+      - title: Agendar um atendimento
+        payload: agendar 
+      - title: Informações sobre a Defensoria Pública
+        payload: defensoria publica
 
   utter_entendi_negar:
     - text: |
@@ -104,19 +134,34 @@ templates:
 
 # ============================ NAVEGAÇÃO PRINCIPAL ============================ #
   utter_menu:
+    - text: Você precisa de encaminhamento para atendimento em qual área?
+      buttons:
+      - title: Cível e Família
+        payload: Cível e Família
+      - title: Infância e Juventude
+        payload: Infância e Juventude
+      - title: Criminal
+        payload: Criminal
+
+  utter_menu_lembrete:
+    - text: Antes de tudo eu preciso te fazer uma pergunta... 
+        porque a Defensoria só pode representar, por lei, 
+        quem recebe menos que 3 salários mínimos de renda familiar,
+        ou seja, o total de todos os salários das pessoas da sua família.
+        Você pode pagar por um advogado?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
+
+  utter_defensoria_posso_pagar:
     - text: |
-          Você precisa de encaminhamento para atendimento em qual área?
-          Cível e Família
-          Infância e Juventude
-          Criminal
-
-  # utter_menu_lembrete:
-  #   - text: |
-  #       Mas antes eu preciso te lembrar que a Defensoria só pode representar, por lei, 
-  #       quem recebe menos que 3 salários minimos de renda familiar
-
-  #       Você pode pagar por um advogado?
-  
+        Desculpe, a Defensoria pública só pode te ajudar se você não puder pagar um advogado,
+        caso queira acompanhar um processo ou saber mais informações sobre a nossa instituição
+        fique a vontade para perguntar :)
+        Volte sempre!
+        
   # utter_menu_lembrete_podepagaradvogado:
   #   - text: | 
   #       Agradeço seu contato, mas a Defensoria Pública apenas atende quem não tem condições de custear um advogado particular
@@ -128,20 +173,41 @@ templates:
 # ============================ CIVEL E FAMILIA ============================ #
 
   utter_civel:
-    - text: | 
-        Primeiro vamos identificar se estamos falando de uma propositura ou de uma defesa...
+    - text: Primeiro preciso saber se você precisa de auxílio em uma propositura (entrar com ação judicial/processar) ou de uma defesa. Em qual categoria você se encaixa?
+      buttons:
+      - title: Propositura
+        payload: Propositura
+      - title: Defesa
+        payload: Defesa
 
-        Você nos procurou pois recebeu uma carta do Poder Judiciário?
+  utter_civel_carta:
+    - text: |
+        Você recebeu uma carta do Poder Judiciário?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_propositura:
-    - text: | 
-        Entendi, você quer fazer uma propositura. Você quer processar uma "pessoa física" ou você quer processar uma "pessoa jurídica", como uma empresa, o município ou o próprio estado.
+    - text: Entendi, você quer fazer uma propositura.
+        Você quer processar
+      buttons:
+      - title: Pessoa física
+        payload: Pessoa física
+      - title: Pessoa jurídica
+        payload: Pessoa jurídica [empresa, município ou Estado]
 
   utter_civel_propositura_pessoajuridica:
     - text: | 
-        muito bem, para processar uma pessos jurídica é necessário que compareça a uma unidade da defensoria.
+        muito bem, para processar uma pessoa jurídica é necessário que compareça a uma unidade da defensoria.
 
         Posso agendar um atendimento presencial para você?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_propositura_pessoafisica:
     - text: | 
@@ -156,11 +222,12 @@ templates:
 
   utter_civel_propositura_pessoafisica_cejusc:
     - text: | 
-        Antes de abrir o processo, você tem a opção de tentar uma audiência de conciliação
-
-        A conciliação é um processo mais simples e mais rápido, medidado pela CEJUSC.
-
-        Quer tentar uma conciliação ?
+        O CEJUSC é uma maneira mais rápida de resolver um conflito,
+        ele realiza as audiências de conciliação,
+        Ele vai te ajudar a fazer uma conciliação.
+        Um mediador vai facilitar a comunicação entre você e a pessoa processada.
+        Se você conseguir fazer uma conciliação, a sua situação pode ser resolvida
+        mais rápido. E aí, quer tentar?
 
   utter_civel_propositura_pessoafisica_cejusc_indicacejusc:
     - text: | 
@@ -202,6 +269,8 @@ templates:
         Ok, maravilha
 
         vamos encaminhar seu agendamento agora!
+
+
 
 # ============================ INFANCIA E JUVENTUDE ============================ #
 
@@ -277,13 +346,15 @@ actions:
     - utter_conhecimento
     - utter_defensoria
     - utter_entendi_negar
+    - utter_implementar
+    - utter_implementar2
 
     - utter_menu
-    # - utter_menu_lembrete
-    # - utter_menu_lembrete_podepagaradvogado
-    # - utter_menu_lembrete_naopodepagaradvogado
+    - utter_menu_lembrete
+    - utter_defensoria_posso_pagar
 
     - utter_civel
+    - utter_civel_carta
     - utter_civel_propositura
     - utter_civel_propositura_pessoajuridica
     - utter_civel_propositura_pessoafisica

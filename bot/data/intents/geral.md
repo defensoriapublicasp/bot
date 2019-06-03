@@ -1,4 +1,5 @@
 ## intent:defensoria
+- Informações sobre a Defensoria Pública
 - O que e a defensoria
 - o que faz a defensoria
 - defensoria publica
@@ -109,4 +110,16 @@
 - bot qual a sua função?
 - me explique como te usar.
 - como vc pode me ajudar
-- qual a sua funcao? 
+- qual a sua funcao?
+
+## intent:andamento_processo
+- informações sobre um processo em andamento
+- informaçoes sobre um processo em andamento
+- quero informações sobre um processo
+- quero informacoes sobre um processo
+- preciso saber sobre andamento de processo
+- processo em andamento
+- informações processo
+- informacoes processo
+- informacão processo
+- informação processo
