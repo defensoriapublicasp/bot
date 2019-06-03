@@ -124,8 +124,6 @@ templates:
       buttons:
       - title: Agendar um atendimento
         payload: agendar 
-      - title: Informações sobre a Defensoria Pública
-        payload: defensoria publica
 
   utter_entendi_negar:
     - text: |
