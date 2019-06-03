@@ -203,6 +203,11 @@ templates:
         muito bem, para processar uma pessoa jurídica é necessário que compareça a uma unidade da defensoria.
 
         Posso agendar um atendimento presencial para você?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_propositura_pessoafisica:
     - text: | 
