@@ -123,3 +123,8 @@
 - informacoes processo
 - informacão processo
 - informação processo
+
+## intent: infancia
+- infancia e juventude 
+- infancia
+- juventude

@@ -8,6 +8,7 @@ intents:
   - conhecimento
   - defensoria
   - andamento_processo
+  - infancia
 
   - afirmar
 
@@ -137,7 +138,7 @@ templates:
       - title: Cível e Família
         payload: Cível e Família
       - title: Infância e Juventude
-        payload: Infância e Juventude
+        payload: infancia
       - title: Criminal
         payload: Criminal
 
