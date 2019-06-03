@@ -1,5 +1,6 @@
 ## intent:menu_agendamento
 - agendar um atendimento
+- agendar
 - quero agendar
 - atendimento
 - agendamento
