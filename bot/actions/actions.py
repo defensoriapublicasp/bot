@@ -31,7 +31,7 @@ class ActionAgendamento(Action):
         try:
             api_place = api.get_city_data(place)[0]
             logger.info(api_place)
-            dispatcher.utter_message('Você pode ir na {} que fica na {}, número {} {}.'.format(api_place['nome'], api_place['endereco']['logradouro'], api_place['endereco']['numero'], api_place['endereco']['complemento']))
+            dispatcher.utter_message('Você pode ir na {} que fica na {}, número {} e telefone {}.'.format(api_place['nome'], api_place['endereco']['logradouro'], api_place['endereco']['numero'], api_place['telefoneOwner']['telefones'][0]['telefone']))
         except:
             dispatcher.utter_message(problem_message)
 
@@ -43,8 +43,8 @@ class ActionCejusc(Action):
         dispatcher.utter_message('Ótimo.')
         place = tracker.get_slot('local')
         try:
-            api_place = api.get_cejusc_data(place)[0]
+            api_place = api.get_cejusc_data()[0]
             logger.info(api_place)
-            dispatcher.utter_message('Você pode ir na {} que fica na {}, número {} {}.'.format(api_place['nome'], api_place['endereco']['logradouro'], api_place['endereco']['numero'], api_place['endereco']['complemento']))
+            dispatcher.utter_message('Você pode ir na {}'.format(api_place['nome']))
         except:
             dispatcher.utter_message(problem_message)

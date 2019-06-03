@@ -18,3 +18,10 @@
 - sou de [Itajaí](local)
 - o processo está em [Registro](local)
 - foro dele é em [sampa](local)
+
+## intent:cejusc
+- Onde fica a cejusc?
+- Quero encontrar uma cejusc
+- Me diga onde fica uma cejusc
+- Onde tem cejusc?
+- Preciso ir em uma cejusc, onde posso encontrar uma?

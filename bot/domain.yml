@@ -41,6 +41,7 @@ intents:
   # - informa_cidade
 
   - action_confirma_agendamento
+  - cejusc
   
 entities:
   - cidade
@@ -378,3 +379,4 @@ actions:
 
     - action_confirma_agendamento
     - action_agendamento
+    - action_cejusc

@@ -21,3 +21,9 @@
 * negar
     - utter_conhecimento
     - utter_menu
+
+## cumprimentar action_cejusc
+* cumprimentar
+    - utter_cumprimentar
+* cejusc
+    - action_cejusc
