@@ -1,5 +1,9 @@
 <!-- FLUXO -->
 ## propositura juridica
+* menu_agendamento
+    - utter_menu_lembrete
+* negar
+    -utter_menu
 * civel
     - utter_civel
 * negar
@@ -14,6 +18,10 @@
     - action_agendamento
 
 ## propositura juridica
+* menu_agendamento
+    - utter_menu_lembrete
+* negar
+    - utter_menu
 * civel
     - utter_civel
 * negar
@@ -95,27 +103,63 @@
     - utter_conhecimento
     - utter_menu
 
-<!-- Geral -->
+<!-- Defesa -->
 ## civel
 * civel
     - utter_civel
 * civel_defesa
-    - utter_civel_defesa
+    - utter_civel_carta
+* afirmar
+    - utter_civel_defesa_digamais
+
+## civel
+* civel_defesa
+    - utter_civel_carta
+* afirmar
+    - utter_civel_defesa_digamais
+* civel_defesa_localprocesso
+    - utter_civel_defesa_localprocesso
+
+## civel
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu_lembrete
+* negar
+    - utter_menu
+* civel_defesa
+    - utter_civel_carta
+* afirmar
+    - utter_civel_defesa_digamais
+* civel_defesa_localprocesso
+    - utter_civel_defesa_localprocesso
 
 ## civel
 * civel
     - utter_civel
 * civel_defesa
+    - utter_civel_carta
+* negar
     - utter_civel_defesa
 
 ## civel
 * civel_defesa
+    - utter_civel_carta
+* negar
     - utter_civel_defesa
 * civel_defesa_localprocesso
     - utter_civel_defesa_localprocesso
 
 ## civel
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu_lembrete
+* negar
+    - utter_menu
 * civel_defesa
+    - utter_civel_carta
+* negar
     - utter_civel_defesa
 * civel_defesa_localprocesso
     - utter_civel_defesa_localprocesso

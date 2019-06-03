@@ -1,3 +1,9 @@
+## intent:menu_agendamento
+- agendar um atendimento
+- quero agendar
+- atendimento
+- agendamento
+
 <!-- ## intent:menu_civel
 -  tenho um problema de família
 -  processo civel
@@ -23,4 +29,3 @@
 -  acusado de menor
 -  menor
 -  acusado jovem -->
-

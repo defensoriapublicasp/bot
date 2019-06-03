@@ -1,6 +1,17 @@
 ## civel
 * cumprimentar
     - utter_cumprimentar
+* menu_agendamento
+    - utter_menu_lembrete
+* afirmar
+    - utter_defensoria_posso_pagar
+
+## civel
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu_lembrete
+* negar
     - utter_menu
 * civel
     - utter_civel
@@ -14,6 +25,9 @@
 ## civel
 * cumprimentar
     - utter_cumprimentar
+* menu_agendamento
+    - utter_menu_lembrete
+* negar
     - utter_menu
 * civel
     - utter_civel
@@ -28,7 +42,14 @@
 ## geral
 * cumprimentar
     - utter_cumprimentar
-    - utter_menu
+* menu_agendamento
+    - utter_menu_lembrete
+
+## geral
+* menu_agendamento
+    - utter_menu_lembrete
+* afirmar
+    - utter_defensoria_posso_pagar
 
 ## geral
 * elogios
@@ -56,7 +77,55 @@
 * defensoria
     - utter_defensoria
 
-## defensoria
+## conhecimento
 * conhecimento
     - utter_conhecimento
     - utter_menu
+
+## defensoria
+* cumprimentar
+    - utter_cumprimentar
+* defensoria
+    - utter_defensoria
+
+## andamento_processo
+* cumprimentar
+    - utter_cumprimentar
+* andamento_processo
+    - utter_implementar
+
+## crime
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu
+* menu_crime
+    - utter_implementar2
+
+## crime
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu
+* menu_crime
+    - utter_implementar2
+* civel
+    - utter_civel
+
+## infancia
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu
+* infancia
+    - utter_implementar2
+* civel
+    - utter_civel
+
+## infancia
+* cumprimentar
+    - utter_cumprimentar
+* menu_agendamento
+    - utter_menu
+* infancia
+    - utter_implementar2
