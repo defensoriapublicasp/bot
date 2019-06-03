@@ -96,9 +96,9 @@ templates:
         mas estou super disposta a continuar te ajudando nos assuntos que eu domino
       buttons:
       - title: Agendar um atendimento
-        payload: Agendar um atendimento
+        payload: agendar
       - title: Informações sobre a Defensoria Pública
-        payload: Informações sobre a Defensoria Pública
+        payload: defensoria publica
 
   utter_implementar2:
     - text: Olha, eu ainda vou aprender a falar sobre isso na próxima versão,
@@ -123,9 +123,9 @@ templates:
         E agora, em que mais posso te ajudar?
       buttons:
       - title: Agendar um atendimento
-        payload: Agendar um atendimento
+        payload: agendar 
       - title: Informações sobre a Defensoria Pública
-        payload: Informações sobre a Defensoria Pública
+        payload: defensoria publica
 
   utter_entendi_negar:
     - text: |
