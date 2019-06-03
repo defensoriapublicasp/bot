@@ -34,3 +34,17 @@ class ActionAgendamento(Action):
             dispatcher.utter_message('Você pode ir na {} que fica na {}, número {} {}.'.format(api_place['nome'], api_place['endereco']['logradouro'], api_place['endereco']['numero'], api_place['endereco']['complemento']))
         except:
             dispatcher.utter_message(problem_message)
+
+class ActionCejusc(Action):
+    def name(self):
+        return "action_cejusc"
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_message('Ótimo.')
+        place = tracker.get_slot('local')
+        try:
+            api_place = api.get_cejusc_data(place)[0]
+            logger.info(api_place)
+            dispatcher.utter_message('Você pode ir na {} que fica na {}, número {} {}.'.format(api_place['nome'], api_place['endereco']['logradouro'], api_place['endereco']['numero'], api_place['endereco']['complemento']))
+        except:
+            dispatcher.utter_message(problem_message)
