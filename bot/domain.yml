@@ -58,7 +58,7 @@ templates:
         Estou aqui para garantir que você tenha acesso à justiça. Em que posso te ajudar?
       buttons:
       - title: Agendar um atendimento
-        payload: agendar um atendimento
+        payload: agendamento
       - title: Informações sobre a Defensoria Pública
         payload: defensoria publica
       - title: Informações sobre um processo em andamento
@@ -98,7 +98,7 @@ templates:
         mas estou super disposta a continuar te ajudando nos assuntos que eu domino
       buttons:
       - title: Agendar um atendimento
-        payload: agendar um atendimento
+        payload: agendamento
       - title: Informações sobre a Defensoria Pública
         payload: defensoria publica
 
@@ -125,7 +125,7 @@ templates:
         E agora, em que mais posso te ajudar?
       buttons:
       - title: Agendar um atendimento
-        payload: agendar um atendimento
+        payload: agendamento
 
   utter_entendi_negar:
     - text: |
