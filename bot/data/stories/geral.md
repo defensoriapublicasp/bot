@@ -46,6 +46,14 @@
     - utter_menu_lembrete
 
 ## geral
+* cumprimentar
+    - utter_cumprimentar
+
+## geral
+* menu_agendamento
+    - utter_menu_lembrete
+
+## geral
 * menu_agendamento
     - utter_menu_lembrete
 * afirmar
@@ -87,12 +95,16 @@
     - utter_cumprimentar
 * defensoria
     - utter_defensoria
+* menu_agendamento
+    - utter_menu
 
 ## andamento_processo
 * cumprimentar
     - utter_cumprimentar
 * andamento_processo
     - utter_implementar
+* menu_agendamento
+    - utter_menu
 
 ## crime
 * cumprimentar

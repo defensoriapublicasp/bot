@@ -7,7 +7,7 @@ policies:
         state_featurizer:
           - name: LabelTokenizerSingleStateFeaturizer
   - name: FallbackPolicy
-    nlu_threshold: 0.6
-    core_threshold: 0.6
+    nlu_threshold: 0.5
+    core_threshold: 0.5
   - name: MemoizationPolicy
     max_history: 3

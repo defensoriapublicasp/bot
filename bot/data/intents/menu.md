@@ -3,7 +3,6 @@
 - quero fazer um atendimento
 - agendar um atendimento
 - quero agendar
-- atendimento
 - agendamento
 - agendar
 

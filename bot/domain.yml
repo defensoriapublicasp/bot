@@ -54,11 +54,10 @@ slots:
 templates:
   utter_cumprimentar:
     - text: Oi, eu sou a Dirce, a assistente virtual da Defensoria Pública do Estado de São Paulo (DPESP).
-        problemas jurídicos do estado de São Paulo.
         Estou aqui para garantir que você tenha acesso à justiça. Em que posso te ajudar?
       buttons:
       - title: Agendar um atendimento
-        payload: agendamento
+        payload: quero agendar
       - title: Informações sobre a Defensoria Pública
         payload: defensoria publica
       - title: Informações sobre um processo em andamento
@@ -98,7 +97,7 @@ templates:
         mas estou super disposta a continuar te ajudando nos assuntos que eu domino
       buttons:
       - title: Agendar um atendimento
-        payload: agendamento
+        payload: quero agendar
       - title: Informações sobre a Defensoria Pública
         payload: defensoria publica
 
@@ -121,11 +120,10 @@ templates:
         como expressão e instrumento do regime democrático, é oferecer, às pessoas necessitadas, 
         de forma integral e gratuita, a orientação jurídica, a promoção dos direitos humanos 
         e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos.
-
-        E agora, em que mais posso te ajudar?
+        Em que posso te ajudar?
       buttons:
       - title: Agendar um atendimento
-        payload: agendamento
+        payload: quero agendar
 
   utter_entendi_negar:
     - text: |
@@ -161,7 +159,8 @@ templates:
         caso queira acompanhar um processo ou saber mais informações sobre a nossa instituição
         fique a vontade para perguntar :)
         Volte sempre!
-        
+
+
   # utter_menu_lembrete_podepagaradvogado:
   #   - text: | 
   #       Agradeço seu contato, mas a Defensoria Pública apenas atende quem não tem condições de custear um advogado particular
@@ -215,6 +214,11 @@ templates:
         primeiro preciso saber se VOCÊ SABE onde podemos encontrá-la,
         
         ou seja, você tem o endereço do RÉU?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_propositura_pessoafisica_localmoradia:
     - text: | 
@@ -228,6 +232,11 @@ templates:
         Um mediador vai facilitar a comunicação entre você e a pessoa processada.
         Se você conseguir fazer uma conciliação, a sua situação pode ser resolvida
         mais rápido. E aí, quer tentar?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_propositura_pessoafisica_cejusc_indicacejusc:
     - text: | 
@@ -240,12 +249,20 @@ templates:
         ótimo, infelizmente não encontrei nenhuma CEJUSC na sua cidade, para tentar uma audiência de conciliação antes de abrir o processo...
 
         vou agendar um atendimento para você, ok?
+      buttons:
+      - title: Ok
+        payload: ok
 
   utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento:
     - text: | 
         tudo bem, se não sabe o endereço certo do Réu é melhor encaminharmos você para um atendimento presencial ok?
 
         Posso te indicar uma unidade mais próxima de você?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_defesa:
     - text: | 
@@ -263,6 +280,11 @@ templates:
   utter_civel_defesa_localprocesso:
     - text: | 
         você sabe em qual cidade está o processo?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_defesa_atendimento:
     - text: | 

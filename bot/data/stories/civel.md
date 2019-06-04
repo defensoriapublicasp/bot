@@ -75,7 +75,11 @@
 * civel_propositura_pessoafisica
     - utter_civel_propositura_pessoafisica
 * afirmar
+    - utter_civel_propositura_pessoafisica_cejusc
+* afirmar
     - utter_civel_propositura_pessoafisica_localmoradia
+* action_cejusc
+    - action_cejusc
 
 ## propositura fisica
 * civel_propositura
