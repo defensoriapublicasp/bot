@@ -78,7 +78,9 @@
     - utter_civel_propositura_pessoafisica_cejusc
 * afirmar
     - utter_civel_propositura_pessoafisica_localmoradia
-* action_cejusc
+* action_confirma_agendamento 
+    - action_confirma_agendamento
+* afirmar
     - action_cejusc
 
 ## propositura fisica

@@ -22,8 +22,10 @@
     - utter_conhecimento
     - utter_menu
 
-## cumprimentar action_cejusc
-* cumprimentar
-    - utter_cumprimentar
+## action_cejusc
 * cejusc
+    - utter_civel_propositura_pessoafisica_localmoradia
+* action_confirma_agendamento 
+    - action_confirma_agendamento
+* afirmar
     - action_cejusc
