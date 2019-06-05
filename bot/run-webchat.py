@@ -44,7 +44,7 @@ def run(core_dir, nlu_dir):
                         tracker_store=_tracker_store,
                         endpoints=_endpoints)
 
-    WEBCHAT_PORT = os.getenv('WEBCHAT_PORT',3000)
+    WEBCHAT_PORT = os.getenv('WEBCHAT_PORT',3001)
     http_server = start_server([input_channel], "", "", int(WEBCHAT_PORT), _agent)
 
     try:

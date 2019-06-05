@@ -43,7 +43,7 @@ sudo docker-compose up bot
 
 e abra o arquivo `index.html` em seu navegador.
 
-O comando irá treinar o bot e deixa-lo na porta `3000`do seu computador. O `index.html` possui um
+O comando irá treinar o bot e deixa-lo na porta `3001`do seu computador. O `index.html` possui um
 script que conecta com a porta `3000` com o webchat.
 
 ### RocketChat
