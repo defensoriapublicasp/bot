@@ -30,6 +30,8 @@ notebooks/stories/img
 /data
 uploads
 
+### nginx ###
+certbot/
 
 ### database
 web/postegres-data
