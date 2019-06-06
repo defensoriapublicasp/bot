@@ -1,6 +1,26 @@
 version: '2'
 
 services:
+  # ============================= NGINXi ==================================
+  nginx:
+    image: nginx:1.15-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+      - ./scripts/nginx:/etc/nginx/conf.d
+      - ./index.html:/etc/nginx/index.html
+      - ./assets/:/etc/nginx/assets/
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
   # ============================= Rocketchat ==================================
   rocketchat:
     image: rocket.chat:0.69.2
