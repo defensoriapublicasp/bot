@@ -43,7 +43,7 @@ class ActionCejusc(Action):
         dispatcher.utter_message('Ótimo.')
         place = tracker.get_slot('local')
         try:
-            api_place = api.get_cejusc_data()[0]
+            api_place = api.get_cejusc_data(place)[0]
             logger.info(api_place)
             dispatcher.utter_message('Você pode ir na CEJUSC {}, que fica na {}, telefone {} e email {}.'.format(api_place['nome'], api_place['endereco'], api_place['telefone'], api_place['email']))
         except:

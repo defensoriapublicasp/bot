@@ -36,7 +36,7 @@ intents:
   - civel_propositura_pessoafisica_cejusc
   - civel_defesa
   - civel_defesa_digamais
-  - civel_defesa_localprocesso
+  - civel_defesa_localprocessoi
 
   # - informa_cidade
 
@@ -299,64 +299,15 @@ templates:
 
 
 # ============================ CRIMINAL ============================ #
-
-
+utter_site_atendimento:
+    - text: | 
+        Caso deseje saber mais informações sobre atendimento, por favor acesse nossa página de atendimento:
+        https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3092
 
 # ============================ AGENDAMENTO ============================ #
   utter_agendamento_local:
     - text: | 
         me diga o nome da CIDADE onde VOCÊ MORA, para que possa verificar a unidade mais próxima
-
-  # utter_agendamento_localmoradia_unidade:
-  #   - text: | 
-  #       encontrei uma Unidade da Defensoria Pública na cidade de Campinas, 
-
-  #       Você pode se dirigir ao endereço Rua Vilela, 19, 2º andar
-
-  #       Na quinta-feira, às 14h00?
-
-  # utter_agendamento_localmoradia_advogado:
-  #   - text: | 
-  #       Não encontrei uma Unidade da Defensoria Pública na cidade de Pirapózinho, 
-
-  #       Mas você pode se dirigir ao endereço Rua Piraporinha, 14, 4º andar
-
-  #       procurar o advogado Dr. Luis Martins
-
-  #       O telefone dele é (19) 98181-3355
-
-  # utter_agendamento_localprocesso:
-  #   - text: | 
-  #       me diga o nome da CIDADE onde está o PROCESSO, para que possa verificar a unidade mais próxima
-
-  # utter_agendamento_localprocesso_unidade:
-  #   - text: | 
-  #       encontrei uma Unidade da Defensoria Pública na cidade de São Paulo, 
-
-  #       Você pode se dirigir ao endereço Rua São Vicente, 260, 2º andar
-
-  #       Na sexta-feira, às 15h00?
-
-  # utter_agendamento_localprocesso_advogado:
-  #   - text: | 
-  #       Não encontrei uma Unidade da Defensoria Pública na cidade de Tajaí, 
-
-  #       Mas você pode se dirigir ao endereço Rua Açaí com banana, nº 4
-
-  #       procurar o advogado Dr. Maurício Lisboa
-
-  #       O telefone dele é (19) 98787-3344
-
-  # utter_agendamento_cidade_unidade:
-  #   - text: | 
-  #       Você mora na cidade de São Paulo, Campinas ou Guarulhos?
-    
-  #   - text: | 
-  #       Você por acaso mora na cidade de São Paulo, Campinas ou Guarulhos?
-
-  # utter_agendamento_cidade_advogado:
-  #   - text: | 
-  #       ok, então em qual cidade você mora?
 
 # ============================ ACTIONS ============================ #
 actions:
@@ -391,6 +342,7 @@ actions:
     - utter_civel_defesa_atendimento
     
     - utter_agendamento_local
+    - utter_site_atendimento
     # - utter_agendamento_localmoradia_unidade
     # - utter_agendamento_localmoradia_advogado
     # - utter_agendamento_localprocesso
