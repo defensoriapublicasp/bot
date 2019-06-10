@@ -89,13 +89,13 @@
 * civel_propositura_pessoafisica
     - utter_civel_propositura_pessoafisica
 * negar
-    - utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento
+    - utter_civel_propositura_pessoafisica_cejusc
 * afirmar
-    - utter_agendamento_local
+    - utter_civel_propositura_pessoafisica_localmoradia
 * action_confirma_agendamento 
     - action_confirma_agendamento
 * afirmar
-    - action_agendamento
+    - action_cejusc
 
 ## propositura fisica
 * civel_propositura
@@ -103,11 +103,13 @@
 * civel_propositura_pessoafisica
     - utter_civel_propositura_pessoafisica
 * negar
-    - utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento
-* negar
-    - utter_entendi_negar
-    - utter_conhecimento
-    - utter_menu
+    - utter_civel_propositura_pessoafisica_cejusc
+* afirmar
+    - utter_civel_propositura_pessoafisica_localmoradia
+* action_confirma_agendamento 
+    - action_confirma_agendamento
+* afirmar
+    - action_cejusc
 
 <!-- Defesa -->
 ## civel
