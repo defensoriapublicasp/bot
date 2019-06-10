@@ -12,7 +12,7 @@ services:
       - ./certbot/www:/var/www/certbot
       - ./scripts/nginx:/etc/nginx/conf.d
       - ./index:/tmp/nginx/
-      - ./assets/:/etc/nginx/assets/
+      - ./assets/:/tmp/assets/
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
     
   certbot:
@@ -54,8 +54,6 @@ services:
       - ./docker/bot.env
     ports:
       - 5005:5005
-      - 5002:5002
-      - 3001:3001
     depends_on:
       - actions
     volumes:
