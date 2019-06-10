@@ -3,20 +3,9 @@
 - civel
 - Cível e Família
 - civel e familia
-- quero propor uma ação 
-- quero processar alguem
-- estou sendo processado
-- fui intimado a comparecer
-- estou sendo vitima
-- sou réu em um processo
-- estou me divorciando
-- quero me divorciar
-- quero pedir pensao
-- pensao para meus filhos
-- quero me separar
-- quero ajuda para me separar
-- quero pedir alimentos
 - Área Cível e Família
+- preciso de encaminhamento para cível e família
+- atendimento em cível
 
 ## intent:menu_lembrete
 -  Eu posso ser defendido pela Defensoria
