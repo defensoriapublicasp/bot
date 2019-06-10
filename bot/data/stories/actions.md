@@ -12,6 +12,7 @@
 * action_confirma_agendamento
     - action_confirma_agendamento
 * negar
+    - utter_site_atendimento
     - utter_conhecimento
     - utter_menu
 
@@ -19,13 +20,6 @@
 * action_confirma_agendamento
     - action_confirma_agendamento
 * negar
+    - utter_site_atendimento
     - utter_conhecimento
     - utter_menu
-
-## action_cejusc
-* cejusc
-    - utter_civel_propositura_pessoafisica_localmoradia
-* action_confirma_agendamento 
-    - action_confirma_agendamento
-* afirmar
-    - action_cejusc
