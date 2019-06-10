@@ -45,6 +45,6 @@ class ActionCejusc(Action):
         try:
             api_place = api.get_cejusc_data()[0]
             logger.info(api_place)
-            dispatcher.utter_message('Você pode ir na {}'.format(api_place['nome']))
+            dispatcher.utter_message('Você pode ir na CEJUSC {}, que fica na {}, telefone {} e email {}.'.format(api_place['nome'], api_place['endereco'], api_place['telefone'], api_place['email']))
         except:
             dispatcher.utter_message(problem_message)
