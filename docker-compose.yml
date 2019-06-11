@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  # ============================= NGINXi ==================================
+  # ============================= NGINX ==================================
   nginx:
     image: nginx:1.15-alpine
     ports:
@@ -59,7 +59,7 @@ services:
     volumes:
       - ./bot:/bot
       - ./scripts:/scripts
-    command: sh -c "make train && make run-webchat"
+    command: sh -c "make run-webchat"
 
   actions:
     build:

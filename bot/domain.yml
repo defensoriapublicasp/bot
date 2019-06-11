@@ -1,47 +1,28 @@
 intents:
-  - cumprimentar
-  - despedir
-  - out_of_scope
   - negar
-  - tudo_bem
   - elogios
-  - conhecimento
-  - defensoria
-  - andamento_processo
+  - despedir
+  - tudo_bem
   - infancia
+  - defensoria
+  - cumprimentar
+  - conhecimento
+  - out_of_scope
+  - andamento_processo
 
   - afirmar
 
-  - menu_lembrete
-  - menu_agendamento
-  - menu_lembrete_podepagaradvogado
-  - menu_lembrete_naopodepagaradvogado
   - menu_crime
-
-  # - pena_preso
-  # - pena_solto
-  # - pena_preso_localprisao
-  # - pena_solto_localpena
-
-  # - criminal
-  # - crime_localacontecimento
-
-  # - infancia
+  - menu_agendamento
 
   - civel
-  - civel_propositura
-  - civel_propositura_pessoajuridica
-  - civel_propositura_pessoafisica
-  - civel_propositura_pessoafisica_localmoradia
-  - civel_propositura_pessoafisica_cejusc
   - civel_defesa
-  - civel_defesa_digamais
-  - civel_defesa_localprocessoi
-
-  # - informa_cidade
+  - civel_propositura
+  - civel_defesa_localprocesso
+  - civel_propositura_pessoafisica
+  - civel_propositura_pessoajuridica
 
   - action_confirma_agendamento
-  - cejusc
   
 entities:
   - cidade
@@ -160,15 +141,6 @@ templates:
         fique a vontade para perguntar :)
         Volte sempre!
 
-
-  # utter_menu_lembrete_podepagaradvogado:
-  #   - text: | 
-  #       Agradeço seu contato, mas a Defensoria Pública apenas atende quem não tem condições de custear um advogado particular
-
-  # utter_menu_lembrete_naopodepagaradvogado:
-  #   - text: | 
-  #       Ok, não se preocupe, vamos lá...
-
 # ============================ CIVEL E FAMILIA ============================ #
 
   utter_civel:
@@ -238,32 +210,6 @@ templates:
       - title: não
         payload: não
 
-  utter_civel_propositura_pessoafisica_cejusc_indicacejusc:
-    - text: | 
-        ótimo, a CEJUSC mais próxima que encontrei foi a do Jabaquara
-
-        Aqui está o [link](https://defensoria.sp.def.br) com o endereço completo
-
-  utter_civel_propositura_pessoafisica_encaminhaatendimento:
-    - text: | 
-        ótimo, infelizmente não encontrei nenhuma CEJUSC na sua cidade, para tentar uma audiência de conciliação antes de abrir o processo...
-
-        vou agendar um atendimento para você, ok?
-      buttons:
-      - title: Ok
-        payload: ok
-
-  utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento:
-    - text: | 
-        tudo bem, se não sabe o endereço certo do Réu é melhor encaminharmos você para um atendimento presencial ok?
-
-        Posso te indicar uma unidade mais próxima de você?
-      buttons:
-      - title: sim
-        payload: sim
-      - title: não
-        payload: não
-
   utter_civel_defesa:
     - text: | 
         Ok, então vamos achar a melhor forma de te atender
@@ -286,20 +232,13 @@ templates:
       - title: não
         payload: não
 
-  utter_civel_defesa_atendimento:
-    - text: | 
-        Ok, maravilha
-
-        vamos encaminhar seu agendamento agora!
-
-
 
 # ============================ INFANCIA E JUVENTUDE ============================ #
 
 
 
 # ============================ CRIMINAL ============================ #
-utter_site_atendimento:
+  utter_site_atendimento:
     - text: | 
         Caso deseje saber mais informações sobre atendimento, por favor acesse nossa página de atendimento:
         https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3092
@@ -333,23 +272,12 @@ actions:
     - utter_civel_propositura_pessoafisica
     - utter_civel_propositura_pessoafisica_localmoradia
     - utter_civel_propositura_pessoafisica_cejusc
-    - utter_civel_propositura_pessoafisica_cejusc_indicacejusc
-    - utter_civel_propositura_pessoafisica_encaminhaatendimento
-    - utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento
     - utter_civel_defesa
     - utter_civel_defesa_digamais
     - utter_civel_defesa_localprocesso
-    - utter_civel_defesa_atendimento
     
     - utter_agendamento_local
     - utter_site_atendimento
-    # - utter_agendamento_localmoradia_unidade
-    # - utter_agendamento_localmoradia_advogado
-    # - utter_agendamento_localprocesso
-    # - utter_agendamento_localprocesso_unidade
-    # - utter_agendamento_localprocesso_advogado
-    # - utter_agendamento_cidade_unidade
-    # - utter_agendamento_cidade_advogado
 
     - action_confirma_agendamento
     - action_agendamento
