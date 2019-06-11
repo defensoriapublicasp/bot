@@ -1,9 +1,21 @@
-# Rasa Boilerplate
+# Dirce
 
-Um projeto feito em Rasa com configurações necessárias para a construção
-de um projeto grande de chatbot.
+Este projeto é um fork do boilerplate feito pelo lappis, o projeto base esta [aqui](http://github.com/lappis-unb/rasa-ptbr-boilerplate).
 
-Este projeto teve como base a [Tais](http://github.com/lappis-unb/tais).
+## Ambiente de produção
+
+* Atualize os arquivos:
+
+* `docker/bot.env`
+* `docker/actions.env`
+* `docker-compose.yml`
+* `index.html` <- **Atualizar o host no final do arquivo**
+
+* Execute o script `init_letsencrypt.sh` na pasta docker:
+
+* `sudo ./init_letsencrypt.sh`
+
+Este script irá fazer toda a configuração de `nginx` e containers
 
 ## Bot
 
@@ -43,7 +55,7 @@ sudo docker-compose up bot
 
 e abra o arquivo `index.html` em seu navegador.
 
-O comando irá treinar o bot e deixa-lo na porta `3000`do seu computador. O `index.html` possui um
+O comando irá treinar o bot e deixa-lo na porta `3001`do seu computador. O `index.html` possui um
 script que conecta com a porta `3000` com o webchat.
 
 ### RocketChat

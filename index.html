@@ -1,38 +1,665 @@
-<html>
-<head>
-    <title>Rasa Web Chat test</title>
-</head>
-<body>
-    <h1>Pagina do Bot :)</h1>
-    <div id="webchat"/>
-    <script src="https://storage.googleapis.com/mrbot-cdn/webchat-0.5.8.js"></script>
-    <script>
-        WebChat.default.init({
-        selector: "#webchat",
-        initPayload: "/get_started",
-        interval: 1000, // 1000 ms between each message
-        // customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-        socketUrl: "http://localhost:3000",
-        socketPath: "/socket.io/",
-        title: "Auto Atendimento",
-        subtitle: "Ligero Smart",
-        inputTextFieldHint: "Digite sua mensagem...",
-        connectingText: "Conectando...",
-        hideWhenNotConnected: true,
-        fullScreenMode: false,
-        profileAvatar: "assets/logo.png",
-        openLauncherImage: 'assets/launcher_button.svg',
-        closeLauncherImage: 'assets/launcher_button.svg',
-        params: {
-            images: {
-            dims: {
-                width: 300,
-                height: 200,
-            }
-            },
-            storage: "session"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="gr__defensoria_sp_def_br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	
+        DPESP/Portal-PRINCIPAL/Home
+    
+</title><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1">
+
+    <script async="" src="assets/analytics.js"></script><script language="javascript" type="text/javascript">
+        // Fun&#65533;&#65533;es usadas para simular o smartnavigation
+        function setarolagemPos() {
+            document.getElementById('rolagemPos').value = document.getElementById('Corpo').scrollTop;
         }
-        })
-    </script>    
-</body>
-</html>
+        function restauraScroll() {
+            document.getElementById('Corpo').scrollTop = document.getElementById('rolagemPos').value;
+        }
+        function redimensiona() {
+            if (document.documentElement.clientHeight - (document.getElementById('Cabecalho').clientHeight + document.getElementById('Banner').clientHeight + document.getElementById('Rodape').clientHeight) >= 0)
+                document.getElementById('Corpo').style.height = document.documentElement.clientHeight - (document.getElementById('Cabecalho').clientHeight + document.getElementById('Banner').clientHeight + document.getElementById('Rodape').clientHeight) + 'px';
+            else
+                document.getElementById('Corpo').style.height = '0px';
+        }
+    </script>
+
+<link href="assets/BACKUP_padrao_21.css" type="text/css" rel="stylesheet"><link href="assets/OLD_padrao.css" type="text/css" rel="stylesheet"><link href="assets/padrao.css" type="text/css" rel="stylesheet"><style type="text/css">
+	.ctl00_MenuSuperior_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_MenuSuperior_1 { text-decoration:none; }
+	.ctl00_MenuSuperior_2 {  }
+	.ctl00_MenuSuperior_3 { border-style:none; }
+	.ctl00_MenuSuperior_4 {  }
+	.ctl00_MenuSuperior_5 { border-style:none; }
+	.ctl00_MenuSuperior_6 {  }
+
+</style></head>
+<body id="body" style="margin: 0 0 0 0; overflow: hidden; height: 100%; width: auto" scroll="no" onload="restauraScroll()" data-gr-c-s-loaded="true">
+    <form name="aspnetForm" method="post" action="default.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" class="Default">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="assets/WebResource.axd" type="text/javascript"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+window.ComponentArt_Atlas=1;window.ComponentArt_Fw35=1;
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+null;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5DA63530">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQKS26T1DwKCxP2JDwLLxYncCwLYttLODwLKlJrTCP/PCcVYATAaFC+yVK29D9w0Gxd4">
+</div>
+    <script type="text/javascript">
+</script>
+
+    <div class="BannerCabecalho">
+        <table id="Cabecalho" width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+                <td class="BannerCabecalho">
+                    <span id="ctl00_lblDesPortal" class="BannerCabecalho"></span>
+                </td>
+                <td align="right">
+                    
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;<a id="ctl00_cmdLogin" title="Acesso Personalizado (Login de Usuário)!" class="BotaoCabecalho" href="javascript:__doPostBack('ctl00$cmdLogin','')"><img src="assets/PessoaAcesso.gif" style="border:0;vertical-align:middle">Acesso</a>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <table id="Banner" width="100%" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+            <td colspan="2">
+                <table id="Menu" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tbody><tr>                        
+	<tbody><tr>
+		<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Concursos" id="ctl00_MenuSuperiorn0"><table class="MenuEstatico ctl00_MenuSuperior_4" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody><tr>
+				<td style="white-space:nowrap;"><a class="ctl00_MenuSuperior_1 MenuEstatico ctl00_MenuSuperior_3" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2902" style="border-style:none;font-size:1em;">Concursos</a></td>
+			</tr>
+		</tbody></table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Convênios" id="ctl00_MenuSuperiorn1"><table class="MenuEstatico ctl00_MenuSuperior_4" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody><tr>
+				<td style="white-space:nowrap;"><a class="ctl00_MenuSuperior_1 MenuEstatico ctl00_MenuSuperior_3" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5857" style="border-style:none;font-size:1em;">Convênios</a></td>
+			</tr>
+		</tbody></table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Licitações" id="ctl00_MenuSuperiorn2"><table class="MenuEstatico ctl00_MenuSuperior_4" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody><tr>
+				<td style="white-space:nowrap;"><a class="ctl00_MenuSuperior_1 MenuEstatico ctl00_MenuSuperior_3" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2945" style="border-style:none;font-size:1em;">Licitações</a></td>
+			</tr>
+		</tbody></table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="E-mail" id="ctl00_MenuSuperiorn3"><table class="MenuEstatico ctl00_MenuSuperior_4" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody><tr>
+				<td style="white-space:nowrap;"><a class="ctl00_MenuSuperior_1 MenuEstatico ctl00_MenuSuperior_3" href="https://webmail.defensoria.sp.def.br/owa" style="border-style:none;font-size:1em;">E-mail</a></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><div id="ctl00_MenuSuperiorn0Items" class="ctl00_MenuSuperior_0">
+	<table cellspacing="0" cellpadding="0" border="0">
+		<tbody><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="VIII Concurso de Ingresso na Carreira de Defensor Público do Estado de São Paulo" id="ctl00_MenuSuperiorn4">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6579" style="border-style:none;font-size:1em;">VIII Concurso de Ingresso na Carreira de Defensor Público do Estado de São Paulo</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Concurso Continuado para Credenciamento de Estagiários de Direito - 2019" id="ctl00_MenuSuperiorn5">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6553" style="border-style:none;font-size:1em;">Concurso Continuado para Credenciamento de Estagiários de Direito - 2019</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr>
+	</tbody></table><div class="MenuDinamico ctl00_MenuSuperior_6 ctl00_MenuSuperior_0" id="ctl00_MenuSuperiorn0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="assets/WebResource.gif" alt="Scroll up">
+	</div><div class="MenuDinamico ctl00_MenuSuperior_6 ctl00_MenuSuperior_0" id="ctl00_MenuSuperiorn0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="assets/WebResource_003.gif" alt="Scroll down">
+	</div>
+</div><div id="ctl00_MenuSuperiorn1Items" class="ctl00_MenuSuperior_0">
+	<table cellspacing="0" cellpadding="0" border="0">
+		<tbody><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Convênio OAB" id="ctl00_MenuSuperiorn6">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5859" style="border-style:none;font-size:1em;">Convênio OAB</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Parcerias Institucionais" id="ctl00_MenuSuperiorn7">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5861" style="border-style:none;font-size:1em;">Parcerias Institucionais</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Perícias SPP" id="ctl00_MenuSuperiorn8">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6295" style="border-style:none;font-size:1em;">Perícias SPP</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr>
+	</tbody></table><div class="MenuDinamico ctl00_MenuSuperior_6 ctl00_MenuSuperior_0" id="ctl00_MenuSuperiorn1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="assets/WebResource.gif" alt="Scroll up">
+	</div><div class="MenuDinamico ctl00_MenuSuperior_6 ctl00_MenuSuperior_0" id="ctl00_MenuSuperiorn1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="assets/WebResource_003.gif" alt="Scroll down">
+	</div>
+</div><div id="ctl00_MenuSuperiorn7Items" class="ctl00_MenuSuperior_0">
+	<table cellspacing="0" cellpadding="0" border="0">
+		<tbody><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Assessoria Jurídica" id="ctl00_MenuSuperiorn9">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5994" style="border-style:none;font-size:1em;">Assessoria Jurídica</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Assessoria Técnica" id="ctl00_MenuSuperiorn10">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6555" style="border-style:none;font-size:1em;">Assessoria Técnica</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Editais" id="ctl00_MenuSuperiorn11">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6035" style="border-style:none;font-size:1em;">Editais</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Órgãos Públicos" id="ctl00_MenuSuperiorn12">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5996" style="border-style:none;font-size:1em;">Órgãos Públicos</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Comunicados - Parcerias Institucionais" id="ctl00_MenuSuperiorn13">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6015" style="border-style:none;font-size:1em;">Comunicados - Parcerias Institucionais</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Manuais - Parcerias Institucionais" id="ctl00_MenuSuperiorn14">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6016" style="border-style:none;font-size:1em;">Manuais - Parcerias Institucionais</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Parcerias Encerradas" id="ctl00_MenuSuperiorn15">
+			<td><table class="MenuDinamico ctl00_MenuSuperior_6" width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_MenuSuperior_1 MenuDinamico ctl00_MenuSuperior_5" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6452" style="border-style:none;font-size:1em;">Parcerias Encerradas</a></td>
+				</tr>
+			</tbody></table></td>
+		</tr>
+	</tbody></table><div class="MenuDinamico ctl00_MenuSuperior_6 ctl00_MenuSuperior_0" id="ctl00_MenuSuperiorn7ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="assets/WebResource.gif" alt="Scroll up">
+	</div><div class="MenuDinamico ctl00_MenuSuperior_6 ctl00_MenuSuperior_0" id="ctl00_MenuSuperiorn7ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="assets/WebResource_003.gif" alt="Scroll down">
+	</div>
+</div><a id="ctl00_MenuSuperior_SkipLink"></a>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+    </tbody></table>
+    <table id="Conteudo" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+            <td valign="top" align="left">
+                <div id="Corpo" style="overflow: auto; width: 100%; height: 627px;" onscroll="setarolagemPos()">
+                    
+    <div align="left">
+        <table style="height: 100%;
+            margin-left: auto; margin-right: auto; text-align: left;" width="98%" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr valign="top">
+                <td colspan="7" class="margemSuperior" id="margemSuperior">
+                </td>
+            </tr>
+            <tr valign="top">
+                
+            </tr>
+            <tr valign="top">
+                <td colspan="7" class="margemCentroSuperior" id="margemCentroSuperior">
+                </td>
+            </tr>
+            <tr valign="top">
+                <td id="ctl00_conteudo_Esquerda" width="100">
+                
+
+<table id="tabTexoHtml" width="100%" cellspacing="0" cellpadding="0" align="center">
+	<tbody><tr id="trCompartimentoHtml" valign="top">
+		<td id="ctl00_conteudo_ctl05_CompartimentoHtml">
+		<img id="MenuSuperior" alt="" src="assets/Menu.jpg" orgwidth="240" orgheight="281" usemap="#MenuSuperior" width="240" height="306" border="0"> <map id="MenuSuperior" name="MenuSuperior">
+<area alt="Home" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=1" shape="rect" coords="0,0,240,25" style="outline:none;" target="_self">
+<area alt="Institucional" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2868" shape="rect" coords="0,24,240,50" style="outline:none;" target="_self">
+<area alt="Legislação" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2893" shape="rect" coords="0,50,240,74" style="outline:none;" target="_self">
+<area alt="Atendimento" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3092" shape="rect" coords="0,74,240,98" style="outline:none;" target="_self">
+<area alt="Corregedoria" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2883" shape="rect" coords="0,98,240,123" style="outline:none;" target="_self">
+<area alt="Conselho Superior" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2877" shape="rect" coords="0,122,240,148" style="outline:none;" target="_self">
+<area alt="Sala de Imprensa" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2910" shape="rect" coords="0,146,240,172" style="outline:none;" target="_self">
+<area alt="Ciclo de Conferências" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6246" shape="rect" coords="0,171,240,197" style="outline:none;" target="_self">
+<area alt="Centro de Atendimento Multidisciplinar" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5416" shape="rect" coords="0,196,240,221" style="outline:none;" target="_self">
+<area alt="Convive - Mães em Cárcere" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5935" shape="rect" coords="0,221,240,246" style="outline:none;" target="_self">
+<area alt="Endereços e Telefones" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2873" shape="rect" coords="0,245,240,269" style="outline:none;" target="_self">
+<area alt="Plantões Judiciários" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5855" shape="rect" coords="0,269,240,293" style="outline:none;" target="_self">
+</map>
+<!-- p   /p -->
+<p>
+</p><table>
+     <tbody>
+         <tr>
+             <td>&nbsp;&nbsp;&nbsp; <img id="MenuNucleos" alt="" src="assets/MenuNucleos.jpg" orgwidth="175" orgheight="422" usemap="#MenuNucleos" width="175" height="422" border="0"><map id="MenuNucleos" name="MenuNucleos">
+             <area alt="Cidadania e Direitos Humanos" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3040" shape="rect" coords="0,25,175,73" style="outline:none;" target="_self">
+             <area alt="Defesa do Consumidor" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5126" shape="rect" coords="0,378,175,422" style="outline:none;" target="_self">
+             <area alt="Infância e Juventude" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3064" shape="rect" coords="0,73,175,113" style="outline:none;" target="_self">
+             <area alt="Habitação e Urbanismo" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2994" shape="rect" coords="0,111,175,152" style="outline:none;" target="_self">
+             <area alt="Segunda Instância e Tribunais Superiores" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3005" shape="rect" coords="0,153,175,199" style="outline:none;" target="_self">
+             <area alt="Situação Carcerária" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3016" shape="rect" coords="0,200,175,242" style="outline:none;" target="_self">
+             <area alt="Direitos da Mulher" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3355" shape="rect" coords="0,241,175,285" style="outline:none;" target="_self">
+             <area alt="Diversidade e Igualdade Racial" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3322" shape="rect" coords="0,285,175,328" style="outline:none;" target="_self">
+             <area alt="Direitos do Idoso e da pessoa com deficiência" title="" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3343" shape="rect" coords="0,330,175,377" style="outline:none;" target="_self">
+             </map></td>
+         </tr>
+     </tbody>
+</table>
+<p></p>
+<p>
+</p>
+<p align="left">
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+
+	</tr>
+</tbody></table>
+
+
+<br></td>
+
+                <td id="margemCentroEsquerda" class="margemCentroEsquerda">
+                </td>
+                <td id="ctl00_conteudo_Centro">
+                
+
+<table id="tabTexoHtml" width="100%" cellspacing="0" cellpadding="0" align="center">
+	<tbody><tr id="trCompartimentoHtml" valign="top">
+		<td id="ctl00_conteudo_ctl00_CompartimentoHtml">
+		<p style="text-align: center; ">&nbsp;<img alt="" src="assets/atendimento.jpg" style="width: 777px; height: 25px;" width="777" height="25" border="0"></p><p>
+</p><table style="width: 727px; height: 141px" width="727" cellspacing="2" cellpadding="2" border="0" align="center">
+<tbody>
+<tr>
+<td>
+<div align="center"><a href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3151" target="_self"><img alt="" src="assets/atendimento%2520conhecanossosservicos.jpg" width="217" height="40" border="0" align="left"></a></div></td>
+<td>
+<div align="center"><a href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3105" target="_self"><img alt="" src="assets/atendimento%2520locaisdeatendimento.jpg" width="217" height="40" border="0"></a></div></td>
+<td>
+<div align="center"><a href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3094" target="_self"><img alt="" src="assets/atendimento%2520duvidasfrequentes.jpg" width="217" height="40" border="0" align="right"></a></div></td></tr>
+<tr>
+<td>
+<div align="center"><a href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3095" target="_self"><img alt="" src="assets/atendimento%2520conhecanossascartilhas.jpg" width="217" height="40" border="0" align="left"></a></div></td>
+<td>
+<div align="center"><a href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2870" target="_self"><img alt="" src="assets/atendimento%2520areasdeatuacao.jpg" width="217" height="40" border="0"></a></div></td>
+<td>
+<div align="center"><a href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3096" target="_self"><img alt="" src="assets/atendimento%2520docsnecessarios.jpg" width="217" height="40" border="0" align="right"></a></div></td></tr></tbody></table><p></p></td>
+
+	</tr>
+</tbody></table>
+
+
+<br>
+
+<table id="TabNoticia" width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody><tr>
+        <td class="Modulo">
+            
+        </td>
+    </tr>
+    <tr>
+        <td>
+            
+        </td>
+    </tr>
+</tbody></table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody><tr>
+        <td class="Modulo">
+            <div id="ctl00_conteudo_ctl01_rotator" class="Modulo" style="display:inline-block;height:291px;width:100%;overflow:hidden;">
+	<div id="ctl00_conteudo_ctl01_rotator_SlideContainer" class="Modulo" style="position: relative; visibility: visible; width: 100%;">
+		
+                    <table width="100% border=0 cellpadding=3 cellspacing=1">
+                        <tbody><tr id="ctl00_conteudo_ctl01_ctl35_comTitulo">
+			<td colspan="3" class="TituloDadoROTATIVO">
+                                
+                                <a id="ctl00_conteudo_ctl01_ctl35_hypTitulo" class="TituloDadoROTATIVO" href="https://www.defensoria.sp.def.br/dpesp/Conteudos/Noticias/NoticiaConsulta.aspx?idItem=84829&amp;idPagina=1" target="_blank">Defensoria Pública de SP obtém decisão que determina instalação de restaurante popular “Bom Prato” em Presidente Prudente</a>
+                            </td>
+		</tr>
+		
+                        
+                        
+                        <tr>
+                            <td valign="top" align="center">
+                                <a id="ctl00_conteudo_ctl01_ctl35_imgResEsquerda" target="_blank">
+                                    <img style="margin-right:5px" src="assets/2019_004.jpg" width="330" height="210" border="0"></a>
+                            </td>
+                            <td valign="top">
+                                <b></b>
+                                
+                                <span id="ctl00_conteudo_ctl01_ctl35_lblResumo" class="Conteudo">A
+ Defensoria Pública de SP obteve na última quarta-feira (29/5) uma 
+decisão de mérito do Tribunal de Justiça paulista (TJ-SP) que determina 
+que o Estado de São Paulo e o Município de Presidente Prudente 
+disponibilizem uma unidade do restaurante popular “Bom Prato” na cidade.</span>
+                            </td>
+                            <td valign="top" align="center">
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody></table>
+                
+	</div>
+</div>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+<br><div id="ctl00_conteudo_ctl02_ModuloTitulo_PainelTitulo" style="width:100%;">
+	
+<table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#CCCCCC" align="center">
+    <tbody><tr>
+        <td class="TitEModuloLink" width="36px" nowrap="nowrap" align="right">
+            
+            
+        </td>
+        <td class="TitModuloLink" valign="middle" align="center">
+            &nbsp;<a id="ctl00_conteudo_ctl02_ModuloTitulo_hypTitulo" class="TitModuloLink">Notícias em destaque</a>
+        </td>
+        <td class="TitDModuloLink" width="36px" nowrap="nowrap" align="left">
+            
+            
+        </td>
+    </tr>
+</tbody></table>
+
+</div>
+
+<table id="ctl00_conteudo_ctl02_dlNoticia" class="Noticia" style="width:100%;border-collapse:collapse;" cellspacing="0" cellpadding="4" border="0">
+	<tbody><tr>
+		<td class="NoticiaItem">
+        <table>
+            <tbody><tr>
+                <td class="TituloItem" valign="top">
+                    
+                    04/06/2019
+                </td>
+                <td class="TituloItem" valign="top">
+                    <a id="ctl00_conteudo_ctl02_dlNoticia_ctl00_noticiaLink" href="https://www.defensoria.sp.def.br/dpesp/Conteudos/Noticias/NoticiaMostra.aspx?idItem=84817&amp;idPagina=1&amp;flaDestaque=V" target="_blank">
+				        <font color="black">Defensoria Pública de SP obtém decisão que determina instalação de restaurante popular “Bom Prato” em Presidente Prudente</font>
+                    </a>
+                </td>
+            </tr>
+        </tbody></table>
+    </td>
+	</tr><tr>
+		<td class="NoticiaAlternado">
+        <table>
+            <tbody><tr>
+                <td class="TituloItem" valign="top">
+                    
+                    04/06/2019
+                </td>
+                <td class="TituloItem" valign="top">
+                    <a id="ctl00_conteudo_ctl02_dlNoticia_ctl01_noticiaLink" href="https://www.defensoria.sp.def.br/dpesp/Conteudos/Noticias/NoticiaMostra.aspx?idItem=84838&amp;idPagina=1&amp;flaDestaque=V" target="_blank">
+				        <font color="black">Defensoria Pública de SP promove audiência pública para discutir a privatização dos presídios do Estado</font>
+                    </a>
+                </td>
+            </tr>
+        </tbody></table>
+    </td>
+	</tr><tr>
+		<td class="NoticiaItem">
+        <table>
+            <tbody><tr>
+                <td class="TituloItem" valign="top">
+                    
+                    03/06/2019
+                </td>
+                <td class="TituloItem" valign="top">
+                    <a id="ctl00_conteudo_ctl02_dlNoticia_ctl02_noticiaLink" href="https://www.defensoria.sp.def.br/dpesp/Conteudos/Noticias/NoticiaMostra.aspx?idItem=84815&amp;idPagina=1&amp;flaDestaque=V" target="_blank">
+				        <font color="black">Defensoria Pública e Secretaria 
+Municipal de Educação celebram parceria para evitar judicialização de 
+processos relativos a vagas em creches na Capital</font>
+                    </a>
+                </td>
+            </tr>
+        </tbody></table>
+    </td>
+	</tr><tr>
+		<td class="NoticiaAlternado">
+        <table>
+            <tbody><tr>
+                <td class="TituloItem" valign="top">
+                    
+                    03/06/2019
+                </td>
+                <td class="TituloItem" valign="top">
+                    <a id="ctl00_conteudo_ctl02_dlNoticia_ctl03_noticiaLink" href="https://www.defensoria.sp.def.br/dpesp/Conteudos/Noticias/NoticiaMostra.aspx?idItem=84813&amp;idPagina=1&amp;flaDestaque=V" target="_blank">
+				        <font color="black">Guarulhos: Defensoria obtém decisão que condena Estado e Município a criarem Casa-Abrigo para mulheres em situação de violência</font>
+                    </a>
+                </td>
+            </tr>
+        </tbody></table>
+    </td>
+	</tr><tr>
+		<td class="NoticiaItem">
+        <table>
+            <tbody><tr>
+                <td class="TituloItem" valign="top">
+                    
+                    31/05/2019
+                </td>
+                <td class="TituloItem" valign="top">
+                    <a id="ctl00_conteudo_ctl02_dlNoticia_ctl04_noticiaLink" href="https://www.defensoria.sp.def.br/dpesp/Conteudos/Noticias/NoticiaMostra.aspx?idItem=84803&amp;idPagina=1&amp;flaDestaque=V" target="_blank">
+				        <font color="black">Defensoria obtém no STF determinação 
+para substituir internação de adolescente por medida socioeducativa sem 
+privação de liberdade, em caso de ato infracional culposo</font>
+                    </a>
+                </td>
+            </tr>
+        </tbody></table>
+    </td>
+	</tr>
+</tbody></table>
+<div id="ctl00_conteudo_ctl02_ModuloRodape_PainelRodape" style="width:100%;">
+	
+<table id="TabRodape" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#CCCCCC" align="center">
+    <tbody><tr>
+        <td class="RodEModuloLink" width="32" nowrap="nowrap" align="right">
+        </td>
+        <td class="RodModuloLink" valign="middle" align="center">
+            &nbsp;
+            <a id="ctl00_conteudo_ctl02_ModuloRodape_hypRodape" class="RodModuloLink" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3086" target="_self">Mais notícias...</a>
+        </td>
+        <td class="RodDModuloLink" width="32" nowrap="nowrap" align="left">
+        </td>
+    </tr>
+</tbody></table>
+
+</div>
+
+<br>
+
+<table id="TabNoticia" width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody><tr>
+        <td class="">
+            
+        </td>
+    </tr>
+    <tr>
+        <td>
+            
+        </td>
+    </tr>
+</tbody></table>
+<br></td>
+
+                <td id="margemCentroDireita" class="margemCentroDireita">
+                </td>
+                <td id="ctl00_conteudo_Direita" width="300">
+                
+
+<table id="tabTexoHtml" width="100%" cellspacing="0" cellpadding="0" align="center">
+	<tbody><tr id="trCompartimentoHtml" valign="top">
+		<td id="ctl00_conteudo_ctl04_CompartimentoHtml">
+		<p align="center">
+</p><table width="263" height="618" cellspacing="2" cellpadding="2" border="0" align="center">
+     <tbody>
+         <tr>
+             <td align="center"><a href="https://www.facebook.com/DefensoriaPublicaSP/" target="_blank"><img style="text-align: center;" alt="" src="assets/facebook2015.png" width="45" height="45" border="0"></a><a href="https://twitter.com/Defensoriasp" target="_blank"><img style="text-align: center;" alt="" src="assets/Twitter2015.png" width="45" height="45" border="0"></a><a href="https://www.flickr.com/photos/defensoriapublicasp/" target="_blank"><img style="text-align: center;" alt="" src="assets/flickr2015.png" width="49" height="44" border="0"></a><a href="https://www.instagram.com/defensoria_sp/"></a><a href="https://www.instagram.com/defensoria_sp/" target="_blank"><img src="assets/Instagram5.jpg" alt="" border="0"></a></td>
+         </tr><tr><td style="text-align: center; "><a target="_self" href="http://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2881"><img src="http://www.defensoria.sp.gov.br/dpesp/Repositorio/0/Figuras/botoes_2015/Ouvidoria.jpg" alt="" border="0"></a> <br></td></tr><tr><td style="text-align: center; "><a href="http://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=2825" target="_blank"><img src="assets/edepe_logotipo.png" alt="" width="150" height="33" border="0"></a><br></td></tr><tr><td style="text-align: center; "><a href="http://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3172" target="_self"><img src="http://www.defensoria.sp.gov.br/dpesp/Repositorio/0/Figuras/botoes_2015/DO.jpg" alt="" border="0"></a></td></tr><tr><td style="text-align: center; "><a href="http://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5139" target="_self"><img src="http://www.defensoria.sp.gov.br/dpesp/Repositorio/0/Figuras/botoes_2015/Transparencia.jpg" alt="" border="0"></a></td></tr><tr><td style="text-align: center;">&nbsp;<a href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6534" target="_blank"><img src="assets/Boto-Observatrio.jpg" alt="" width="123" height="55" border="0"></a></td></tr><tr><td style="text-align: center;"><a href="http://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=4120" target="_self"><img src="http://www.defensoria.sp.gov.br/dpesp/Repositorio/0/Figuras/botoes_2015/Agenda.jpg" alt="" border="0"></a><a href="https://www.facebook.com/DefensoriaPublicaSP/" target="_blank" style="font-family: " times="" new="" roman";="" font-size:="" medium;="" font-style:="" normal;="" font-variant:="" font-weight:="" letter-spacing:="" line-height:="" orphans:="" auto;="" text-align:="" center;="" text-indent:="" 0px;="" text-transform:="" none;="" white-space:="" widows:="" 1;="" word-spacing:="" -webkit-text-stroke-width:="" 0px;"=""></a></td></tr><tr><td style="text-align: center;">&nbsp;<a href="http://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=5517" target="_self"><img src="http://www.defensoria.sp.gov.br/dpesp/Repositorio/0/Figuras/botoes_2015/Acessoinfo.jpg" alt="" border="0"></a></td></tr><tr><td style="text-align: center;">&nbsp;<a href="https://docs.google.com/forms/d/1RiGTbr6oCaO4NVDoMGsk4MwzCWqbhfbr1tgN92GuaYA/viewform" target="_blank"><img src="http://www.defensoria.sp.gov.br/dpesp/Repositorio/0/Figuras/botoes_2015/Recebaboletins.jpg" alt="" border="0"></a></td></tr><tr><td style="text-align: center;"><a href="https://online.defensoria.sp.gov.br/portal/" target="_blank"><img src="assets/2018.jpg" alt="" width="123" height="55" border="0"></a>&nbsp;</td></tr><tr><td style="text-align: center;">&nbsp;<a href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6540" target="_self"><img src="assets/Boto-Home-Assedio.jpg" alt="" width="123" height="75" border="0"></a></td></tr><tr><td style="text-align: center;"><a href="http://www.defensoria.sp.gov.br/dpesp/Default.aspx?idPagina=6122" target="_self"><img src="assets/SeloOtimiz.png" alt="" width="96" height="77" border="0"></a></td></tr><tr><td style="text-align: center;"><br>&nbsp;</td></tr></tbody></table><p></p><div align="center"><br></div><div align="center"></div></td>
+
+	</tr>
+</tbody></table>
+
+
+<br></td>
+
+            </tr>
+            <tr valign="top">
+                <td colspan="7" class="margemCentroInferior" id="margemCentroInferior">
+                </td>
+            </tr>
+            <tr valign="top">
+                
+            </tr>
+        </tbody></table>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
+    </div>
+
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+    <table id="Rodape" width="100%" cellspacing="0" cellpadding="0" border="0">
+        
+        <tbody><tr>
+            <td class="RodapePortal" width="10%" nowrap="nowrap" align="left">
+                <a id="ctl00_hypHome" title="Home Portal Principal" class="RodapePortal" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=1" target="_self"><img src="assets/home.gif" style="border-style:None;border-width:0px;">Home</a>
+            </td>
+            <td class="RodapePortal">
+                <div>
+                    
+                </div>
+                <div align="center">
+                    <input name="ctl00$txtBusca" type="text" maxlength="500" id="ctl00_txtBusca" class="watermarked" style="width:200px;" value="Pesquisa texto no Portal">
+                    <input type="hidden" name="ctl00$TextBoxWatermark_ClientState" id="ctl00_TextBoxWatermark_ClientState">
+                    <a id="ctl00_cmdBusca" title="Digite a palavra ou frase (entre aspas) a ser pesquisada." class="BotaoCmd" href="javascript:__doPostBack('ctl00$cmdBusca','')"><img src="assets/procurar.gif" style="border:0"></a>
+                </div>
+            </td>
+            <td class="RodapePortal" width="10%" nowrap="nowrap" align="left">
+                
+            </td>
+        </tr>
+    </tbody></table>
+
+    <!-- Campo nescess&#65533;rio para "simular" o smartnavigation  -->
+    <input id="rolagemPos" type="hidden" value="0" name="rolagemPos">
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_MenuSuperior_Data = new Object();
+ctl00_MenuSuperior_Data.disappearAfter = 2000;
+ctl00_MenuSuperior_Data.horizontalOffset = 0;
+ctl00_MenuSuperior_Data.verticalOffset = 0;
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+
+
+<script language="javascript" type="text/javascript">
+    redimensiona();
+    window.onresize = redimensiona;
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91388617-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="webchat"/>
+<script src="https://storage.googleapis.com/mrbot-cdn/webchat-0.5.8.js"></script>
+<script>
+    WebChat.default.init({
+    selector: "#webchat",
+    initPayload: "oi",
+    interval: 1000, // 1000 ms between each message
+    // customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "https://pocdefensoria.lappis.rocks",
+    socketPath: "/socket.io/",
+    title: "Dirce",
+    backgroundColor: '#FF0000',
+    inputTextFieldHint: "Digite sua mensagem...",
+    connectingText: "Conectando...",
+    hideWhenNotConnected: true,
+    fullScreenMode: false,
+    profileAvatar: "assets/lawyer.png",
+    openLauncherImage: 'assets/launcher_button.svg',
+    closeLauncherImage: 'assets/launcher_button.svg',
+    params: {
+        images: {
+        dims: {
+            width: 300,
+            height: 200,
+        }
+        },
+        storage: "session"
+    }
+    })
+</script> 
+
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

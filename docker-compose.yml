@@ -1,6 +1,27 @@
 version: '2'
 
 services:
+  # ============================= NGINX ==================================
+  nginx:
+    image: nginx:1.15-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+      - ./scripts/nginx:/etc/nginx/conf.d
+      - ./index.html:/tmp/nginx/index.html
+      - ./assets/:/tmp/assets/
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
   # ============================= Rocketchat ==================================
   rocketchat:
     image: rocket.chat:0.69.2
@@ -33,13 +54,12 @@ services:
       - ./docker/bot.env
     ports:
       - 5005:5005
-      - 5002:5002
-      - 3000:3000
     depends_on:
       - actions
     volumes:
       - ./bot:/bot
       - ./scripts:/scripts
+    command: sh -c "make run-webchat"
 
   actions:
     build:

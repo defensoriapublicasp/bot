@@ -1,43 +1,26 @@
 intents:
-  - cumprimentar
-  - despedir
-  - out_of_scope
   - negar
-  - tudo_bem
   - elogios
-  - conhecimento
+  - despedir
+  - tudo_bem
+  - infancia
   - defensoria
+  - cumprimentar
+  - conhecimento
+  - out_of_scope
   - andamento_processo
 
   - afirmar
 
-  - menu_lembrete
-  - menu_agendamento
-  - menu_lembrete_podepagaradvogado
-  - menu_lembrete_naopodepagaradvogado
   - menu_crime
-
-  # - pena_preso
-  # - pena_solto
-  # - pena_preso_localprisao
-  # - pena_solto_localpena
-
-  # - criminal
-  # - crime_localacontecimento
-
-  # - infancia
+  - menu_agendamento
 
   - civel
-  - civel_propositura
-  - civel_propositura_pessoajuridica
-  - civel_propositura_pessoafisica
-  - civel_propositura_pessoafisica_localmoradia
-  - civel_propositura_pessoafisica_cejusc
   - civel_defesa
-  - civel_defesa_digamais
+  - civel_propositura
   - civel_defesa_localprocesso
-
-  # - informa_cidade
+  - civel_propositura_pessoafisica
+  - civel_propositura_pessoajuridica
 
   - action_confirma_agendamento
   
@@ -52,11 +35,10 @@ slots:
 templates:
   utter_cumprimentar:
     - text: Oi, eu sou a Dirce, a assistente virtual da Defensoria Pública do Estado de São Paulo (DPESP).
-        problemas jurídicos do estado de São Paulo.
         Estou aqui para garantir que você tenha acesso à justiça. Em que posso te ajudar?
       buttons:
       - title: Agendar um atendimento
-        payload: agendar 
+        payload: quero agendar
       - title: Informações sobre a Defensoria Pública
         payload: defensoria publica
       - title: Informações sobre um processo em andamento
@@ -96,7 +78,7 @@ templates:
         mas estou super disposta a continuar te ajudando nos assuntos que eu domino
       buttons:
       - title: Agendar um atendimento
-        payload: agendar
+        payload: quero agendar
       - title: Informações sobre a Defensoria Pública
         payload: defensoria publica
 
@@ -119,13 +101,10 @@ templates:
         como expressão e instrumento do regime democrático, é oferecer, às pessoas necessitadas, 
         de forma integral e gratuita, a orientação jurídica, a promoção dos direitos humanos 
         e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos.
-
-        E agora, em que mais posso te ajudar?
+        Em que posso te ajudar?
       buttons:
       - title: Agendar um atendimento
-        payload: agendar 
-      - title: Informações sobre a Defensoria Pública
-        payload: defensoria publica
+        payload: quero agendar
 
   utter_entendi_negar:
     - text: |
@@ -139,7 +118,7 @@ templates:
       - title: Cível e Família
         payload: Cível e Família
       - title: Infância e Juventude
-        payload: Infância e Juventude
+        payload: infancia
       - title: Criminal
         payload: Criminal
 
@@ -161,14 +140,6 @@ templates:
         caso queira acompanhar um processo ou saber mais informações sobre a nossa instituição
         fique a vontade para perguntar :)
         Volte sempre!
-        
-  # utter_menu_lembrete_podepagaradvogado:
-  #   - text: | 
-  #       Agradeço seu contato, mas a Defensoria Pública apenas atende quem não tem condições de custear um advogado particular
-
-  # utter_menu_lembrete_naopodepagaradvogado:
-  #   - text: | 
-  #       Ok, não se preocupe, vamos lá...
 
 # ============================ CIVEL E FAMILIA ============================ #
 
@@ -215,6 +186,11 @@ templates:
         primeiro preciso saber se VOCÊ SABE onde podemos encontrá-la,
         
         ou seja, você tem o endereço do RÉU?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_propositura_pessoafisica_localmoradia:
     - text: | 
@@ -228,24 +204,11 @@ templates:
         Um mediador vai facilitar a comunicação entre você e a pessoa processada.
         Se você conseguir fazer uma conciliação, a sua situação pode ser resolvida
         mais rápido. E aí, quer tentar?
-
-  utter_civel_propositura_pessoafisica_cejusc_indicacejusc:
-    - text: | 
-        ótimo, a CEJUSC mais próxima que encontrei foi a do Jabaquara
-
-        Aqui está o [link](https://defensoria.sp.def.br) com o endereço completo
-
-  utter_civel_propositura_pessoafisica_encaminhaatendimento:
-    - text: | 
-        ótimo, infelizmente não encontrei nenhuma CEJUSC na sua cidade, para tentar uma audiência de conciliação antes de abrir o processo...
-
-        vou agendar um atendimento para você, ok?
-
-  utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento:
-    - text: | 
-        tudo bem, se não sabe o endereço certo do Réu é melhor encaminharmos você para um atendimento presencial ok?
-
-        Posso te indicar uma unidade mais próxima de você?
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
   utter_civel_defesa:
     - text: | 
@@ -263,13 +226,11 @@ templates:
   utter_civel_defesa_localprocesso:
     - text: | 
         você sabe em qual cidade está o processo?
-
-  utter_civel_defesa_atendimento:
-    - text: | 
-        Ok, maravilha
-
-        vamos encaminhar seu agendamento agora!
-
+      buttons:
+      - title: sim
+        payload: sim
+      - title: não
+        payload: não
 
 
 # ============================ INFANCIA E JUVENTUDE ============================ #
@@ -277,64 +238,15 @@ templates:
 
 
 # ============================ CRIMINAL ============================ #
-
-
+  utter_site_atendimento:
+    - text: | 
+        Caso deseje saber mais informações sobre atendimento, por favor acesse nossa página de atendimento:
+        https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=3092
 
 # ============================ AGENDAMENTO ============================ #
   utter_agendamento_local:
     - text: | 
         me diga o nome da CIDADE onde VOCÊ MORA, para que possa verificar a unidade mais próxima
-
-  # utter_agendamento_localmoradia_unidade:
-  #   - text: | 
-  #       encontrei uma Unidade da Defensoria Pública na cidade de Campinas, 
-
-  #       Você pode se dirigir ao endereço Rua Vilela, 19, 2º andar
-
-  #       Na quinta-feira, às 14h00?
-
-  # utter_agendamento_localmoradia_advogado:
-  #   - text: | 
-  #       Não encontrei uma Unidade da Defensoria Pública na cidade de Pirapózinho, 
-
-  #       Mas você pode se dirigir ao endereço Rua Piraporinha, 14, 4º andar
-
-  #       procurar o advogado Dr. Luis Martins
-
-  #       O telefone dele é (19) 98181-3355
-
-  # utter_agendamento_localprocesso:
-  #   - text: | 
-  #       me diga o nome da CIDADE onde está o PROCESSO, para que possa verificar a unidade mais próxima
-
-  # utter_agendamento_localprocesso_unidade:
-  #   - text: | 
-  #       encontrei uma Unidade da Defensoria Pública na cidade de São Paulo, 
-
-  #       Você pode se dirigir ao endereço Rua São Vicente, 260, 2º andar
-
-  #       Na sexta-feira, às 15h00?
-
-  # utter_agendamento_localprocesso_advogado:
-  #   - text: | 
-  #       Não encontrei uma Unidade da Defensoria Pública na cidade de Tajaí, 
-
-  #       Mas você pode se dirigir ao endereço Rua Açaí com banana, nº 4
-
-  #       procurar o advogado Dr. Maurício Lisboa
-
-  #       O telefone dele é (19) 98787-3344
-
-  # utter_agendamento_cidade_unidade:
-  #   - text: | 
-  #       Você mora na cidade de São Paulo, Campinas ou Guarulhos?
-    
-  #   - text: | 
-  #       Você por acaso mora na cidade de São Paulo, Campinas ou Guarulhos?
-
-  # utter_agendamento_cidade_advogado:
-  #   - text: | 
-  #       ok, então em qual cidade você mora?
 
 # ============================ ACTIONS ============================ #
 actions:
@@ -360,22 +272,13 @@ actions:
     - utter_civel_propositura_pessoafisica
     - utter_civel_propositura_pessoafisica_localmoradia
     - utter_civel_propositura_pessoafisica_cejusc
-    - utter_civel_propositura_pessoafisica_cejusc_indicacejusc
-    - utter_civel_propositura_pessoafisica_encaminhaatendimento
-    - utter_civel_propositura_pessoafisica_localmoradia_encaminhaatendimento
     - utter_civel_defesa
     - utter_civel_defesa_digamais
     - utter_civel_defesa_localprocesso
-    - utter_civel_defesa_atendimento
     
     - utter_agendamento_local
-    # - utter_agendamento_localmoradia_unidade
-    # - utter_agendamento_localmoradia_advogado
-    # - utter_agendamento_localprocesso
-    # - utter_agendamento_localprocesso_unidade
-    # - utter_agendamento_localprocesso_advogado
-    # - utter_agendamento_cidade_unidade
-    # - utter_agendamento_cidade_advogado
+    - utter_site_atendimento
 
     - action_confirma_agendamento
     - action_agendamento
+    - action_cejusc

@@ -12,6 +12,7 @@
 * action_confirma_agendamento
     - action_confirma_agendamento
 * negar
+    - utter_site_atendimento
     - utter_conhecimento
     - utter_menu
 
@@ -19,5 +20,6 @@
 * action_confirma_agendamento
     - action_confirma_agendamento
 * negar
+    - utter_site_atendimento
     - utter_conhecimento
     - utter_menu

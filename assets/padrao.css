@@ -1,0 +1,2354 @@
+﻿/* ================================
+    ESTILOS CSS PARA O TEMA PADRO
+	01/2007 - Vidal
+   ================================ */
+/*-------------------------------------------------------------------------------------
+  ESTILO DO ESPAÇAMENTO
+/*------------------------------------------------------------------------------------- */
+/* Define o espaçamento entre os painéis */
+.margemSuperior
+{
+    height: 10px;
+}
+.margemEsquerda
+{
+    width: 10px;
+}
+.margemCentroSuperior
+{
+    height: 5px;
+}
+.margemCentroEsquerda
+{
+    width: 10px;
+}
+.margemCentroDireita
+{
+    width: 10px;
+}
+.margemCentroInferior
+{
+    height: 5px;
+}
+.margemDireita
+{
+    width: 10px;
+}
+.margemInferior
+{
+    height: 0px;
+}
+/*-------------------------------------------------------------------------------------
+  ESTILO DO BANNER
+/*------------------------------------------------------------------------------------- */
+/* Define a primeira linha do Banner */
+.BannerCabecalho
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black;
+    background-color: #17a541;
+    background-image: url('Imagens/HeaderFundo.jpg');
+    text-decoration: none;
+    font-weight: normal;
+	height: 16px;
+	
+    text-align: right;
+    background-repeat: no-repeat;
+
+}
+/* Qualquer link que esteja na primeira linha do cabealho*/
+A.BannerCabecalho
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 22px;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    font-weight: bold;
+}
+/* Qualquer link que esteja na primeira linha do cabealho*/
+A.BannerCabecalho:hover
+{
+    text-decoration: underline;
+    background-color: transparent;
+}
+A.BotaoCabecalho
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    padding-right: 2px;
+    font-weight: bold;
+}
+A.BotaoCabecalho:hover
+{
+    text-decoration: underline;
+}
+
+TD.Banner180
+{
+	
+    height: 90px;
+    vertical-align: bottom;
+    text-align: right;
+    background-color: #17a541;
+    background-image: url('Imagens/BannerFundo.jpg');
+    background-repeat: no-repeat;
+    
+}
+
+#ctl00_MenuSuperior /*Atribuindo o css pelo id do elemento*/
+{
+    float: right;
+    background-color: #255b07; /*imagem de 3 px que serve de fundo para aquele espaço que o menu deixa*/
+}
+
+
+.BannerMenu
+{
+    padding-left: 0px;
+}
+.Default
+{
+    background-color: white;
+}
+
+/*-------------------------------------------------------------------------------------
+  ESTILO DO MENU
+/*------------------------------------------------------------------------------------- */
+/* MENU SUPERIOR*/
+.MenuEstatico
+{
+    background-image: url(Imagens/menu.jpg);
+    background-repeat: no-repeat;
+    background-color: tranparent;
+    color: #ede6c3;
+    font-size: 11px;
+    font-family: Verdana;
+    line-height: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 2px;
+}
+A.MenuEstatico
+{
+    background-image: none;
+    text-decoration: none;
+}
+A.MenuEstatico:Hover
+{
+    background-image: none;
+    text-decoration: none;
+    color: #4da13c;
+}
+.MenuDinamico
+{
+    background-color: #ede6c3;
+    color: #117d12;
+    font-size: 11px;
+    text-indent: 5px;
+    font-family: Verdana;
+    line-height: 18px;
+    text-decoration: none;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-image: none;
+    border-bottom: solid 1px #2f720b;
+}
+A.MenuDinamico
+{
+    display: block;
+    background-color: transparent;
+    color: #117d12;
+    font-size: 11px;
+    font-family: Verdana;
+    line-height: 18px;
+    text-decoration: none;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-image: none;
+    border: solid 1px #2f720b;
+}
+A.MenuDinamico:Hover
+{
+    display: block;
+    background-color: #d9d2b2;
+    color: #117d12;
+    font-size: 10px;
+    font-family: Verdana;
+    line-height: 18px;
+    text-decoration: none;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-image: none;
+    border: solid 1px #2f720b;
+}
+/*----------------------------------------------*/
+/* ESTILO DO MENU ESQUERDO                      */
+/*----------------------------------------------*/
+/* Fundo da Tabela do Menu*/
+TD.MenuEsquerdoFundo
+{
+    background-color: white;
+    background-image: none;
+}
+.MenuEstaticoEsquerdo
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 25px;
+    text-indent: 15px;
+    color: black;
+    background-color: white;
+    background-image: url(Imagens/MenuLeft.gif);
+}
+A.MenuEstaticoEsquerdo
+{
+    display: block;
+    background-image: none;
+    background-color: Transparent;
+    text-decoration: none;
+}
+A.MenuEstaticoEsquerdo:Hover
+{
+    color: #2a690a;
+    text-decoration: none;
+}
+.MenuDinamicoEsquerdo
+{
+    background-color: #ebedc3;
+    color: black;
+    font-size: 11px;
+    text-indent: 5px;
+    font-family: Verdana;
+    line-height: 18px;
+    text-decoration: none;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-image: none;
+    border-bottom: solid 1px #2f720b;
+}
+A.MenuDinamicoEsquerdo
+{
+    display: block;
+    background-color: transparent;
+    color: black;
+    font-size: 10px;
+    font-family: Verdana;
+    line-height: 18px;
+    text-decoration: none;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-image: none;
+}
+A.MenuDinamicoEsquerdo:Hover
+{
+    display: block;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+    color: black;
+    background-color: #d9d2b2;
+    background-image: none;
+    text-decoration: none;
+}
+/*------------------------------------------*/
+/* 	ESTILO DO RODAPE DO PORTAL              */
+/*------------------------------------------*/
+
+/* Primeira linha do Rodape, usada para endereco*/
+.RodapeTexto
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    background-color: #b8b395;
+    margin-left: 2px;
+    font-weight: bold;
+}
+/* ultima linha do Rodape, usada para links e busca*/
+
+.RodapePortal
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    color: white;
+    text-decoration: none;
+    background-color: #1c4e06;
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+/*-------------------------------------------------------------------------------------
+  ESTILO DA BARRA DE BOTES
+/*------------------------------------------------------------------------------------- */
+.BotaoBarra
+{
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+}
+
+a.BotaoBarra:link, a.BotaoBarra:active, a.BotaoBarra:visited
+{
+    display: block;
+    width: 100%;
+    line-height: 14px;
+    background-color: #d2c797;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+a.BotaoBarra:hover
+{
+    background-color: #e9e1bc;
+    text-decoration: none;
+    color: black;
+}
+.BotaoBarra:disabled
+{
+    display: block;
+    width: 100%;
+    line-height: 14px;
+    background-color: lightgrey;
+    border: 1px solid blue;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.BotaoSel
+{
+    display: block;
+    width: 100%;
+    line-height: 14px;
+    background-color: #095609;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+}
+a.BotaoSel
+{
+    display: block;
+    width: 100%;
+    line-height: 14px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+a.BotaoSel:hover
+{
+    background-color: #467e46;
+    text-decoration: none;
+    color: #fff;
+}
+/*-------------------------------------------------------------------------------------
+  ACCORDION
+/*------------------------------------------------------------------------------------- */
+/* Accordion */
+.AccordionCabecalho
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    color: black;
+    background-color: #e5dcaf;
+    background-image: url('Imagens/AcordeomFnd.gif');
+    font-family: Verdana, Tahoma, Arial, Sans-Serif;
+    font-size: 10px;
+    line-height: 24px;
+    font-weight: Normal;
+    padding: 4px;
+    cursor: pointer;
+}
+
+A.AccordionCabecalho
+{
+    color: black;
+    background: none;
+    text-decoration: none;
+}
+
+A.AccordionCabecalho:hover
+{
+    background: none;
+    text-decoration: underline;
+}
+
+.AccordionConteudo
+{
+    background-color: #ede6c3;
+    border: 0px;
+    border-top: none;
+    padding: 5px;
+    padding-top: 5px;
+}
+.BuscaItem
+{
+    background-color: #ede6c3;
+    border-bottom: 1px dashed #2F4F4F;
+    padding-top: 5px;
+}
+/*-------------------------------------------------------------------------------------
+  BOTO DE COMANDO
+/*------------------------------------------------------------------------------------- */
+.BotaoCmd
+{
+    font-size: 11px;
+    font-weight: normal;
+    color: #095509;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: transparent;
+}
+A.BotaoCmd
+{
+    font-size: 11px;
+    font-weight: normal;
+    color: #095509;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+}
+A.BotaoCmd:link
+{
+    font-size: 11px;
+    font-weight: normal;
+    color: #095509;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.BotaoCmd:visited
+{
+    font-size: 11px;
+    font-weight: normal;
+    color: #095509;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.BotaoCmd:active
+{
+    font-size: 11px;
+    font-weight: normal;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.BotaoCmd:hover
+{
+    font-size: 11px;
+    font-weight: normal;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+/*-------------------------------------------------------------------------------------
+  ESTILO DOS TTULOS DOS MÓDULOS
+/*------------------------------------------------------------------------------------- */
+/* Tipo 1 de ttulo de mdulo. Este  o tipo default */
+.TitModulo
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #276109;
+    line-height: 25px;
+    background-color: #e5ddb4;
+    text-align: center;
+    text-decoration: none;
+    background-image: url('Imagens/TitMod.gif');
+}
+A.TitModulo
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #276109;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-image: none;
+    background-color: transparent;
+}
+.TitEModulo
+{
+    line-height: 18px;
+    background-color: #e5ddb4;
+    background-image: url('Imagens/TitMod.gif');
+}
+.TitDModulo
+{
+    line-height: 18px;
+    background-color: #e5ddb4;
+    background-image: url('Imagens/TitMod.gif');
+}
+
+.TitModuloLink
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    line-height: 25px;
+    background-color: #2f720b;
+    background-image: url('Imagens/TitModLinkC.gif');
+    text-align: center;
+    text-decoration: none;
+}
+A.TitModuloLink
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #f8e9eb;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    background-image: none;
+    background-color: transparent;
+}
+.TitEModuloLink
+{
+    line-height: 25px;
+    background-color: #2f720b;
+    background-image: url('Imagens/TitModLinkE.gif');
+}
+.TitDModuloLink
+{
+    line-height: 25px;
+    background-color: #2f720b;
+    background-image: url('Imagens/TitModLinkC.gif');
+}
+.RodModuloLink
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    color: white;
+    line-height: 15px;
+    background-color: #2f720b;
+    text-align: right;
+}
+A.RodModuloLink
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    color: white;
+    line-height: 15px;
+    background-color: #2f720b;
+    text-align: right;
+}
+.RodEModuloLink
+{
+    line-height: 14px;
+    background-color: #2f720b;
+}
+.RodDModuloLink
+{
+    line-height: 15px;
+    background-color: #2f720b;
+    background-image: url('Imagens/RodModLinkD.gif');
+}
+
+.ModuloTitulo
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #276109;
+    line-height: 25px;
+    background-color: #e5ddb4;
+    text-align: center;
+    text-decoration: none;
+    background-image: url('Imagens/TitMod.gif');
+}
+A.ModuloTitulo
+{
+    color: #276109;
+}
+.ModuloTituloD
+{
+    line-height: 25px;
+    background-color: #e5ddb4;
+    background-image: url('Imagens/TitMod.gif');
+}
+.ModuloTituloE
+{
+    line-height: 25px;
+    background-color: #e5ddb4;
+    background-image: url('Imagens/TitMod.gif');
+}
+
+A.ModuloTitulo:hover
+{
+    color: red;
+}
+.ModuloSubTitulo
+{
+    font-weight: bold;
+    font-size: 12px;
+    color: #990000;
+    line-height: 20px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    background-color: ##ede6c3;
+}
+A.ModuloSubTitulo
+{
+    color: white;
+}
+A.ModuloSubTitulo:hover
+{
+    color: #990000;
+}
+.ModuloRelatorio
+{
+    border-right: blue 1px solid;
+    border-top: blue 1px solid;
+    font-weight: normal;
+    font-size: 11px;
+    border-left: blue 1px solid;
+    color: #008000;
+    line-height: 20px;
+    border-bottom: blue 1px solid;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    background-color: #ede6c3;
+    text-align: center;
+    text-decoration: none;
+    border-color: #008000;
+}
+.ModuloBarra
+{
+    border-right: gray 1px solid;
+    padding-right: 1px;
+    border-top: gray 1px solid;
+    padding-left: 1px;
+    font-weight: normal;
+    font-size: 11px;
+    padding-bottom: 1px;
+    border-left: gray 1px solid;
+    color: #008000;
+    line-height: 15px;
+    padding-top: 1px;
+    border-bottom: gray 1px solid;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    background-color: #ede6c3;
+    text-align: center;
+    text-decoration: none;
+    border-color: #008000;
+}
+/*-------------------------------------------------------------------------------------
+  ESTILO DOS TTULOS DOS MDULOS COM GRID
+/*------------------------------------------------------------------------------------- */
+.ModuloAnalise
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: transparent;
+}
+.ModuloGrupo
+{
+    font-weight: bold;
+    font-size: 10px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: transparent;
+}
+
+/*-------------------------------------------------------------------------------------
+  ESTILO DOS MODULOS
+/*------------------------------------------------------------------------------------- */
+.ModuloItem
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: transparent;
+    color: black;
+}
+.ModuloItem:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCFFCC;
+    color: black;
+}
+A.ModuloItem:link
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.ModuloSelecionado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #FF0000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: white;
+}
+.ModuloAlternado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #F2EEDB;
+}
+.ModuloAlternado:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCFFCC;
+}
+TR.ModuloAlternado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.ModuloAlternado:link
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.ModuloEditado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCFFCC;
+    width: 300px;
+}
+.ModuloCabecalho
+{
+    font-weight: bold;
+    font-size: 10px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #ede6c3;
+}
+TR.ModuloCabecalho
+{
+    font-weight: bold;
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+TR.ModuloCabecalho:link
+{
+    font-weight: bold;
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+TD.ModuloCabecalho
+{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 20px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.ModuloCabecalho
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+}
+A.ModuloCabecalho:link
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+}
+A.ModuloCabecalho:visited
+{
+    font-size: 10px;
+    color: #800000;
+}
+A.ModuloCabecalho:active
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+}
+A.ModuloCabecalho:hover
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.ModuloRodape
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #008000;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #ede6c3;
+}
+.ModuloPaginacao
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #ede6c3;
+}
+.ModuloPaginacao span
+{
+    font-size: 14px;
+}
+A.ModuloPaginacao
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.ModuloPaginacao:link
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.ModuloPaginacao:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+/*-------------------------------------------------------------------------------------
+   LISTA ITEM
+/*-------------------------------------------------------------------------------------*/
+.ListaItem
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: transparent;
+    color: black;
+}
+.ListaItem:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCFFCC;
+    color: black;
+}
+A.ListaItem:link
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.ListaSelecionado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #FF0000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: white;
+}
+.ListaAlternado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #F2EEDB;
+}
+.ListaAlternado:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCFFCC;
+}
+TR.ListaAlternado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.ListaAlternado:link
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.ListaEditado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCFFCC;
+    width: 300px;
+}
+.ListaCabecalho
+{
+    font-weight: bold;
+    font-size: 10px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #ede6c3;
+}
+TR.ListaCabecalho
+{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+TR.ListaCabecalho:link
+{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+TD.ListaCabecalho
+{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.ListaCabecalho
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+}
+A.ListaCabecalho:link
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+}
+A.ListaCabecalho:visited
+{
+    font-size: 10px;
+    color: #800000;
+}
+A.ListaCabecalho:active
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+}
+A.ListaCabecalho:hover
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.ListaRodape
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #ede6c3;
+}
+.ListaPaginacao
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #ede6c3;
+}
+.ListaPaginacao span
+{
+    font-size: 14px;
+}
+A.ListaPaginacao
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.ListaPaginacao:link
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.ListaPaginacao:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------------------------------------------
+  ESTILO DO CORPO DOS MÓDULOS
+  Obs.: Existem 3 tipos de estilos dos mdulos.
+/*------------------------------------------------------------------------------------- */
+/* Tipo 1 de corpo do mdulo. Este  o tipo default */
+
+.ProcessoCapa
+{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    line-height: 20px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background-color: white;
+    text-decoration: none;
+}
+.Titulo
+{
+    font-weight: bold;
+    font-size: 11px;
+    color: #90212c;
+    line-height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.TituloCapa
+{
+    font-weight: bold;
+    font-size: 11px;
+    color: #90212c;
+    line-height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.TituloItem
+{
+    font-weight: normal;
+    font-size: 11px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.TituloDado
+{
+    font-weight: bold;
+    font-size: 13px;
+    color: #005B00;
+    line-height: 20px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.TituloDadoROTATIVO
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: #005B00;
+    line-height: 30px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.Modulo
+{
+    font-size: 12px;
+    line-height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background: transparent;
+}
+INPUT.Modulo
+{
+    background-color: White;
+}
+SELECT.Modulo
+{
+    background-color: White;
+}
+TEXTAREA.Modulo
+{
+    background-color: White;
+}
+A.Modulo:hover
+{
+    color: Blue;
+    text-decoration: underline;
+    background: transparent;
+}
+A.Modulo
+{
+    font-size: 11px;
+    color: #008000;
+    line-height: 14px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    background: transparent;
+}
+A.Modulo:link
+{
+    font-size: 10px;
+    color: #008000;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+}
+A.Modulo:visited
+{
+    font-size: 10px;
+    color: #008080;
+    text-decoration: none;
+}
+A.Modulo:active
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+}
+A.Modulo:hover
+{
+    color: #990000;
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+H1.Modulo
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666565;
+}
+H2.Modulo
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #666565;
+}
+SELECT.Modulo
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+P.Modulo
+{
+    font-size: 11px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: Justify;
+}
+HR.Modulo
+{
+    border-style: dashed;
+    color: #90212c;
+    width: 100%;
+    height: 1px;
+}
+.Tracejado
+{
+    width: 100%;
+    color: #008000;
+    border-top-style: dotted;
+    border-right-style: dotted;
+    border-left-style: dotted;
+    height: 1px;
+    border-bottom-style: dotted;
+}
+/*-------------------------------------------------------------------------------------
+  ESTILO DO CALENDARIO DE NOTICIAS
+/*------------------------------------------------------------------------------------- */
+/* Define o fundo do cabeçalho */
+
+.CalendarioTitulo
+{
+    background-color: #008000;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-color: #008000;
+    border-width: 1px;
+    border-style: Solid;
+    height: 25px;
+}
+.CalendarioNavegador
+{
+    background-color: #008000;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-color: #008000;
+    border-width: 1px;
+    border-style: Solid;
+    height: 25px;
+}
+A.CalendarioNavegador
+{
+    background-color: #008000;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-color: #008000;
+    border-width: 1px;
+    border-style: Solid;
+    height: 25px;
+}
+
+/* Define os nomes dos dias da semana */
+.CalendarioCabecalho
+{
+    background-color: #a4c09a;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #1c4e06;
+    text-decoration: none;
+    height: 12px;
+}
+/* Define os dias úteis */
+.CalendarioDia
+{
+    background-color: white;
+    height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+}
+/* Define os finais de semana */
+.CalendarioFimSemana
+{
+    background-color: #d4e5ce;
+    height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+}
+/* Define data atual se outra data estiver selecionada  */
+.CalendarioHoje
+{
+    background-color: #d8cc9f;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+    height: 14px;
+}
+/* Define as datas dos meses anterior e posterior que entram no calendário corrente */
+.CalendarioOutroMes
+{
+    background-color: #effee9;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #d4e5ce;
+    text-decoration: none;
+    height: 14px;
+}
+/*-------------------------------------------------------------------------------------
+  MÓDULO DOCUMENTO
+/*------------------------------------------------------------------------------------- */
+.Docto
+{
+    color: black;
+    background-color: transparent;
+    text-align: left;
+    text-decoration: none;
+}
+.DoctoItem
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: white;
+}
+.DoctoAlternado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #f8fff5;
+}
+
+A.Docto
+{
+    border: 0px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: left;
+    text-decoration: none;
+    color: #2e72b6;
+    background-color: Transparent;
+}
+A.Docto:hover
+{
+    text-decoration: underline;
+}
+.DoctoCabecalho
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: black;
+    background-color: #c5dabb;
+    text-align: left;
+    text-decoration: none;
+}
+A.DoctoCabecalho
+{
+    color: red;
+    text-decoration: none;
+}
+A.DoctoCabecalho:hover
+{
+    text-decoration: underline;
+}
+.DoctoPaginacao
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: black;
+    background-color: #c5dabb;
+    text-align: left;
+    text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------------------
+  MODULO DE IMAGENS ROTATIVAS
+/*------------------------------------------------------------------------------------- */
+/*Define a cor de fundo da tabela, a borda e a fonte da legenda se não tiver link*/
+
+.ImagemRotativa
+{
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+/*Define o link da legenda da foto, se houver*/
+
+A.ImagemRotativa
+{
+    border: 0px;
+    text-align: center;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+    border: 0px;
+}
+A.ImagemRotativa:hover
+{
+    text-decoration: underline;
+    border: 0px;
+}
+/*Define o titulo da foto, se houver*/
+
+H1.ImagemRotativa
+{
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*-------------------------------------------------------------------------------------
+  MDULO LINK
+/*------------------------------------------------------------------------------------- */
+.Link
+{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    background-color: #fbf8ea;
+    border-left: 1px solid #2f720b;
+    border-right: 1px solid #2f720b;
+}
+A.Link
+{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    border: 0px;
+}
+A.Link:hover
+{
+    text-decoration: underline;
+}
+.LinkItem
+{
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    border-left: 1px solid #2f720b;
+    border-right: 1px solid #2f720b;
+    border-bottom: 1px dashed #2f720b;
+    background-color: #fbf8ea;
+}
+.LinkAlternado
+{
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    border-left: 1px solid #2f720b;
+    border-right: 1px solid #2f720b;
+    border-bottom: 1px dashed #2f720b;
+    background-color: #fbf8ea;
+}
+LI.Link
+{
+    font-weight: normal;
+    font-size: 11px;
+    list-style-image: url(../imagens/bullet_links.gif);
+    color: #565656;
+    line-height: 15px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+TD.Link
+{
+    background-color: #fbf8ea;
+    padding: 2px;
+}
+HR.Link
+{
+    color: transparent;
+}
+/*-------------------------------------------------------------------------------------
+  MDULO AVISO
+/*------------------------------------------------------------------------------------- */
+.Aviso
+{
+    border-left: 1px solid #90212c;
+    border-right: 1px solid #90212c;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    background-color: #f8e9eb;
+}
+A.Aviso
+{
+    border: 0px;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 20px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+A.Aviso:hover
+{
+    text-decoration: underline;
+}
+.AvisoItem
+{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+.AvisoAlterna
+{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+LI.Aviso
+{
+    font-weight: normal;
+    font-size: 11px;
+    color: #565656;
+    line-height: 14px;
+    font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    border: 0px;
+}
+TD.Aviso
+{
+    padding: 2px;
+    border: 0px;
+}
+HR.Aviso
+{
+    border-style: solid;
+    color: #f8e9eb;
+    width: 100%;
+    height: 1px;
+}
+/*-------------------------------------------------------------------------------------
+  MDULO NOTCIAS
+/*------------------------------------------------------------------------------------- */
+.Noticia
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: black;
+    background-color: #fbf8ea;
+    text-align: left;
+    text-decoration: none;
+    border-left: 1px solid #2f720b;
+    border-right: 1px solid #2f720b;
+}
+.NoticiaItem
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: black;
+    background-color: #fbf8ea;
+    text-align: left;
+    text-decoration: none;
+    border-left: 1px solid #2f720b;
+    border-right: 1px solid #2f720b;
+}
+.NoticiaAlternado
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: black;
+    background-color: #fbf8ea;
+    text-align: left;
+    text-decoration: none;
+    border-left: 1px solid #2f720b;
+    border-right: 1px solid #2f720b;
+}
+
+A.Noticia
+{
+    border: 0px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+A.Noticia:hover
+{
+    text-decoration: underline;
+}
+HR.Noticia
+{
+    border-style: dotted;
+    color: #008080;
+    width: 100%;
+    height: 1px;
+}
+TD.Noticia
+{
+    font-weight: normal;
+    font-size: 11px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    background-color: #fbf8ea;
+}
+.NoticiaTitulo
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    color: #2f720b;
+    border: 0px;
+}
+.NoticiaData
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 9px;
+    text-align: left;
+    color: black;
+    border: 0px;
+}
+
+
+/* ================================
+   MÓDULO MATÉRIA
+   ================================ */
+
+.Materia
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: black;
+    background-color: white;
+    text-align: left;
+    text-decoration: none;
+    background-color: white;
+}
+.MateriaTitulo
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    color: #2f720b;
+    border: 0px;
+}
+
+.MateriaItem
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: black;
+    background-color: white;
+    text-align: left;
+    text-decoration: none;
+    padding-bottom: 13px;
+    border-bottom: 1px dashed #FCD272;
+}
+.MateriaAlternado
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: black;
+    background-color: white;
+    text-align: left;
+    text-decoration: none;
+    padding-bottom: 13px;
+    border-bottom: 1px dashed #FCD272;
+}
+
+A.Materia
+{
+    border: 0px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #2f720b;
+    background-color: transparent;
+}
+A.Materia:hover
+{
+    text-decoration: underline;
+}
+/*-------------------------------------------------------------------------------------
+  ESTILO DO GRID
+/*------------------------------------------------------------------------------------- */
+.GridItem
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: transparent;
+    color: black;
+}
+A.GridItem:link
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+A.GridItem:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCFFCC;
+    color: black;
+}
+.GridAlternado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 15px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #fbf8ea;
+}
+
+A.GridAlternado:link
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.GridAlternado:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: black;
+    line-height: 20px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCFFCC;
+}
+A.Grid
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    color: green;
+}
+A.Grid:hover
+{
+    text-decoration: underline;
+}
+.GridSelecionado
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #FF0000;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: white;
+}
+.GridEdita
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #008000;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCFFCC;
+    width: 300px;
+}
+.GridCabecalho
+{
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+    line-height: 20px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #ede6c3;
+    text-align: center;
+}
+A.GridCabecalho:link
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #2f700b;
+}
+A.GridCabecalho:visited
+{
+    font-size: 10px;
+    color: #c41f3a;
+}
+A.GridCabecalho:hover
+{
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.GridRodape
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #008000;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #ede6c3;
+}
+.GridPaginacao
+{
+    font-weight: bold;
+    font-size: 10px;
+    color: #008000;
+    line-height: 20px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #ede6c3;
+}
+
+A.GridPaginacao:link
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+A.GridPaginacao:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------------------------------------------
+  ESTILO SEPARADOR DE MDULOS
+/*------------------------------------------------------------------------------------- */
+/* Altura padro para separar os mdulos verticais*/
+
+.ModuloSeparador
+{
+    line-height: 10px;
+}
+/*-------------------------------------------------------------------------------------
+  ESTILO DO LOGIN
+/*------------------------------------------------------------------------------------- */
+/* Configuraes da pgina de login. Tais configuraes sero 
+  aplicadas a todos os elementos da tela*/
+.Login
+{
+    font-weight: normal;
+    font-size: 11px;
+    color: black;
+    line-height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    background-color: #f7f2d9;
+}
+A.Login
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    text-decoration: none;
+    background: transparent;
+}
+A.Login:hover
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    text-decoration: underline;
+    background: transparent;
+}
+
+/* Cabealho da tela de login*/
+.LoginCabecalho
+{
+    font-weight: bold;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #f7f2d9;
+    text-decoration: none;
+    background-color: #2f720b;
+    text-align: center;
+    padding: 3px;
+}
+/*-------------------------------------------------------------------------------------
+  ESTILOS GENRICOS
+/*------------------------------------------------------------------------------------- */
+BODY
+{
+    font-size: 12px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background: transparent;
+}
+P
+{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background: transparent;
+    color: black;
+    text-align: justify;
+}
+h1
+{
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background-color: #f4f1e0;
+    color: black;
+    font-weight: bold;
+    text-indent: 15px;
+}
+h2
+{
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-indent: 15px;
+    border-bottom: 1px #245b08 solid;
+}
+h3
+{
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background-color: #245b08;
+    color: #e5dcaf;
+    font-weight: bold;
+    text-indent: 15px;
+}
+
+
+DIV
+{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background: transparent;
+    color: black;
+}
+
+INPUT
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+TEXTAREA
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+A
+{
+    background: transparent;
+    color: #245b08;
+    text-decoration: none;
+    font-size: 12px;
+}
+A:hover
+{
+    background: transparent;
+    text-decoration: underline;
+}
+A:selected
+{
+    background: transparent;
+    text-decoration: none;
+}
+SPAN
+{
+    font-size: 12px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+/*-------------------------------------------------------------------------------------
+  ESTILO DO HELP
+/*------------------------------------------------------------------------------------- */
+.Help
+{
+    font-weight: normal;
+    font-size: 11px;
+    color: #666565;
+    line-height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+A.Help
+{
+    font-weight: bold;
+    font-size: 10px;
+    color: #777777;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+A.Help:hover
+{
+    text-decoration: underline;
+}
+LI.Help
+{
+    font-weight: bold;
+    font-size: 11px;
+    list-style-image: url(../imagens/arvore.gif);
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    list-style-position: inside;
+}
+TD.Help
+{
+    background-color: #CED7F7;
+    border: 1px;
+    border-color: #081C7B;
+    border-style: solid;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #081C7B;
+    line-height: 18px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+HR.Help
+{
+    border-style: dotted;
+    color: #06A854;
+    width: 100%;
+    height: 1px;
+}
+H1.Help
+{
+    font-weight: normal;
+    font-size: 16px;
+    color: #E7BA00;
+    line-height: 18px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+P.Help
+{
+    font-weight: normal;
+    font-size: 11px;
+    color: #666565;
+    line-height: 14px;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    text-align: justify;
+}
+/*-------------------------------------------------------------------------------------
+  ESTILO DO FÓRUM
+/*------------------------------------------------------------------------------------- */
+.TitModuloForum
+{
+    font-family: Arial, Verdana, Tahoma, Geneva, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #316700;
+    background-image: url('../../Imagens/TitModForumC.gif');
+    text-align: left;
+    padding-left: 15px;
+    text-decoration: none;
+    line-height: 46px;
+}
+A.TitModuloForum
+{
+    font-family: Arial, Verdana, Tahoma, Geneva, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #316700;
+    text-indent: 0px;
+    text-align: left;
+    text-decoration: none;
+    background-image: none;
+}
+.TitEModuloForum
+{
+    line-height: 46px;
+    background-image: url('../../Imagens/TitModForumE.gif');
+}
+.TitDModuloForum
+{
+    line-height: 46px;
+    background-image: url('../../Imagens/TitModForumD.gif');
+}
+
+A.TituloForum
+{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: white;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    background-color: #6bac60;
+}
+A.TituloForum:hover
+{
+    text-decoration: underline;
+}
+.TituloForum
+{
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    background-color: #6bac60;
+}
+
+.DetalheForum
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #777777;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+A.DetalheForum
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #777777;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+A.DetalheForum:hover
+{
+    text-decoration: underline;
+}
+P.Forum
+{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: black;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+.TextoForum
+{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: black;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+A.RespostaForum
+{
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #6bac60;
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+A.RespostaForum:hover
+{
+    text-decoration: underline;
+}
+
+
+.ForumItem
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    border: 0px;
+}
+.ForumAlternado
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    border-top: 1px green solid;
+}
+
+table.Forum
+{
+    border-style: solid;
+    border-color: #6bac60;
+    width: 95%;
+    border: 1px;
+    padding: 5px;
+}
+HR.Forum
+{
+    border-style: solid;
+    color: #6bac60;
+    width: 100%;
+    height: 1px;
+}
+/*-------------------------------------------------------------------------------------------------*/
+/* Reorder List */
+/*-------------------------------------------------------------------------------------------------*/
+.dragHandle
+{
+    width: 10px;
+    height: 15px;
+    background-color: Blue;
+    background-image: url(images/bg-menu-main.png);
+    cursor: move;
+    border: outset thin white;
+}
+
+.callbackStyle
+{
+    border: thin blue inset;
+}
+
+.callbackStyle table
+{
+    background-color: #5377A9;
+    color: Black;
+}
+
+
+.reorderListDemo li
+{
+    list-style: none;
+    margin: 2px;
+    background-image: url(images/bg_nav.gif);
+    background-repeat: repeat-x;
+    color: #FFF;
+}
+
+.dragVisualContainer li
+{
+    list-style: none;
+    background-image: url(images/bg_nav.gif);
+    background-repeat: repeat-x;
+    color: #FFF;
+}
+
+.reorderListDemo li a
+{
+    color: #FFF !important;
+    font-weight: bold;
+}
+
+.reorderCue
+{
+    border: dashed thin black;
+    width: 100%;
+    height: 25px;
+}
+
+.itemArea
+{
+    margin-left: 15px;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 1em;
+    text-align: left;
+}

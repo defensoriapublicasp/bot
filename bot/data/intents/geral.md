@@ -27,33 +27,22 @@
 - flw vlw
 
 ## intent:cumprimentar
-- oi, tudo bem
-- como vai
-- oi, como vai voce
-- como vao as coisas
-- tudo bom
+- oi
+- oi, bot
 - posso falar com voce
-- pode me tirar uma duvida
-- gostaria de tirar uma duvida
-- to bem
-- tranquilo
-- estou bem
-- estou otimo
-- muito bem
 - bom dia
 - boa tarde
 - boa noite
 - ola
-- Olá como vai
 - oie
 - oiee
-- opa tudo bem
-- ola boa tarde
-- ola ola
 
 ## intent:elogios
 - Você é  muito educado!
 - Adorei
+- muito obrigado
+- obrigado
+- obrigada, Dirce
 - Me ajudou muito
 - vc eh lindo
 - parabéns
@@ -93,13 +82,13 @@
 - beleza
 - sim sim
 - ótimo
+- isso
   
 ## intent:tudo_bem
 - Tudo bem
 - Como vocês esta
-- como ta
+- tudo ótimo
 - tudo bom
-- bom dia
 - Tudo bem e você
 - como vc esta
 - como vai
@@ -123,3 +112,8 @@
 - informacoes processo
 - informacão processo
 - informação processo
+
+## intent: infancia
+- infancia e juventude 
+- infancia
+- juventude

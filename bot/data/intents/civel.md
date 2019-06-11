@@ -3,46 +3,9 @@
 - civel
 - Cível e Família
 - civel e familia
-- quero propor uma ação 
-- quero processar alguem
-- estou sendo processado
-- fui intimado a comparecer
-- estou sendo vitima
-- sou réu em um processo
-- estou me divorciando
-- quero me divorciar
-- quero pedir pensao
-- pensao para meus filhos
-- quero me separar
-- quero ajuda para me separar
-- quero pedir alimentos
 - Área Cível e Família
-
-## intent:menu_lembrete
--  Eu posso ser defendido pela Defensoria
--  Posso ter um advogado
--  preciso de um advogado
--  preciso de defesa juridica
--  pode me defender juridicamente
-  
-
-## intent:menu_lembrete_podepagaradvogado
-- eu tenho dinheiro para pagar advogado 
-- ganho mais que 3 salarios minimos
-- renda familiar acima de 3 salarios
-- renda da familia maior que 3 salarios
-- ganho bem mais que isso
-
-
-## intent:menu_lembrete_naopodepagaradvogado
-- não tenho condições de pagar um advogado
-- não consigo pagar um advogado
-- ganho menos que 3 salarios
-- renda familiar não chega a 3 salarios
-- ganho 1 salario minimo
-- renda familiar de 2 salários minimos
-- ganho bem pouco
-- sou pobre
+- preciso de encaminhamento para cível e família
+- atendimento em cível
 
 ## intent:civel_propositura
 - propositura
@@ -78,22 +41,6 @@
 - processar minha ex-mulher
 - processar meu companheiro
 
-## intent:civel_propositura_pessoafisica_localmoradia
-- eu sei onde o reu mora
-- tem endereco certo
-- sei onde ele esta
-- sei a rua do reu 
-- sei a cidade dele
-  
-
-## intent:civel_propositura_pessoafisica_cejusc
-- quero tentar uma conciliacao 
-- acho que podemos tentar o cejusc
-- acredito que de para conciliar
-- talvez da para conciliar
-- vamos tentar o dialogo
-  
-
 ## intent:civel_defesa
 - recebi uma carta  
 - quero me defender
@@ -106,14 +53,6 @@
 - fui processado injustamente
 - defesa
 - defender
-
-## intent:civel_defesa_digamais
-- o que e defesa 
-- o que exatamente a defesa faz 
-- o que mais a defesa faz
-- qual a diferenca entre defesa e propositura 
-- como a defensoria pode me defender 
-- quais casos posso me defender 
 
 ## intent:civel_defesa_localprocesso
 - sei o local do processo 
