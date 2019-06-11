@@ -40,6 +40,9 @@
 ## intent:elogios
 - Você é  muito educado!
 - Adorei
+- muito obrigado
+- obrigado
+- obrigada, Dirce
 - Me ajudou muito
 - vc eh lindo
 - parabéns
